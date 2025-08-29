@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <POU Name="FB_RunOutputs" Id="{fd74bc16-b780-4aac-ac44-2091a1d8e935}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_RunOutputs
+VAR_INPUT
+	bEnable : BOOL;
+	tStepSpeed : TIME;
+	tCycleDelay : TIME;
+END_VAR
+VAR
+	nStep: INT;
+	fbStepTimer: TON;
+	fbCycleDelay: TON;
+	nShiftReg : BYTE;
+END_VAR
+VAR_IN_OUT
+	Outputs_MX : ST_DOSOutputsMX;
+END_VAR]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[CASE nStep OF
+0:
+	fbStepTimer.IN := FALSE;
+	fbCycleDelay.IN := FALSE;
+	IF bEnable THEN
+		nShiftReg:=1;
+		fbStepTimer.IN:=TRUE;
+		nStep:=nStep+1;
+	END_IF
+	
+1:
+	IF fbStepTimer.Q THEN
+		fbStepTimer.IN:=FALSE;
+		nStep:=nStep+1;
+	END_IF
+
+2:
+	nShiftReg:=SHL(nShiftReg,1);
+	IF Outputs_MX.bOutputCh8 THEN
+		fbCycleDelay.IN:=TRUE;
+		nStep:=nStep+1;	
+	ELSE
+		fbStepTimer.IN:=TRUE;
+		nStep:=nStep-1;
+	END_IF
+
+3:
+	IF fbCycleDelay.Q THEN
+		nShiftReg:=1;
+		fbStepTimer.IN:=TRUE;
+		fbCycleDelay.IN:=FALSE;
+		nStep:=1;
+	END_IF
+
+999:
+	nShiftReg:=0;
+	fbCycleDelay.IN:=FALSE;
+	fbStepTimer.IN:=FALSE;
+	nStep:=0;
+
+END_CASE
+fbStepTimer(PT:=tStepSpeed);
+fbCycleDelay(PT:=tCycleDelay);
+IF NOT(bEnable) THEN
+	nStep:=999;
+END_IF
+Outputs_MX.bOutputCh8:=nShiftReg.7;
+Outputs_MX.bOutputCh7:=nShiftReg.6;
+Outputs_MX.bOutputCh6:=nShiftReg.5;
+Outputs_MX.bOutputCh5:=nShiftReg.4;
+Outputs_MX.bOutputCh4:=nShiftReg.3;
+Outputs_MX.bOutputCh3:=nShiftReg.2;
+Outputs_MX.bOutputCh2:=nShiftReg.1;
+Outputs_MX.bOutputCh1:=nShiftReg.0;
+	]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

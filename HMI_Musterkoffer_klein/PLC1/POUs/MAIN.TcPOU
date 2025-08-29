@@ -13,10 +13,12 @@ VAR
 	
 	bEnableBluetoothDiagnosis	AT%Q* 	:  	BOOL := TRUE;
 	bActivatePairingMode		AT%Q*	:	BOOL := TRUE;
+	
+	fbRunOutputs	:	FB_RunOutputs;
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[]]></ST>
+      <ST><![CDATA[fbRunOutputs(bEnable:= , tStepSpeed:=t#500ms , tCycleDelay:=t#1000ms , Outputs_MX:=stIoModulSlot9.stDOSOutputs );]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>
