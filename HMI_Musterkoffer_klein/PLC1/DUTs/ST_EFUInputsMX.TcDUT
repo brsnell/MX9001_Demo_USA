@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <DUT Name="ST_EFUInputsMX" Id="{7370842a-66da-4f0c-981f-c349e0bf9a26}">
+    <Declaration><![CDATA[TYPE ST_EFUInputsMX :
+STRUCT
+	bWarning 	AT%I*	: BOOL;
+	bError 		AT%I*	: BOOL;
+	bTripped 	AT%I*	: BOOL;
+	bEnabled 	AT%I*	: BOOL;
+	//InputCycleCounter : BYTE;
+	fCurrent 	AT%I*	: REAL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

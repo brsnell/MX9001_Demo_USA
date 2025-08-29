@@ -1,0 +1,221 @@
+<div id="HeaderDesktop_1" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="100" data-tchmi-height="100" data-tchmi-width-unit="%" data-tchmi-height-unit="%">
+
+<div id="TcHmiHeaderGrid_2" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-width="100" data-tchmi-height="100" data-tchmi-left="0" data-tchmi-top="0" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="0" data-tchmi-height-unit="%" data-tchmi-width-unit="%" data-tchmi-left-unit="px" data-tchmi-top-unit="px">
+<script data-tchmi-target-attribute="data-tchmi-column-options" type="application/json">[
+        {
+        "width": 1.0,
+        "widthUnit": "factor",
+        "widthMode": "Value",
+        "maxWidthUnit": "px",
+        "minWidthUnit": "px",
+        "overflow": false
+        },
+        {
+        "width": 1.0,
+        "widthUnit": "factor",
+        "widthMode": "Value",
+        "maxWidthUnit": "px",
+        "minWidthUnit": "px",
+        "overflow": false
+        },
+        {"width": 1.0,
+        "widthUnit": "factor",
+        "widthMode": "Value",
+        "maxWidthUnit": "px",
+        "minWidthUnit": "px",
+        "overflow": false
+        }
+        ]</script><script data-tchmi-target-attribute="data-tchmi-row-options" type="application/json">[
+        {
+        "height": 1,
+        "heightUnit": "factor",
+        "heightMode": "Value",
+        "maxHeightUnit": "px",
+        "minHeightUnit": "px"
+        }
+        ]</script><script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
+[
+"background-header"
+]
+</script><div id="TcHmiBeckhoffLogoImage_2" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-width="206" data-tchmi-height="40" data-tchmi-left="40" data-tchmi-top="25" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="0" data-tchmi-height-unit="px" data-tchmi-width-unit="px" data-tchmi-left-unit="px" data-tchmi-top-unit="px">
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
+        {
+        "event": "TcHmiBeckhoffLogoImage_2.onPressed",
+        "actions": [
+        {
+        "objectType": "ControlApiFunction",
+        "active": true,
+        "control": "HostContent_TcHmiBreadCrumbControl",
+        "fn": "clearDisplay",
+        "asyncWait": true
+        },
+        {
+        "objectType": "ControlApiFunction",
+        "active": true,
+        "control": "TcHmiNavBarMenu",
+        "fn": "closeMenu",
+        "asyncWait": true
+        },
+        {
+        "objectType": "ControlApiFunction",
+        "active": true,
+        "control": "TcHmiNavBarLanguage",
+        "fn": "closeMenu",
+        "asyncWait": true
+        },
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%HostContent_TcHmiHostRegion::TargetContent%/ctrl%",
+        "valueType": "tchmi:framework#/definitions/ContentPath",
+        "value": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:framework#/definitions/ContentPath",
+        "value": "Pages/StartPage.content"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ]</script><script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
+[
+"Logo"
+]
+</script>
+
+</div><div id="TcHmiNavBarLanguage_2" data-tchmi-type="TcHmi.Controls.ResponsiveNavigation.TcHmiNavigationBar" data-tchmi-width="160" data-tchmi-height="100" data-tchmi-top="0" data-tchmi-grid-column-index="2" data-tchmi-grid-row-index="0" data-tchmi-height-unit="%" data-tchmi-width-unit="px" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-right="40" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-alignment-bottom="False" data-tchmi-alignment-top="True" data-tchmi-enable-mobile-switch="False" data-tchmi-nav-content-control="%ctrl%TcHmiNavContentLanguage%/ctrl%" data-tchmi-font-size="170" data-tchmi-listen-window-resize="True" data-tchmi-padding-left-right="0" data-tchmi-switch-breakpoint="1200">
+
+<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
+[
+"language-selection"
+]
+</script><script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%ctx%owner::Id|EventRegistrationMode=Resolve%/ctx%.onAttached",
+    "actions": [
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.UpdateLanguageIcon",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%TcHmiNavBarLanguage_2%/ctrl%"
+          },
+          {
+            "objectType": "FunctionExpression",
+            "functionExpression": "GetLocale()"
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "%ctx%owner::Id|EventRegistrationMode=Resolve%/ctx%.onPageCalled",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%ctrl%TcHmiNavBarLanguage_2%/ctrl%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": "PARAMETER_NOT_SET"
+                },
+                "compareOperator": "!=",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "Function",
+                "active": true,
+                "fn": "TcHmi.Functions.Beckhoff.SetLocale",
+                "fnParams": [
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:general#/definitions/ProjectLocale",
+                    "symbolExpression": "%ctrl%TcHmiNavBarLanguage_2::LastEventParameter%/ctrl%"
+                  }
+                ],
+                "asyncWait": true
+              },
+              {
+                "objectType": "Function",
+                "active": true,
+                "fn": "TcHmi.Functions.UpdateLanguageIcon",
+                "fnParams": [
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:framework#/definitions/Control",
+                    "symbolExpression": "%ctrl%TcHmiNavBarLanguage_2%/ctrl%"
+                  },
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "symbolExpression": "%ctrl%TcHmiNavBarLanguage_2::LastEventParameter%/ctrl%"
+                  }
+                ],
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": []
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script><script data-tchmi-target-attribute="data-tchmi-menu-source-data" type="application/json">[
+        {
+        "name": "%l%L_Language%/l%",
+        "subtitle": "%l%L_LanguageSelection%/l%",
+        "image": "Themes/Base/Images/Flags/en_us.png",
+        "imageWidthUnit": "px",
+        "imageHeightUnit": "px",
+        "children": [
+        {
+        "name": "",
+        "children": [
+        {
+        "name": "%l%L_German%/l%",
+        "parameter": "de",
+        "image": "Themes/Base/Images/Flags/de.png",
+        "imageWidthUnit": "px",
+        "imageHeightUnit": "px"
+        }
+        ]
+        },
+        {
+        "name": "",
+        "children": [
+        {
+        "name": "%l%L_English%/l%",
+        "parameter": "en",
+        "image": "Themes/Base/Images/Flags/en_us.png",
+        "imageWidthUnit": "px",
+        "imageHeightUnit": "px"
+        }
+        ]
+        }
+        ]
+        }
+        ]</script><script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{"color": "rgba(0, 0, 0, 0)"}
+</script></div></div>
+</div>

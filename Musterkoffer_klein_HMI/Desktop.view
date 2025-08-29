@@ -1,0 +1,73 @@
+<div id="Desktop" data-tchmi-type="TcHmi.Controls.System.TcHmiView" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width-unit="%" data-tchmi-width="100" data-tchmi-height-unit="%" data-tchmi-height="100" data-tchmi-background-image-width-unit="%" data-tchmi-background-image-height-unit="%" data-tchmi-background-image-width="100" data-tchmi-background-image-height="100" data-tchmi-creator-viewport-width="768" data-tchmi-creator-viewport-height="1024">
+  
+<div id="TcHmiDesktopGrid" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-width="100" data-tchmi-height="100" data-tchmi-left="0" data-tchmi-top="0" data-tchmi-height-unit="%" data-tchmi-width-unit="%" data-tchmi-left-unit="px" data-tchmi-top-unit="px">
+
+<script data-tchmi-target-attribute="data-tchmi-column-options" type="application/json">[
+        {
+        "width": 1.0,
+        "widthUnit": "factor",
+        "widthMode": "Value",
+        "maxWidthUnit": "px",
+        "minWidthUnit": "px",
+        "overflow": true
+        }
+        ]</script><script data-tchmi-target-attribute="data-tchmi-row-options" type="application/json">[
+        {
+        "height": 90.0,
+        "heightUnit": "px",
+        "heightMode": "Value",
+        "maxHeightUnit": "px",
+        "minHeight": 90.0,
+        "minHeightUnit": "px",
+        "overflow": true
+        },
+        {
+        "height": 50.0,
+        "heightUnit": "px",
+        "heightMode": "Value",
+        "maxHeightUnit": "px",
+        "minHeight": 50.0,
+        "minHeightUnit": "px",
+        "overflow": true
+        },
+        {
+        "height": 1.0,
+        "heightUnit": "factor",
+        "heightMode": "Value",
+        "maxHeightUnit": "px",
+        "minHeightUnit": "px",
+        "overflow": true
+        }
+        ]</script>><div id="TcHmiTopLevelRegion" data-tchmi-type="TcHmi.Controls.System.TcHmiRegion" data-tchmi-left="0" data-tchmi-top="0" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="2" data-tchmi-height-unit="px" data-tchmi-width-unit="px" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-right="0" data-tchmi-right-unit="px" data-tchmi-bottom="0" data-tchmi-bottom-unit="px" data-tchmi-scrolling="Auto" data-tchmi-visibility="Visible" data-tchmi-target-content="Pages/StartPage.content">
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
+        {
+        "event": "TcHmiTopLevelRegion.onPressed",
+        "actions": [
+        {
+        "objectType": "ControlApiFunction",
+        "active": true,
+        "control": "TcHmiNavBarMenu",
+        "fn": "closeMenu",
+        "asyncWait": true
+        },
+        {
+        "objectType": "ControlApiFunction",
+        "active": true,
+        "control": "TcHmiNavBarLanguage",
+        "fn": "closeMenu",
+        "asyncWait": true
+        }
+        ]
+        }
+        ]</script></div>><div id="TcHmiNavContentMenu" data-tchmi-type="TcHmi.Controls.ResponsiveNavigation.TcHmiNavigationContent" data-tchmi-height-mode="Content" data-tchmi-width="100" data-tchmi-height="550" data-tchmi-left="0" data-tchmi-top="0" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="2" data-tchmi-height-unit="px" data-tchmi-width-unit="%" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-zindex="20" data-tchmi-show-icons-mobile="False" data-tchmi-enable-mobile-switch="True" data-tchmi-close-test="%l%L_CloseText%/l%" data-tchmi-subtitle-font-size="130" data-tchmi-column-title-font-size="130" data-tchmi-column-element-font-size="120" data-tchmi-close-font-size="130" data-tchmi-padding-left-right="40" data-tchmi-column-element-margin-top="5" data-tchmi-mobile-element-margin-top="5" data-tchmi-auto-collapse-elements="False">
+
+</div><div id="TcHmiNavContentLanguage" data-tchmi-type="TcHmi.Controls.ResponsiveNavigation.TcHmiNavigationContent" data-tchmi-height-mode="Content" data-tchmi-width="100" data-tchmi-height="260" data-tchmi-left="0" data-tchmi-top="0" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="1" data-tchmi-height-unit="px" data-tchmi-width-unit="%" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-show-icons-mobile="True" data-tchmi-zindex="20" data-tchmi-close-test="%l%L_CloseText%/l%" data-tchmi-column-element-font-size="130" data-tchmi-subtitle-font-size="140" data-tchmi-column-title-font-size="130">
+
+</div>
+<div data-tchmi-grid-row-index="1" data-tchmi-grid-column-index="0" id="NavigationRegion" data-tchmi-type="TcHmi.Controls.System.TcHmiRegion" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-top="0" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-target-content="Pages/NavigationDesktop.content">
+</div>
+<div id="HeaderRegion" data-tchmi-type="TcHmi.Controls.System.TcHmiRegion" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%">
+</div>
+</div>
+</div>

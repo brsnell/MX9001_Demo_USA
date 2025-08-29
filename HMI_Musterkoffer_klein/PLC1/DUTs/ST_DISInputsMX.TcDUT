@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <DUT Name="ST_DISInputsMX" Id="{6a40389f-fe8f-407e-bba0-cf326bbc679c}">
+    <Declaration><![CDATA[TYPE ST_DISInputsMX :
+STRUCT
+	bInputCh1 AT%I* : BOOL;
+	bInputCh2 AT%I* : BOOL;
+	bInputCh3 AT%I* : BOOL;
+	bInputCh4 AT%I* : BOOL;
+	bInputCh5 AT%I* : BOOL;
+	bInputCh6 AT%I* : BOOL;
+	bInputCh7 AT%I* : BOOL;
+	bInputCh8 AT%I* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

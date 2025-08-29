@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <DUT Name="ST_DOSOutputsMX" Id="{1520e8ca-b868-4e96-a953-15c66bdc4481}">
+    <Declaration><![CDATA[TYPE ST_DOSOutputsMX :
+STRUCT
+	bOutputCh1	AT%Q*: BOOL;
+	bOutputCh2	AT%Q*: BOOL;
+	bOutputCh3	AT%Q*: BOOL;
+	bOutputCh4	AT%Q*: BOOL;
+	bOutputCh5	AT%Q*: BOOL;
+	bOutputCh6	AT%Q*: BOOL;
+	bOutputCh7	AT%Q*: BOOL;
+	bOutputCh8	AT%Q*: BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

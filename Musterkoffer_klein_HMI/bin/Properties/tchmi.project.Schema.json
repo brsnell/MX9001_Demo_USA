@@ -1,0 +1,2128 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {
+    "MO2008": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControls\\MO2008.usercontrol.json",
+      "id": "tchmi:project#/definitions/MO2008",
+      "type": "object"
+    },
+    "PLC1.ST_DOSDiagnosisMX": {
+      "additionalProperties": {},
+      "properties": {
+        "bOpenLoadCh1": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 3
+            }
+          ]
+        },
+        "bOpenLoadCh2": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 7
+            }
+          ]
+        },
+        "bOpenLoadCh3": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 11
+            }
+          ]
+        },
+        "bOpenLoadCh4": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 15
+            }
+          ]
+        },
+        "bOpenLoadCh5": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 19
+            }
+          ]
+        },
+        "bOpenLoadCh6": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 23
+            }
+          ]
+        },
+        "bOpenLoadCh7": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 27
+            }
+          ]
+        },
+        "bOpenLoadCh8": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 31
+            }
+          ]
+        },
+        "bOvercurrentCh1": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 1
+            }
+          ]
+        },
+        "bOvercurrentCh2": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 5
+            }
+          ]
+        },
+        "bOvercurrentCh3": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 9
+            }
+          ]
+        },
+        "bOvercurrentCh4": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 13
+            }
+          ]
+        },
+        "bOvercurrentCh5": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 17
+            }
+          ]
+        },
+        "bOvercurrentCh6": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 21
+            }
+          ]
+        },
+        "bOvercurrentCh7": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 25
+            }
+          ]
+        },
+        "bOvercurrentCh8": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 29
+            }
+          ]
+        },
+        "bOverloadCh1": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 2
+            }
+          ]
+        },
+        "bOverloadCh2": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 6
+            }
+          ]
+        },
+        "bOverloadCh3": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 10
+            }
+          ]
+        },
+        "bOverloadCh4": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 14
+            }
+          ]
+        },
+        "bOverloadCh5": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 18
+            }
+          ]
+        },
+        "bOverloadCh6": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 22
+            }
+          ]
+        },
+        "bOverloadCh7": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 26
+            }
+          ]
+        },
+        "bOverloadCh8": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 30
+            }
+          ]
+        },
+        "bShortTo24VCh1": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 4
+            }
+          ]
+        },
+        "bShortTo24VCh2": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 8
+            }
+          ]
+        },
+        "bShortTo24VCh3": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 12
+            }
+          ]
+        },
+        "bShortTo24VCh4": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 16
+            }
+          ]
+        },
+        "bShortTo24VCh5": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 20
+            }
+          ]
+        },
+        "bShortTo24VCh6": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 24
+            }
+          ]
+        },
+        "bShortTo24VCh7": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 28
+            }
+          ]
+        },
+        "bShortTo24VCh8": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 32
+            }
+          ]
+        }
+      },
+      "type": "object",
+      "required": [
+        "bOvercurrentCh1",
+        "bOverloadCh1",
+        "bOpenLoadCh1",
+        "bShortTo24VCh1",
+        "bOvercurrentCh2",
+        "bOverloadCh2",
+        "bOpenLoadCh2",
+        "bShortTo24VCh2",
+        "bOvercurrentCh3",
+        "bOverloadCh3",
+        "bOpenLoadCh3",
+        "bShortTo24VCh3",
+        "bOvercurrentCh4",
+        "bOverloadCh4",
+        "bOpenLoadCh4",
+        "bShortTo24VCh4",
+        "bOvercurrentCh5",
+        "bOverloadCh5",
+        "bOpenLoadCh5",
+        "bShortTo24VCh5",
+        "bOvercurrentCh6",
+        "bOverloadCh6",
+        "bOpenLoadCh6",
+        "bShortTo24VCh6",
+        "bOvercurrentCh7",
+        "bOverloadCh7",
+        "bOpenLoadCh7",
+        "bShortTo24VCh7",
+        "bOvercurrentCh8",
+        "bOverloadCh8",
+        "bOpenLoadCh8",
+        "bShortTo24VCh8"
+      ]
+    },
+    "PLC1.ST_DOSOutputsMX": {
+      "additionalProperties": {},
+      "properties": {
+        "bOutputCh1": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 1
+            }
+          ]
+        },
+        "bOutputCh2": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 2
+            }
+          ]
+        },
+        "bOutputCh3": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 3
+            }
+          ]
+        },
+        "bOutputCh4": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 4
+            }
+          ]
+        },
+        "bOutputCh5": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 5
+            }
+          ]
+        },
+        "bOutputCh6": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 6
+            }
+          ]
+        },
+        "bOutputCh7": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 7
+            }
+          ]
+        },
+        "bOutputCh8": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 8
+            }
+          ]
+        }
+      },
+      "type": "object",
+      "required": [
+        "bOutputCh1",
+        "bOutputCh2",
+        "bOutputCh3",
+        "bOutputCh4",
+        "bOutputCh5",
+        "bOutputCh6",
+        "bOutputCh7",
+        "bOutputCh8"
+      ]
+    },
+    "PLC1.ST_EFUInputsMX": {
+      "additionalProperties": {},
+      "properties": {
+        "bEnabled": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 4
+            }
+          ]
+        },
+        "bError": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 2
+            }
+          ]
+        },
+        "bTripped": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 3
+            }
+          ]
+        },
+        "bWarning": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 1
+            }
+          ]
+        },
+        "fCurrent": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/REAL"
+            },
+            {
+              "comment": "InputCycleCounter : BYTE;",
+              "propertyOrder": 5
+            }
+          ]
+        }
+      },
+      "type": "object",
+      "required": [
+        "bWarning",
+        "bError",
+        "bTripped",
+        "bEnabled",
+        "fCurrent"
+      ]
+    },
+    "PLC1.ST_EFUOutputsMX": {
+      "additionalProperties": {},
+      "properties": {
+        "ControlViaProcessData": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 2
+            }
+          ]
+        },
+        "bEnable": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 1
+            }
+          ]
+        },
+        "bReset": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 3
+            }
+          ]
+        }
+      },
+      "type": "object",
+      "required": [
+        "bEnable",
+        "ControlViaProcessData",
+        "bReset"
+      ]
+    },
+    "PLC1.ST_IoModulMO2008": {
+      "additionalProperties": {},
+      "properties": {
+        "stDOSDiagnosis": {
+          "allOf": [
+            {
+              "$ref": "tchmi:project#/definitions/PLC1.ST_DOSDiagnosisMX"
+            },
+            {
+              "propertyOrder": 2
+            }
+          ]
+        },
+        "stDOSOutputs": {
+          "allOf": [
+            {
+              "$ref": "tchmi:project#/definitions/PLC1.ST_DOSOutputsMX"
+            },
+            {
+              "propertyOrder": 1
+            }
+          ]
+        },
+        "stEFUInputs": {
+          "allOf": [
+            {
+              "$ref": "tchmi:project#/definitions/PLC1.ST_EFUInputsMX"
+            },
+            {
+              "propertyOrder": 3
+            }
+          ]
+        },
+        "stEFUOutputs": {
+          "allOf": [
+            {
+              "$ref": "tchmi:project#/definitions/PLC1.ST_EFUOutputsMX"
+            },
+            {
+              "propertyOrder": 4
+            }
+          ]
+        }
+      },
+      "type": "object",
+      "required": [
+        "stDOSOutputs",
+        "stDOSDiagnosis",
+        "stEFUInputs",
+        "stEFUOutputs"
+      ]
+    },
+    "MO1008": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControls\\MO1008.usercontrol.json",
+      "id": "tchmi:project#/definitions/MO1008",
+      "type": "object"
+    },
+    "MO2338": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControls\\MO2338.usercontrol.json",
+      "id": "tchmi:project#/definitions/MO2338",
+      "type": "object"
+    },
+    "MS1010-1002": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControls\\MS1010-1002.usercontrol.json",
+      "id": "tchmi:project#/definitions/MS1010-1002",
+      "type": "object"
+    },
+    "PLC1.ST_DISDiagnosisMX": {
+      "additionalProperties": {},
+      "properties": {
+        "bWirebreakCh1": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 1
+            }
+          ]
+        },
+        "bWirebreakCh2": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 2
+            }
+          ]
+        },
+        "bWirebreakCh3": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 3
+            }
+          ]
+        },
+        "bWirebreakCh4": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 4
+            }
+          ]
+        },
+        "bWirebreakCh5": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 5
+            }
+          ]
+        },
+        "bWirebreakCh6": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 6
+            }
+          ]
+        },
+        "bWirebreakCh7": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 7
+            }
+          ]
+        },
+        "bWirebreakCh8": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 8
+            }
+          ]
+        }
+      },
+      "type": "object",
+      "required": [
+        "bWirebreakCh1",
+        "bWirebreakCh2",
+        "bWirebreakCh3",
+        "bWirebreakCh4",
+        "bWirebreakCh5",
+        "bWirebreakCh6",
+        "bWirebreakCh7",
+        "bWirebreakCh8"
+      ]
+    },
+    "PLC1.ST_DISInputsMX": {
+      "additionalProperties": {},
+      "properties": {
+        "bInputCh1": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 1
+            }
+          ]
+        },
+        "bInputCh2": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 2
+            }
+          ]
+        },
+        "bInputCh3": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 3
+            }
+          ]
+        },
+        "bInputCh4": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 4
+            }
+          ]
+        },
+        "bInputCh5": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 5
+            }
+          ]
+        },
+        "bInputCh6": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 6
+            }
+          ]
+        },
+        "bInputCh7": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 7
+            }
+          ]
+        },
+        "bInputCh8": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 8
+            }
+          ]
+        }
+      },
+      "type": "object",
+      "required": [
+        "bInputCh1",
+        "bInputCh2",
+        "bInputCh3",
+        "bInputCh4",
+        "bInputCh5",
+        "bInputCh6",
+        "bInputCh7",
+        "bInputCh8"
+      ]
+    },
+    "PLC1.ST_EFUInputsMX_MO1008": {
+      "additionalProperties": {},
+      "properties": {
+        "bEnabled": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 4
+            }
+          ]
+        },
+        "bError": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 2
+            }
+          ]
+        },
+        "bTripped": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 3
+            }
+          ]
+        },
+        "bWarning": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 1
+            }
+          ]
+        },
+        "fCurrent": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/REAL"
+            },
+            {
+              "comment": "InputCycleCounter : BYTE;",
+              "propertyOrder": 5
+            }
+          ]
+        }
+      },
+      "type": "object",
+      "required": [
+        "bWarning",
+        "bError",
+        "bTripped",
+        "bEnabled",
+        "fCurrent"
+      ]
+    },
+    "PLC1.ST_EFUOutputsMX_MO1008": {
+      "additionalProperties": {},
+      "properties": {
+        "ControlViaProcessData": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 2
+            }
+          ]
+        },
+        "bEnable": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 1
+            }
+          ]
+        },
+        "bReset": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 3
+            }
+          ]
+        }
+      },
+      "type": "object",
+      "required": [
+        "bEnable",
+        "ControlViaProcessData",
+        "bReset"
+      ]
+    },
+    "PLC1.ST_IoModulMO1008": {
+      "additionalProperties": {},
+      "properties": {
+        "stDISDiagnosis": {
+          "allOf": [
+            {
+              "$ref": "tchmi:project#/definitions/PLC1.ST_DISDiagnosisMX"
+            },
+            {
+              "propertyOrder": 2
+            }
+          ]
+        },
+        "stDISInputs": {
+          "allOf": [
+            {
+              "$ref": "tchmi:project#/definitions/PLC1.ST_DISInputsMX"
+            },
+            {
+              "propertyOrder": 1
+            }
+          ]
+        },
+        "stEFUInputs": {
+          "allOf": [
+            {
+              "$ref": "tchmi:project#/definitions/PLC1.ST_EFUInputsMX"
+            },
+            {
+              "propertyOrder": 3
+            }
+          ]
+        },
+        "stEFUOutputs": {
+          "allOf": [
+            {
+              "$ref": "tchmi:project#/definitions/PLC1.ST_EFUOutputsMX"
+            },
+            {
+              "propertyOrder": 4
+            }
+          ]
+        }
+      },
+      "type": "object",
+      "required": [
+        "stDISInputs",
+        "stDISDiagnosis",
+        "stEFUInputs",
+        "stEFUOutputs"
+      ]
+    },
+    "PLC1.ST_DISDiagnosisMX_MO2338": {
+      "additionalProperties": {},
+      "properties": {
+        "bWirebreakCh1": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 1
+            }
+          ]
+        },
+        "bWirebreakCh2": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 2
+            }
+          ]
+        },
+        "bWirebreakCh3": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 3
+            }
+          ]
+        },
+        "bWirebreakCh4": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 4
+            }
+          ]
+        },
+        "bWirebreakCh5": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 5
+            }
+          ]
+        },
+        "bWirebreakCh6": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 6
+            }
+          ]
+        },
+        "bWirebreakCh7": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 7
+            }
+          ]
+        },
+        "bWirebreakCh8": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 8
+            }
+          ]
+        }
+      },
+      "type": "object",
+      "required": [
+        "bWirebreakCh1",
+        "bWirebreakCh2",
+        "bWirebreakCh3",
+        "bWirebreakCh4",
+        "bWirebreakCh5",
+        "bWirebreakCh6",
+        "bWirebreakCh7",
+        "bWirebreakCh8"
+      ]
+    },
+    "PLC1.ST_DISInputsMX_MO2338": {
+      "additionalProperties": {},
+      "properties": {
+        "bInputCh1": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 1
+            }
+          ]
+        },
+        "bInputCh2": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 2
+            }
+          ]
+        },
+        "bInputCh3": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 3
+            }
+          ]
+        },
+        "bInputCh4": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 4
+            }
+          ]
+        },
+        "bInputCh5": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 5
+            }
+          ]
+        },
+        "bInputCh6": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 6
+            }
+          ]
+        },
+        "bInputCh7": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 7
+            }
+          ]
+        },
+        "bInputCh8": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 8
+            }
+          ]
+        }
+      },
+      "type": "object",
+      "required": [
+        "bInputCh1",
+        "bInputCh2",
+        "bInputCh3",
+        "bInputCh4",
+        "bInputCh5",
+        "bInputCh6",
+        "bInputCh7",
+        "bInputCh8"
+      ]
+    },
+    "PLC1.ST_DOSDiagnosisMX_MO2338": {
+      "additionalProperties": {},
+      "properties": {
+        "bOpenLoadCh1": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 3
+            }
+          ]
+        },
+        "bOpenLoadCh2": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 7
+            }
+          ]
+        },
+        "bOpenLoadCh3": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 11
+            }
+          ]
+        },
+        "bOpenLoadCh4": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 15
+            }
+          ]
+        },
+        "bOpenLoadCh5": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 19
+            }
+          ]
+        },
+        "bOpenLoadCh6": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 23
+            }
+          ]
+        },
+        "bOpenLoadCh7": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 27
+            }
+          ]
+        },
+        "bOpenLoadCh8": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 31
+            }
+          ]
+        },
+        "bOvercurrentCh1": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 1
+            }
+          ]
+        },
+        "bOvercurrentCh2": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 5
+            }
+          ]
+        },
+        "bOvercurrentCh3": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 9
+            }
+          ]
+        },
+        "bOvercurrentCh4": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 13
+            }
+          ]
+        },
+        "bOvercurrentCh5": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 17
+            }
+          ]
+        },
+        "bOvercurrentCh6": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 21
+            }
+          ]
+        },
+        "bOvercurrentCh7": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 25
+            }
+          ]
+        },
+        "bOvercurrentCh8": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 29
+            }
+          ]
+        },
+        "bOverloadCh1": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 2
+            }
+          ]
+        },
+        "bOverloadCh2": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 6
+            }
+          ]
+        },
+        "bOverloadCh3": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 10
+            }
+          ]
+        },
+        "bOverloadCh4": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 14
+            }
+          ]
+        },
+        "bOverloadCh5": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 18
+            }
+          ]
+        },
+        "bOverloadCh6": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 22
+            }
+          ]
+        },
+        "bOverloadCh7": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 26
+            }
+          ]
+        },
+        "bOverloadCh8": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 30
+            }
+          ]
+        },
+        "bShortTo24VCh1": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 4
+            }
+          ]
+        },
+        "bShortTo24VCh2": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 8
+            }
+          ]
+        },
+        "bShortTo24VCh3": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 12
+            }
+          ]
+        },
+        "bShortTo24VCh4": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 16
+            }
+          ]
+        },
+        "bShortTo24VCh5": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 20
+            }
+          ]
+        },
+        "bShortTo24VCh6": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 24
+            }
+          ]
+        },
+        "bShortTo24VCh7": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 28
+            }
+          ]
+        },
+        "bShortTo24VCh8": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 32
+            }
+          ]
+        }
+      },
+      "type": "object",
+      "required": [
+        "bOvercurrentCh1",
+        "bOverloadCh1",
+        "bOpenLoadCh1",
+        "bShortTo24VCh1",
+        "bOvercurrentCh2",
+        "bOverloadCh2",
+        "bOpenLoadCh2",
+        "bShortTo24VCh2",
+        "bOvercurrentCh3",
+        "bOverloadCh3",
+        "bOpenLoadCh3",
+        "bShortTo24VCh3",
+        "bOvercurrentCh4",
+        "bOverloadCh4",
+        "bOpenLoadCh4",
+        "bShortTo24VCh4",
+        "bOvercurrentCh5",
+        "bOverloadCh5",
+        "bOpenLoadCh5",
+        "bShortTo24VCh5",
+        "bOvercurrentCh6",
+        "bOverloadCh6",
+        "bOpenLoadCh6",
+        "bShortTo24VCh6",
+        "bOvercurrentCh7",
+        "bOverloadCh7",
+        "bOpenLoadCh7",
+        "bShortTo24VCh7",
+        "bOvercurrentCh8",
+        "bOverloadCh8",
+        "bOpenLoadCh8",
+        "bShortTo24VCh8"
+      ]
+    },
+    "PLC1.ST_DOSOutputsMX_MO2338": {
+      "additionalProperties": {},
+      "properties": {
+        "bOutputCh1": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 1
+            }
+          ]
+        },
+        "bOutputCh2": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 2
+            }
+          ]
+        },
+        "bOutputCh3": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 3
+            }
+          ]
+        },
+        "bOutputCh4": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 4
+            }
+          ]
+        },
+        "bOutputCh5": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 5
+            }
+          ]
+        },
+        "bOutputCh6": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 6
+            }
+          ]
+        },
+        "bOutputCh7": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 7
+            }
+          ]
+        },
+        "bOutputCh8": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 8
+            }
+          ]
+        }
+      },
+      "type": "object",
+      "required": [
+        "bOutputCh1",
+        "bOutputCh2",
+        "bOutputCh3",
+        "bOutputCh4",
+        "bOutputCh5",
+        "bOutputCh6",
+        "bOutputCh7",
+        "bOutputCh8"
+      ]
+    },
+    "PLC1.ST_EFUInputsMX_MO2338": {
+      "additionalProperties": {},
+      "properties": {
+        "bEnabled": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 4
+            }
+          ]
+        },
+        "bError": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 2
+            }
+          ]
+        },
+        "bTripped": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 3
+            }
+          ]
+        },
+        "bWarning": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 1
+            }
+          ]
+        },
+        "fCurrent": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/REAL"
+            },
+            {
+              "comment": "InputCycleCounter : BYTE;",
+              "propertyOrder": 5
+            }
+          ]
+        }
+      },
+      "type": "object",
+      "required": [
+        "bWarning",
+        "bError",
+        "bTripped",
+        "bEnabled",
+        "fCurrent"
+      ]
+    },
+    "PLC1.ST_EFUOutputsMX_MO2338": {
+      "additionalProperties": {},
+      "properties": {
+        "ControlViaProcessData": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 2
+            }
+          ]
+        },
+        "bEnable": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 1
+            }
+          ]
+        },
+        "bReset": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 3
+            }
+          ]
+        }
+      },
+      "type": "object",
+      "required": [
+        "bEnable",
+        "ControlViaProcessData",
+        "bReset"
+      ]
+    },
+    "PLC1.ST_IoModulMO2338": {
+      "additionalProperties": {},
+      "properties": {
+        "stDISDiagnosis": {
+          "allOf": [
+            {
+              "$ref": "tchmi:project#/definitions/PLC1.ST_DISDiagnosisMX"
+            },
+            {
+              "propertyOrder": 3
+            }
+          ]
+        },
+        "stDISInputs": {
+          "allOf": [
+            {
+              "$ref": "tchmi:project#/definitions/PLC1.ST_DISInputsMX"
+            },
+            {
+              "propertyOrder": 1
+            }
+          ]
+        },
+        "stDOSDiagnosis": {
+          "allOf": [
+            {
+              "$ref": "tchmi:project#/definitions/PLC1.ST_DOSDiagnosisMX"
+            },
+            {
+              "propertyOrder": 4
+            }
+          ]
+        },
+        "stDOSOutputs": {
+          "allOf": [
+            {
+              "$ref": "tchmi:project#/definitions/PLC1.ST_DOSOutputsMX"
+            },
+            {
+              "propertyOrder": 2
+            }
+          ]
+        },
+        "stEFUInputs": {
+          "allOf": [
+            {
+              "$ref": "tchmi:project#/definitions/PLC1.ST_EFUInputsMX"
+            },
+            {
+              "propertyOrder": 5
+            }
+          ]
+        },
+        "stEFUOutputs": {
+          "allOf": [
+            {
+              "$ref": "tchmi:project#/definitions/PLC1.ST_EFUOutputsMX"
+            },
+            {
+              "propertyOrder": 6
+            }
+          ]
+        }
+      },
+      "type": "object",
+      "required": [
+        "stDISInputs",
+        "stDOSOutputs",
+        "stDISDiagnosis",
+        "stDOSDiagnosis",
+        "stEFUInputs",
+        "stEFUOutputs"
+      ]
+    },
+    "PLC1.ST_PSUInputsMX": {
+      "additionalProperties": {},
+      "properties": {
+        "bError": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 2
+            }
+          ]
+        },
+        "bI2TWarning": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 3
+            }
+          ]
+        },
+        "bWarning": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 1
+            }
+          ]
+        },
+        "fActualOutputCurrent": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/REAL"
+            },
+            {
+              "propertyOrder": 6
+            }
+          ]
+        },
+        "fActualOutputVoltage": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/REAL"
+            },
+            {
+              "propertyOrder": 5
+            }
+          ]
+        },
+        "nActualI2TUtilization": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/USINT"
+            },
+            {
+              "propertyOrder": 7
+            }
+          ]
+        },
+        "nInfoData1": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/UINT"
+            },
+            {
+              "propertyOrder": 8
+            }
+          ]
+        },
+        "nInfoData2": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/UINT"
+            },
+            {
+              "propertyOrder": 9
+            }
+          ]
+        },
+        "nInpuCycleCounter": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/UINT"
+            },
+            {
+              "propertyOrder": 4
+            }
+          ]
+        }
+      },
+      "type": "object",
+      "required": [
+        "bWarning",
+        "bError",
+        "bI2TWarning",
+        "nInpuCycleCounter",
+        "fActualOutputVoltage",
+        "fActualOutputCurrent",
+        "nActualI2TUtilization",
+        "nInfoData1",
+        "nInfoData2"
+      ]
+    },
+    "MC6015": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControls\\MC6015.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/MC6015"
+    },
+    "MS4208": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControls\\MS4208.usercontrol.json",
+      "id": "tchmi:project#/definitions/MS4208",
+      "type": "object"
+    },
+    "PLC1.ST_EFUInputsMX_MS4208": {
+      "additionalProperties": {},
+      "properties": {
+        "bEnabled": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 4
+            }
+          ]
+        },
+        "bError": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 2
+            }
+          ]
+        },
+        "bTripped": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 3
+            }
+          ]
+        },
+        "bWarning": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 1
+            }
+          ]
+        },
+        "fCurrent": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/REAL"
+            },
+            {
+              "comment": "InputCycleCounter : BYTE;",
+              "propertyOrder": 5
+            }
+          ]
+        }
+      },
+      "type": "object",
+      "required": [
+        "bWarning",
+        "bError",
+        "bTripped",
+        "bEnabled",
+        "fCurrent"
+      ]
+    },
+    "PLC1.ST_EFUOutputsMX_MS4208": {
+      "additionalProperties": {},
+      "properties": {
+        "ControlViaProcessData": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 2
+            }
+          ]
+        },
+        "bEnable": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 1
+            }
+          ]
+        },
+        "bReset": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "propertyOrder": 3
+            }
+          ]
+        }
+      },
+      "type": "object",
+      "required": [
+        "bEnable",
+        "ControlViaProcessData",
+        "bReset"
+      ]
+    },
+    "PLC1.ST_MS4208_MS4208": {
+      "additionalProperties": {},
+      "properties": {
+        "stEFUInputsUp1": {
+          "allOf": [
+            {
+              "$ref": "tchmi:project#/definitions/PLC1.ST_EFUInputsMX"
+            },
+            {
+              "propertyOrder": 2
+            }
+          ]
+        },
+        "stEFUInputsUp2": {
+          "allOf": [
+            {
+              "$ref": "tchmi:project#/definitions/PLC1.ST_EFUInputsMX"
+            },
+            {
+              "propertyOrder": 3
+            }
+          ]
+        },
+        "stEFUInputsUs": {
+          "allOf": [
+            {
+              "$ref": "tchmi:project#/definitions/PLC1.ST_EFUInputsMX"
+            },
+            {
+              "propertyOrder": 1
+            }
+          ]
+        },
+        "stEFUOutputsUp1": {
+          "allOf": [
+            {
+              "$ref": "tchmi:project#/definitions/PLC1.ST_EFUOutputsMX"
+            },
+            {
+              "propertyOrder": 5
+            }
+          ]
+        },
+        "stEFUOutputsUp2": {
+          "allOf": [
+            {
+              "$ref": "tchmi:project#/definitions/PLC1.ST_EFUOutputsMX"
+            },
+            {
+              "propertyOrder": 6
+            }
+          ]
+        },
+        "stEFUOutputsUs": {
+          "allOf": [
+            {
+              "$ref": "tchmi:project#/definitions/PLC1.ST_EFUOutputsMX"
+            },
+            {
+              "propertyOrder": 4
+            }
+          ]
+        }
+      },
+      "type": "object",
+      "required": [
+        "stEFUInputsUs",
+        "stEFUInputsUp1",
+        "stEFUInputsUp2",
+        "stEFUOutputsUs",
+        "stEFUOutputsUp1",
+        "stEFUOutputsUp2"
+      ]
+    }
+  }
+}

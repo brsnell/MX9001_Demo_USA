@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <DUT Name="ST_DOSDiagnosisMX" Id="{94e8c0cf-39ac-4aa9-a360-1c5d267cb018}">
+    <Declaration><![CDATA[TYPE ST_DOSDiagnosisMX :
+STRUCT
+	bOvercurrentCh1 	AT%I*	: BOOL;
+	bOverloadCh1		AT%I*	: BOOL;
+	bOpenLoadCh1 		AT%I*	: BOOL;
+	bShortTo24VCh1 		AT%I*	: BOOL;
+	bOvercurrentCh2 	AT%I*	: BOOL;
+	bOverloadCh2		AT%I*	: BOOL;
+	bOpenLoadCh2 		AT%I*	: BOOL;
+	bShortTo24VCh2 		AT%I*	: BOOL;
+	bOvercurrentCh3 	AT%I*	: BOOL;
+	bOverloadCh3		AT%I*	: BOOL;
+	bOpenLoadCh3 		AT%I*	: BOOL;
+	bShortTo24VCh3 		AT%I*	: BOOL;
+	bOvercurrentCh4 	AT%I*	: BOOL;
+	bOverloadCh4		AT%I*	: BOOL;
+	bOpenLoadCh4 		AT%I*	: BOOL;
+	bShortTo24VCh4 		AT%I*	: BOOL;
+	bOvercurrentCh5 	AT%I*	: BOOL;
+	bOverloadCh5		AT%I*	: BOOL;
+	bOpenLoadCh5 		AT%I*	: BOOL;
+	bShortTo24VCh5 		AT%I*	: BOOL;
+	bOvercurrentCh6 	AT%I*	: BOOL;
+	bOverloadCh6		AT%I*	: BOOL;
+	bOpenLoadCh6 		AT%I*	: BOOL;
+	bShortTo24VCh6 		AT%I*	: BOOL;
+	bOvercurrentCh7 	AT%I*	: BOOL;
+	bOverloadCh7		AT%I*	: BOOL;
+	bOpenLoadCh7 		AT%I*	: BOOL;
+	bShortTo24VCh7 		AT%I*	: BOOL;
+	bOvercurrentCh8 	AT%I*	: BOOL;
+	bOverloadCh8		AT%I*	: BOOL;
+	bOpenLoadCh8 		AT%I*	: BOOL;
+	bShortTo24VCh8 		AT%I*	: BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

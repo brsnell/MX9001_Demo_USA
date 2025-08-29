@@ -1,0 +1,5 @@
+<div id="PowerSupply_1" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="100" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-width-unit="%">
+
+<div id="MO1008_5" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="66" data-tchmi-height-unit="%" data-tchmi-left="32" data-tchmi-left-unit="%" data-tchmi-target-user-control="UserControls/MS1010-1002.usercontrol" data-tchmi-top="15.5" data-tchmi-top-unit="%" data-tchmi-width="36" data-tchmi-width-unit="%" data-tchmi-stpsums1010="%s%ADS.PLC1.MAIN.stPSUSlot3%/s%">
+</div>
+</div>

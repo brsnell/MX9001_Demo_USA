@@ -1,0 +1,898 @@
+<div id="MO1008" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControl" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="100" data-tchmi-height="100" data-tchmi-width-unit="%" data-tchmi-height-unit="%" data-tchmi-creator-viewport-width="500" data-tchmi-creator-viewport-height="500" data-tchmi-zindex="1">
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "MO1008.onAttached",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%pp%bIsM12Modul%/pp%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/Boolean",
+                  "value": false
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiImageModulM8::Visibility%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Visibility",
+                  "value": "Visible"
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiImageModulM12::Visibility%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Visibility",
+                  "value": "Collapsed"
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiImageModulM8::Visibility%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Visibility",
+                  "value": "Collapsed"
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiImageModulM12::Visibility%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Visibility",
+                  "value": "Visible"
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+<div id="TcHmiGrid_1" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="1" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="%" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-width="100" data-tchmi-height="100">
+
+<script data-tchmi-target-attribute="data-tchmi-row-options" type="application/json">
+[
+  {
+    "height": 0.7,
+    "heightUnit": "factor",
+    "heightMode": "Value",
+    "maxHeightUnit": "px",
+    "minHeightUnit": "px",
+    "overflow": false
+  },
+  {
+    "height": 0.3,
+    "heightUnit": "factor",
+    "heightMode": "Value",
+    "maxHeightUnit": "px",
+    "minHeightUnit": "px",
+    "overflow": false
+  }
+]
+</script>
+<div id="TcHmiGridMain" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-zindex="1" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
+<script data-tchmi-target-attribute="data-tchmi-column-options" type="application/json">
+[
+  {
+    "width": 55.0,
+    "widthUnit": "%",
+    "widthMode": "Value",
+    "maxWidthUnit": "px",
+    "minWidthUnit": "px",
+    "overflow": false
+  },
+  {
+    "width": 45.0,
+    "widthUnit": "%",
+    "widthMode": "Value",
+    "maxWidthUnit": "px",
+    "minWidthUnit": "px",
+    "overflow": false
+  }
+]
+</script>
+<div id="TcHmiGridInputs" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="0" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-top="0" data-tchmi-top-unit="%" data-tchmi-width-unit="px" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-zindex="1" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
+
+<script data-tchmi-target-attribute="data-tchmi-row-options" type="application/json">
+[
+  {
+    "height": 1.0,
+    "heightUnit": "factor",
+    "heightMode": "Value",
+    "maxHeightUnit": "px",
+    "minHeightUnit": "px",
+    "overflow": false
+  },
+  {
+    "height": 1.0,
+    "heightUnit": "factor",
+    "heightMode": "Value",
+    "maxHeightUnit": "px",
+    "minHeightUnit": "px",
+    "overflow": false
+  }
+]
+</script>
+<div id="TcHmiGridDI" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-top="20" data-tchmi-top-unit="%" data-tchmi-width-unit="px" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-zindex="1" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
+
+<script data-tchmi-target-attribute="data-tchmi-column-options" type="application/json">
+[
+  {
+    "width": 1.0,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidthUnit": "px",
+    "minWidthUnit": "px",
+    "overflow": false
+  },
+  {
+    "width": 1.0,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidthUnit": "px",
+    "minWidthUnit": "px",
+    "overflow": false
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-row-options" type="application/json">
+[
+  {
+    "height": 1.0,
+    "heightUnit": "factor",
+    "heightMode": "Value",
+    "maxHeightUnit": "px",
+    "minHeightUnit": "px",
+    "overflow": false
+  },
+  {
+    "height": 1.0,
+    "heightUnit": "factor",
+    "heightMode": "Value",
+    "maxHeightUnit": "px",
+    "minHeightUnit": "px",
+    "overflow": false
+  },
+  {
+    "height": 1.0,
+    "heightUnit": "factor",
+    "heightMode": "Value",
+    "maxHeightUnit": "px",
+    "minHeightUnit": "px",
+    "overflow": false
+  },
+  {
+    "height": 1.0,
+    "heightUnit": "factor",
+    "heightMode": "Value",
+    "maxHeightUnit": "px",
+    "minHeightUnit": "px",
+    "overflow": false
+  }
+]
+</script>
+<div id="TcHmiRadioButtonDI1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRadioButton" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="%" data-tchmi-text="DI 1" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width-unit="px" data-tchmi-right="5" data-tchmi-bottom="5" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-position="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-is-enabled="false" data-tchmi-zindex="1" data-tchmi-text-font-size="150" data-tchmi-text-font-size-unit="%" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-state-symbol="%pp%stIoModulMO1008::stDISInputs::bInputCh1%/pp%">
+
+<script data-tchmi-target-attribute="data-tchmi-radio-state-icon-color" type="application/json">
+{
+  "color": "rgba(50, 230, 50, 1)"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="1" id="TcHmiRadioButtonDI2" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRadioButton" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="%" data-tchmi-text="DI 2" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width-unit="px" data-tchmi-right="5" data-tchmi-bottom="5" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-position="Right" data-tchmi-text-vertical-alignment="Center" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-is-enabled="false" data-tchmi-zindex="1" data-tchmi-text-font-size="150" data-tchmi-text-font-size-unit="%" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-state-symbol="%pp%stIoModulMO1008::stDISInputs::bInputCh2%/pp%">
+
+<script data-tchmi-target-attribute="data-tchmi-radio-state-icon-color" type="application/json">
+{
+  "color": "rgba(50, 230, 50, 1)"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+</div>
+<div data-tchmi-grid-row-index="1" data-tchmi-grid-column-index="0" id="TcHmiRadioButtonDI3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRadioButton" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="%" data-tchmi-text="DI 3" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width-unit="px" data-tchmi-right="5" data-tchmi-bottom="5" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-position="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-is-enabled="false" data-tchmi-zindex="1" data-tchmi-text-font-size="150" data-tchmi-text-font-size-unit="%" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-state-symbol="%pp%stIoModulMO1008::stDISInputs::bInputCh3%/pp%">
+
+<script data-tchmi-target-attribute="data-tchmi-radio-state-icon-color" type="application/json">
+{
+  "color": "rgba(50, 230, 50, 1)"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+</div>
+<div data-tchmi-grid-row-index="1" data-tchmi-grid-column-index="1" id="TcHmiRadioButtonDI4" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRadioButton" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="%" data-tchmi-text="DI 4" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width-unit="px" data-tchmi-right="5" data-tchmi-bottom="5" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-position="Right" data-tchmi-text-vertical-alignment="Center" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-is-enabled="false" data-tchmi-zindex="1" data-tchmi-text-font-size="150" data-tchmi-text-font-size-unit="%" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-state-symbol="%pp%stIoModulMO1008::stDISInputs::bInputCh4%/pp%">
+
+<script data-tchmi-target-attribute="data-tchmi-radio-state-icon-color" type="application/json">
+{
+  "color": "rgba(50, 230, 50, 1)"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+</div>
+<div data-tchmi-grid-row-index="2" data-tchmi-grid-column-index="0" id="TcHmiRadioButtonDI5" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRadioButton" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="%" data-tchmi-text="DI 5" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width-unit="px" data-tchmi-right="5" data-tchmi-bottom="5" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-position="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-is-enabled="false" data-tchmi-zindex="1" data-tchmi-text-font-size="150" data-tchmi-text-font-size-unit="%" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-state-symbol="%pp%stIoModulMO1008::stDISInputs::bInputCh5%/pp%">
+
+<script data-tchmi-target-attribute="data-tchmi-radio-state-icon-color" type="application/json">
+{
+  "color": "rgba(50, 230, 50, 1)"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+</div>
+<div data-tchmi-grid-row-index="2" data-tchmi-grid-column-index="1" id="TcHmiRadioButtonDI6" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRadioButton" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="%" data-tchmi-text="DI 6" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width-unit="px" data-tchmi-right="5" data-tchmi-bottom="5" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-position="Right" data-tchmi-text-vertical-alignment="Center" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-is-enabled="false" data-tchmi-zindex="1" data-tchmi-text-font-size="150" data-tchmi-text-font-size-unit="%" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-state-symbol="%pp%stIoModulMO1008::stDISInputs::bInputCh6%/pp%">
+
+<script data-tchmi-target-attribute="data-tchmi-radio-state-icon-color" type="application/json">
+{
+  "color": "rgba(50, 230, 50, 1)"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+</div>
+<div data-tchmi-grid-row-index="3" data-tchmi-grid-column-index="0" id="TcHmiRadioButtonDI7" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRadioButton" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="%" data-tchmi-text="DI 7" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width-unit="px" data-tchmi-right="5" data-tchmi-bottom="5" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-position="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-is-enabled="false" data-tchmi-zindex="1" data-tchmi-text-font-size="150" data-tchmi-text-font-size-unit="%" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-state-symbol="%pp%stIoModulMO1008::stDISInputs::bInputCh7%/pp%">
+
+<script data-tchmi-target-attribute="data-tchmi-radio-state-icon-color" type="application/json">
+{
+  "color": "rgba(50, 230, 50, 1)"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+</div>
+<div data-tchmi-grid-row-index="3" data-tchmi-grid-column-index="1" id="TcHmiRadioButtonDI8" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRadioButton" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="%" data-tchmi-text="DI 8" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width-unit="px" data-tchmi-right="5" data-tchmi-bottom="5" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-position="Right" data-tchmi-text-vertical-alignment="Center" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-is-enabled="false" data-tchmi-zindex="1" data-tchmi-text-font-size="150" data-tchmi-text-font-size-unit="%" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-state-symbol="%pp%stIoModulMO1008::stDISInputs::bInputCh8%/pp%">
+
+<script data-tchmi-target-attribute="data-tchmi-radio-state-icon-color" type="application/json">
+{
+  "color": "rgba(50, 230, 50, 1)"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+</div>
+
+
+
+
+
+
+</div>
+<div data-tchmi-grid-row-index="1" data-tchmi-grid-column-index="0" id="TcHmiGridDiag" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-top="20" data-tchmi-top-unit="%" data-tchmi-width-unit="px" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-zindex="1" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
+<script data-tchmi-target-attribute="data-tchmi-column-options" type="application/json">
+[
+  {
+    "width": 1.0,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidthUnit": "px",
+    "minWidthUnit": "px",
+    "overflow": false
+  },
+  {
+    "width": 1.0,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidthUnit": "px",
+    "minWidthUnit": "px",
+    "overflow": false
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-row-options" type="application/json">
+[
+  {
+    "height": 1.0,
+    "heightUnit": "factor",
+    "heightMode": "Value",
+    "maxHeightUnit": "px",
+    "minHeightUnit": "px",
+    "overflow": false
+  },
+  {
+    "height": 1.0,
+    "heightUnit": "factor",
+    "heightMode": "Value",
+    "maxHeightUnit": "px",
+    "minHeightUnit": "px",
+    "overflow": false
+  },
+  {
+    "height": 1.0,
+    "heightUnit": "factor",
+    "heightMode": "Value",
+    "maxHeightUnit": "px",
+    "minHeightUnit": "px",
+    "overflow": false
+  },
+  {
+    "height": 1.0,
+    "heightUnit": "factor",
+    "heightMode": "Value",
+    "maxHeightUnit": "px",
+    "minHeightUnit": "px",
+    "overflow": false
+  }
+]
+</script>
+<div data-tchmi-grid-row-index="1" data-tchmi-grid-column-index="0" id="TcHmiRadioButtonWB3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRadioButton" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="%" data-tchmi-text="WB 3" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width-unit="px" data-tchmi-right="5" data-tchmi-bottom="5" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-position="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-radio-state="Normal" data-tchmi-is-enabled="false" data-tchmi-zindex="1" data-tchmi-text-font-size="150" data-tchmi-text-font-size-unit="%" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-state-symbol="%pp%stIoModulMO1008::stDISDiagnosis::bWirebreakCh3%/pp%">
+
+<script data-tchmi-target-attribute="data-tchmi-radio-state-icon-color" type="application/json">
+{
+  "color": "rgba(255, 0, 0, 1)"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="1" id="TcHmiRadioButtonWB2" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRadioButton" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="%" data-tchmi-text="WB 2" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width-unit="px" data-tchmi-right="5" data-tchmi-bottom="5" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-position="Right" data-tchmi-text-vertical-alignment="Center" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-radio-state="Normal" data-tchmi-is-enabled="false" data-tchmi-zindex="1" data-tchmi-text-font-size="150" data-tchmi-text-font-size-unit="%" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-state-symbol="%pp%stIoModulMO1008::stDISDiagnosis::bWirebreakCh2%/pp%">
+
+<script data-tchmi-target-attribute="data-tchmi-radio-state-icon-color" type="application/json">
+{
+  "color": "rgba(255, 0, 0, 1)"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiRadioButtonWB1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRadioButton" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="%" data-tchmi-text="WB 1" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width-unit="px" data-tchmi-right="5" data-tchmi-bottom="5" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-position="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-radio-state="Normal" data-tchmi-is-enabled="false" data-tchmi-zindex="1" data-tchmi-text-font-size="150" data-tchmi-text-font-size-unit="%" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-state-symbol="%pp%stIoModulMO1008::stDISDiagnosis::bWirebreakCh1%/pp%">
+
+<script data-tchmi-target-attribute="data-tchmi-radio-state-icon-color" type="application/json">
+{
+  "color": "rgba(255, 0, 0, 1)"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+</div>
+<div data-tchmi-grid-row-index="1" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="1" data-tchmi-grid-column-index="1" id="TcHmiRadioButtonWB4" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRadioButton" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="%" data-tchmi-text="WB 4" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width-unit="px" data-tchmi-right="5" data-tchmi-bottom="5" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-position="Right" data-tchmi-text-vertical-alignment="Center" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-radio-state="Normal" data-tchmi-is-enabled="false" data-tchmi-zindex="1" data-tchmi-text-font-size="150" data-tchmi-text-font-size-unit="%" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-state-symbol="%pp%stIoModulMO1008::stDISDiagnosis::bWirebreakCh4%/pp%">
+
+<script data-tchmi-target-attribute="data-tchmi-radio-state-icon-color" type="application/json">
+{
+  "color": "rgba(255, 0, 0, 1)"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+</div>
+<div data-tchmi-grid-row-index="2" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="2" data-tchmi-grid-column-index="1" id="TcHmiRadioButtonWB6" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRadioButton" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="%" data-tchmi-text="WB 6" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width-unit="px" data-tchmi-right="5" data-tchmi-bottom="5" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-position="Right" data-tchmi-text-vertical-alignment="Center" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-radio-state="Normal" data-tchmi-is-enabled="false" data-tchmi-zindex="1" data-tchmi-text-font-size="150" data-tchmi-text-font-size-unit="%" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-state-symbol="%pp%stIoModulMO1008::stDISDiagnosis::bWirebreakCh6%/pp%">
+
+<script data-tchmi-target-attribute="data-tchmi-radio-state-icon-color" type="application/json">
+{
+  "color": "rgba(255, 0, 0, 1)"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+</div>
+<div data-tchmi-grid-row-index="3" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="3" data-tchmi-grid-column-index="0" id="TcHmiRadioButtonWB7" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRadioButton" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="%" data-tchmi-text="WB 7" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width-unit="px" data-tchmi-right="5" data-tchmi-bottom="5" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-position="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-radio-state="Normal" data-tchmi-is-enabled="false" data-tchmi-zindex="1" data-tchmi-text-font-size="150" data-tchmi-text-font-size-unit="%" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-state-symbol="%pp%stIoModulMO1008::stDISDiagnosis::bWirebreakCh7%/pp%">
+
+<script data-tchmi-target-attribute="data-tchmi-radio-state-icon-color" type="application/json">
+{
+  "color": "rgba(255, 0, 0, 1)"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+</div>
+<div data-tchmi-grid-row-index="3" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="3" data-tchmi-grid-column-index="1" id="TcHmiRadioButtonWB8" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRadioButton" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="%" data-tchmi-text="WB 8" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width-unit="px" data-tchmi-right="5" data-tchmi-bottom="5" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-position="Right" data-tchmi-text-vertical-alignment="Center" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-radio-state="Normal" data-tchmi-is-enabled="false" data-tchmi-zindex="1" data-tchmi-text-font-size="150" data-tchmi-text-font-size-unit="%" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-state-symbol="%pp%stIoModulMO1008::stDISDiagnosis::bWirebreakCh8%/pp%">
+
+<script data-tchmi-target-attribute="data-tchmi-radio-state-icon-color" type="application/json">
+{
+  "color": "rgba(255, 0, 0, 1)"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+</div>
+<div data-tchmi-grid-row-index="2" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="2" data-tchmi-grid-column-index="0" id="TcHmiRadioButtonWB5" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRadioButton" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="%" data-tchmi-text="WB 5" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width-unit="px" data-tchmi-right="5" data-tchmi-bottom="5" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-position="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-radio-state="Normal" data-tchmi-is-enabled="false" data-tchmi-zindex="1" data-tchmi-text-font-size="150" data-tchmi-text-font-size-unit="%" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-state-symbol="%pp%stIoModulMO1008::stDISDiagnosis::bWirebreakCh5%/pp%">
+
+<script data-tchmi-target-attribute="data-tchmi-radio-state-icon-color" type="application/json">
+{
+  "color": "rgba(255, 0, 0, 1)"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+</div>
+</div>
+<div id="TcHmiTextblockDISDiag" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="1" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-text="DIS Diagnosis" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width-unit="px" data-tchmi-right="0" data-tchmi-bottom="80" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="1" data-tchmi-text-font-size="150" data-tchmi-text-font-size-unit="%" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
+</div>
+<div id="TcHmiTextblockDIInputs" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="0" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-bottom="80" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="1" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="150" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-text="DIS Inputs">
+</div>
+
+
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-cell-options" type="application/json">
+[
+  {
+    "columnIndex": 0,
+    "rowIndex": 0,
+    "borderWidth": {
+      "left": 1,
+      "right": 1,
+      "top": 1,
+      "bottom": 1,
+      "leftUnit": "px",
+      "rightUnit": "px",
+      "topUnit": "px",
+      "bottomUnit": "px"
+    },
+    "borderStyle": {
+      "left": "None",
+      "right": "Solid",
+      "top": "Solid",
+      "bottom": "Solid"
+    },
+    "backgroundImageWidthUnit": "px",
+    "backgroundImageHeightUnit": "px",
+    "backgroundImageHorizontalAlignment": "Center",
+    "backgroundImageVerticalAlignment": "Center"
+  },
+  {
+    "columnIndex": 0,
+    "rowIndex": 1,
+    "borderWidth": {
+      "left": 1,
+      "right": 1,
+      "top": 1,
+      "bottom": 1,
+      "leftUnit": "px",
+      "rightUnit": "px",
+      "topUnit": "px",
+      "bottomUnit": "px"
+    },
+    "borderStyle": {
+      "left": "None",
+      "right": "Solid",
+      "top": "None",
+      "bottom": "Solid"
+    },
+    "backgroundImageWidthUnit": "px",
+    "backgroundImageHeightUnit": "px",
+    "backgroundImageHorizontalAlignment": "Center",
+    "backgroundImageVerticalAlignment": "Center"
+  }
+]
+</script>
+</div>
+
+
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-cell-options" type="application/json">
+[
+  {
+    "columnIndex": 0,
+    "rowIndex": 0,
+    "borderWidth": {
+      "left": 1,
+      "right": 1,
+      "top": 1,
+      "bottom": 1,
+      "leftUnit": "px",
+      "rightUnit": "px",
+      "topUnit": "px",
+      "bottomUnit": "px"
+    },
+    "borderStyle": {
+      "left": "Solid",
+      "right": "Solid",
+      "top": "Solid",
+      "bottom": "Solid"
+    },
+    "backgroundImageWidthUnit": "px",
+    "backgroundImageHeightUnit": "px",
+    "backgroundImageHorizontalAlignment": "Center",
+    "backgroundImageVerticalAlignment": "Center"
+  },
+  {
+    "columnIndex": 1,
+    "rowIndex": 0,
+    "backgroundImageWidthUnit": "px",
+    "backgroundImageHeightUnit": "px",
+    "backgroundImageHorizontalAlignment": "Center",
+    "backgroundImageVerticalAlignment": "Center"
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-row-options" type="application/json">
+[
+  {
+    "height": 1.0,
+    "heightUnit": "factor",
+    "heightMode": "Value",
+    "maxHeightUnit": "px",
+    "minHeightUnit": "px",
+    "overflow": false
+  }
+]
+</script>
+<div id="TcHmiGrid_16" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-top="0" data-tchmi-top-unit="%" data-tchmi-width-unit="px" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-width-mode="Value" data-tchmi-height-mode="Value">
+
+<script data-tchmi-target-attribute="data-tchmi-row-options" type="application/json">
+[
+  {
+    "height": 0.1,
+    "heightUnit": "factor",
+    "heightMode": "Value",
+    "maxHeightUnit": "px",
+    "minHeightUnit": "px",
+    "overflow": false
+  },
+  {
+    "height": 0.9,
+    "heightUnit": "factor",
+    "heightMode": "Value",
+    "maxHeightUnit": "px",
+    "minHeightUnit": "px",
+    "overflow": false
+  }
+]
+</script>
+<div data-tchmi-grid-row-index="1" data-tchmi-grid-column-index="0" id="TcHmiImageModulM8" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height-unit="%" data-tchmi-left="3.4" data-tchmi-left-unit="%" data-tchmi-src="Images/MX-System/MO1008-0000-1111.svg" data-tchmi-top="3.1" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-right="4.2" data-tchmi-bottom="2.9" data-tchmi-visibility="%f%%pp%bIsM12Modul%/pp%==false%/f%" data-tchmi-zindex="0" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-width-mode="Value" data-tchmi-height-mode="Value">
+</div>
+<div id="TcHmiTextblock_46" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-top="0" data-tchmi-top-unit="%" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-text-font-weight="Bold" data-tchmi-text="MO1008-0000-1111" data-tchmi-width-mode="Value" data-tchmi-height-mode="Value" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="120">
+
+
+</div>
+</div>
+</div>
+<div id="TcHmiGrid_2" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="1" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="%" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-width="100" data-tchmi-height="100">
+
+<script data-tchmi-target-attribute="data-tchmi-column-options" type="application/json">
+[
+  {
+    "width": 0.3,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidthUnit": "px",
+    "minWidthUnit": "px",
+    "overflow": false
+  },
+  {
+    "width": 0.7,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidthUnit": "px",
+    "minWidthUnit": "px",
+    "overflow": false
+  }
+]
+</script>
+<div id="TcHmiGridEFU" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="0" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-top="20" data-tchmi-top-unit="%" data-tchmi-width-unit="px" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-zindex="1" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
+<script data-tchmi-target-attribute="data-tchmi-row-options" type="application/json">
+[
+  {
+    "height": 1.0,
+    "heightUnit": "factor",
+    "heightMode": "Value",
+    "maxHeightUnit": "px",
+    "minHeightUnit": "px",
+    "overflow": false
+  },
+  {
+    "height": 1.0,
+    "heightUnit": "factor",
+    "heightMode": "Value",
+    "maxHeightUnit": "px",
+    "minHeightUnit": "px",
+    "overflow": false
+  },
+  {
+    "height": 1.0,
+    "heightUnit": "factor",
+    "heightMode": "Value",
+    "maxHeightUnit": "px",
+    "minHeightUnit": "px",
+    "overflow": false
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-column-options" type="application/json">
+[
+  {
+    "width": 1.0,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidthUnit": "px",
+    "minWidthUnit": "px",
+    "overflow": false
+  },
+  {
+    "width": 1.0,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidthUnit": "px",
+    "minWidthUnit": "px",
+    "overflow": false
+  }
+]
+</script>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="1" id="TcHmiRadioButtonWB1_2" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRadioButton" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="%" data-tchmi-text="Error" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width-unit="px" data-tchmi-right="5" data-tchmi-bottom="5" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-position="Right" data-tchmi-text-vertical-alignment="Center" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-radio-state="Normal" data-tchmi-is-enabled="false" data-tchmi-zindex="1" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-text-font-size="150" data-tchmi-text-font-size-unit="%" data-tchmi-state-symbol="%pp%stIoModulMO1008::stEFUInputs::bError%/pp%">
+<script data-tchmi-target-attribute="data-tchmi-radio-state-icon-color" type="application/json">
+{
+  "color": "rgba(255, 0, 0, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+</div>
+<div data-tchmi-grid-row-index="1" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="1" data-tchmi-grid-column-index="0" id="TcHmiRadioButtonWB1_3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRadioButton" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="%" data-tchmi-text="Tripped" data-tchmi-top="5.6" data-tchmi-top-unit="%" data-tchmi-width-unit="px" data-tchmi-right="5" data-tchmi-bottom="4.4" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-position="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-radio-state="Normal" data-tchmi-is-enabled="false" data-tchmi-zindex="1" data-tchmi-text-font-size="150" data-tchmi-text-font-size-unit="%" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-state-symbol="%pp%stIoModulMO1008::stEFUInputs::bTripped%/pp%">
+<script data-tchmi-target-attribute="data-tchmi-radio-state-icon-color" type="application/json">
+{
+  "color": "rgba(251, 194, 11, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+</div>
+<div data-tchmi-grid-row-index="1" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="1" data-tchmi-grid-column-index="1" id="TcHmiRadioButtonWB1_4" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRadioButton" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="%" data-tchmi-text="Enabled" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width-unit="px" data-tchmi-right="5" data-tchmi-bottom="5" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-position="Right" data-tchmi-text-vertical-alignment="Center" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-is-enabled="false" data-tchmi-zindex="1" data-tchmi-text-font-size="150" data-tchmi-text-font-size-unit="%" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-state-symbol="%pp%stIoModulMO1008::stEFUInputs::bEnabled%/pp%">
+<script data-tchmi-target-attribute="data-tchmi-radio-state-icon-color" type="application/json">
+{
+  "color": "rgba(50, 230, 50, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiRadioButtonWB1_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRadioButton" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="%" data-tchmi-text="Warning" data-tchmi-top="5.1" data-tchmi-top-unit="%" data-tchmi-width-unit="px" data-tchmi-right="5" data-tchmi-bottom="4.9" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-position="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-radio-state="Normal" data-tchmi-is-enabled="false" data-tchmi-zindex="1" data-tchmi-text-font-size="150" data-tchmi-text-font-size-unit="%" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-state-symbol="%pp%stIoModulMO1008::stEFUInputs::bWarning%/pp%">
+<script data-tchmi-target-attribute="data-tchmi-radio-state-icon-color" type="application/json">
+{
+  "color": "rgba(251, 194, 11, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+</div>
+<div id="TcHmiInput" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiInput" data-tchmi-auto-focus-out="false" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="2" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="%" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width-unit="px" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="5" data-tchmi-bottom="5" data-tchmi-is-enabled="true" data-tchmi-zindex="1" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="150" data-tchmi-text="%f%TcHmi.Functions.Beckhoff.GaugeValueFormatter(%pp%stIoModulMO1008::stEFUInputs::fCurrent%/pp%, 3)%/f%" data-tchmi-is-read-only="true">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+
+
+</div>
+<div id="TcHmiTextblock_25" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="2" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="%" data-tchmi-text="Current [A]" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="5" data-tchmi-bottom="5" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="1" data-tchmi-text-font-size="150" data-tchmi-text-font-size-unit="%" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
+</div>
+</div>
+<div id="TcHmiTextblockEFUInputs" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="0" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-text="EFU Inputs" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-bottom="80" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="1" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="150" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
+</div>
+
+<script data-tchmi-target-attribute="data-tchmi-cell-options" type="application/json">
+[
+  {
+    "columnIndex": 0,
+    "rowIndex": 0,
+    "borderWidth": {
+      "left": 1,
+      "right": 1,
+      "top": 1,
+      "bottom": 1,
+      "leftUnit": "px",
+      "rightUnit": "px",
+      "topUnit": "px",
+      "bottomUnit": "px"
+    },
+    "borderStyle": {
+      "left": "Solid",
+      "right": "Solid",
+      "top": "None",
+      "bottom": "Solid"
+    },
+    "backgroundImageWidthUnit": "px",
+    "backgroundImageHeightUnit": "px",
+    "backgroundImageHorizontalAlignment": "Center",
+    "backgroundImageVerticalAlignment": "Center"
+  },
+  {
+    "columnIndex": 1,
+    "rowIndex": 0,
+    "borderWidth": {
+      "left": 1,
+      "right": 1,
+      "top": 1,
+      "bottom": 1,
+      "leftUnit": "px",
+      "rightUnit": "px",
+      "topUnit": "px",
+      "bottomUnit": "px"
+    },
+    "borderStyle": {
+      "left": "None",
+      "right": "Solid",
+      "top": "None",
+      "bottom": "Solid"
+    },
+    "backgroundImageWidthUnit": "px",
+    "backgroundImageHeightUnit": "px",
+    "backgroundImageHorizontalAlignment": "Center",
+    "backgroundImageVerticalAlignment": "Center"
+  }
+]
+</script>
+<div id="TcHmiButton_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height-unit="px" data-tchmi-left="20" data-tchmi-left-unit="%" data-tchmi-text="Reset" data-tchmi-top="55" data-tchmi-top-unit="%" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-right="20" data-tchmi-right-unit="%" data-tchmi-bottom="15" data-tchmi-bottom-unit="%" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="150" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-state-symbol="%pp%stIoModulMO1008::stEFUOutputs::bReset%/pp%">
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiToggleButton" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height-unit="px" data-tchmi-left="20" data-tchmi-left-unit="%" data-tchmi-text="Enable" data-tchmi-top="15" data-tchmi-top-unit="%" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-right="20" data-tchmi-bottom="55" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-text-font-size="120" data-tchmi-text-font-size-unit="%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-state-symbol="%pp%stIoModulMO1008::stEFUOutputs::bEnable%/pp%">
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+</div>
+</div>
+</div>
+</div>

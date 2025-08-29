@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <DUT Name="ST_DISDiagnosisMX" Id="{43fdaa55-2e59-4bc0-9333-9e4ad9826933}">
+    <Declaration><![CDATA[TYPE ST_DISDiagnosisMX :
+STRUCT
+	bWirebreakCh1 AT%I* : BOOL;
+	bWirebreakCh2 AT%I* : BOOL;
+	bWirebreakCh3 AT%I* : BOOL;
+	bWirebreakCh4 AT%I* : BOOL;
+	bWirebreakCh5 AT%I* : BOOL;
+	bWirebreakCh6 AT%I* : BOOL;
+	bWirebreakCh7 AT%I* : BOOL;
+	bWirebreakCh8 AT%I* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

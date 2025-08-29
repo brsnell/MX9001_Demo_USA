@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <DUT Name="ST_MS4208" Id="{2fe814ef-3bb7-4c07-b66d-c85989d7c494}">
+    <Declaration><![CDATA[TYPE ST_MS4208 :
+STRUCT
+	stEFUInputsUs		:		ST_EFUInputsMX;
+	stEFUInputsUp1		:		ST_EFUInputsMX;
+	stEFUInputsUp2		:		ST_EFUInputsMX;
+	stEFUOutputsUs		:		ST_EFUOutputsMX;
+	stEFUOutputsUp1		:		ST_EFUOutputsMX;
+	stEFUOutputsUp2		:		ST_EFUOutputsMX;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

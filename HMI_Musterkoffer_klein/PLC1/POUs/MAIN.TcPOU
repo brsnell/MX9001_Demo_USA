@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <POU Name="MAIN" Id="{d72f5376-9d08-4c56-b91e-83212ab541cb}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+	stPSUSlot3		:	ST_PSUInputsMX;
+	stMS4208Slot7	:	ST_MS4208;
+	stIoModulSlot8	:	ST_IoModulMO1008;
+	stIoModulSlot9	:	ST_IoModulMO2008;
+	stIoModulSlot10	:	ST_IoModulMo2338;
+	
+	fTest			:	REAL := 3.141;
+	
+	bEnableBluetoothDiagnosis	AT%Q* 	:  	BOOL := TRUE;
+	bActivatePairingMode		AT%Q*	:	BOOL := TRUE;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

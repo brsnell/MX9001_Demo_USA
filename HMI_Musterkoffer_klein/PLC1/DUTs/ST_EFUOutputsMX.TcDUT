@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <DUT Name="ST_EFUOutputsMX" Id="{222b141d-ae45-4497-a25e-384e05dfdb30}">
+    <Declaration><![CDATA[TYPE ST_EFUOutputsMX :
+STRUCT
+	bEnable 				AT%Q*	: BOOL;
+	ControlViaProcessData 	AT%Q*	: BOOL;
+	bReset 					AT%Q*	: BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

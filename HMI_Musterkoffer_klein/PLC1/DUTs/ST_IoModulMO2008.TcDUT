@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <DUT Name="ST_IoModulMO2008" Id="{1d2d4010-0c0b-4b91-b6b8-31b2a8a89f7a}">
+    <Declaration><![CDATA[TYPE ST_IoModulMO2008 :
+STRUCT
+	stDOSOutputs : ST_DOSOutputsMX;
+	stDOSDiagnosis : ST_DOSDiagnosisMX;
+	stEFUInputs : ST_EFUInputsMX;
+	stEFUOutputs : ST_EFUOutputsMX;
+END_STRUCT
+END_TYPE]]></Declaration>
+  </DUT>
+</TcPlcObject>

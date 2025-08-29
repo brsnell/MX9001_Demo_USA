@@ -1,0 +1,36 @@
+<div id="NavigationDesktop_1" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="100" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-width-unit="%">
+
+<div id="TcHmiNavBarMenu_1" data-tchmi-type="TcHmi.Controls.ResponsiveNavigation.TcHmiNavigationBar" data-tchmi-width="100" data-tchmi-height="100" data-tchmi-left="0" data-tchmi-top="0" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="1" data-tchmi-height-unit="%" data-tchmi-width-unit="%" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom="0" data-tchmi-bottom-unit="px" data-tchmi-alignment-top="False" data-tchmi-alignment-bottom="True" data-tchmi-nav-content-control-symbol="%ctrl%TcHmiNavContentMenu%/ctrl%" data-tchmi-alignment="Top" data-tchmi-mobile-icon-width="40" data-tchmi-mobile-icon-height="40" data-tchmi-listen-window-resize="False" data-tchmi-mouse-over-show="False" data-tchmi-font-size="140" data-tchmi-padding-left-right="40" data-tchmi-switch-breakpoint="800" data-tchmi-enable-mobile-switch="True" data-tchmi-nav-target-region-control-symbol="%ctrl%TcHmiTopLevelRegion%/ctrl%">
+<script data-tchmi-target-attribute="data-tchmi-menu-source-data" type="application/json">
+[
+  {
+    "name": "%l%L_Overview%/l%",
+    "page": "Pages/StartPage.content"
+  },
+  {
+    "name": "%l%L_Pages%/l%",
+    "children": [
+      {
+        "name": "%l%L_Content%/l%",
+        "showColumnName": true,
+        "children": [
+          {
+            "name": "%l%L_PowerSupply%/l%",
+            "page": "Pages/Desktop/Modules/PowerSupply.content"
+          },
+          {
+            "name": "EtherCAT",
+            "page": "Pages/Desktop/Modules/EtherCAT.content"
+          },
+          {
+            "name": "IOs",
+            "page": "Pages/Desktop/Modules/IOs.content"
+          }
+        ]
+      }
+    ]
+  }
+]
+</script>
+</div>
+</div>

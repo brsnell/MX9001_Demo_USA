@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <DUT Name="ST_PSUInputsMX" Id="{708aa8e5-671b-4bb6-996f-843247b7ce53}">
+    <Declaration><![CDATA[TYPE ST_PSUInputsMX :
+STRUCT
+	bWarning 				AT%I* : BOOL;
+	bError 					AT%I* : BOOL;
+	bI2TWarning 			AT%I* : BOOL;
+	nInpuCycleCounter 		AT%I* : UINT;
+	fActualOutputVoltage 	AT%I* : REAL;
+	fActualOutputCurrent 	AT%I* : REAL;
+	nActualI2TUtilization 	AT%I* : USINT;
+	nInfoData1 				AT%I* : UINT;
+	nInfoData2 				AT%I* : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

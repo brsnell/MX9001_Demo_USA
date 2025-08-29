@@ -1,0 +1,66 @@
+<div id="NavigationSmartphone_1" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="100" data-tchmi-height="100" data-tchmi-width-unit="%" data-tchmi-height-unit="%" data-tchmi-creator-viewport-width="390" data-tchmi-creator-viewport-height="844">
+
+<div id="TcHmiNavigationBar_1" data-tchmi-type="TcHmi.Controls.ResponsiveNavigation.TcHmiNavigationBar" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-switch-breakpoint="300" data-tchmi-nav-target-region-control-symbol="%ctrl%TcHmiTopLevelRegion%/ctrl%" data-tchmi-nav-content-control-symbol="%ctrl%TcHmiNavContentMenu%/ctrl%" data-tchmi-enable-mobile-switch="false">
+<script data-tchmi-target-attribute="data-tchmi-menu-source-data" type="application/json">
+[
+  {
+    "name": "%l%L_Overview%/l%",
+    "page": "Pages/StartPageSmartphone.content"
+  },
+  {
+    "children": [
+      {
+        "children": [
+          {
+            "name": "MO1008",
+            "page": "Pages/Smartphone/Modules/MO1008-0000-1111.content"
+          },
+          {
+            "name": "MO2008",
+            "page": "Pages/Smartphone/Modules/MO2008-0000-1111.content"
+          },
+          {
+            "name": "MO2338",
+            "page": "Pages/Smartphone/Modules/MO2338-0000-1112.content"
+          }
+        ],
+        "name": "IO",
+        "showColumnName": true
+      },
+      {
+        "children": [
+          {
+            "name": "MO7221",
+            "page": "Pages/Smartphone/Modules/MO7221-9016-1114.content"
+          }
+        ],
+        "name": "Drives",
+        "showColumnName": true
+      },
+      {
+        "children": [
+          {
+            "name": "MS1010",
+            "page": "Pages/Smartphone/Modules/MS1010-1002-1334.content"
+          }
+        ],
+        "name": "Power Supply",
+        "showColumnName": true
+      },
+      {
+        "children": [
+          {
+            "name": "Diagnostics",
+            "page": "Pages/Smartphone/Modules/EtherCAT.content"
+          }
+        ],
+        "name": "EtherCAT",
+        "showColumnName": true
+      }
+    ],
+    "name": "%l%L_Modules%/l%"
+  }
+]
+</script>
+</div>
+</div>
