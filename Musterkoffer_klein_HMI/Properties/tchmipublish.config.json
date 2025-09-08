@@ -37,7 +37,7 @@
     "createPublishLog": false,
     "salt": "5a5f74ccf5a54ba08e580fff89f16978",
     "encryptedTcHmiServerPassword": "tFbiXgpT0DNzaCY/ffjHMg==",
-    "tcHmiServerHost": "192.168.7.189",
+    "tcHmiServerHost": "127.0.0.1",
     "tcHmiServerPort": "2010",
     "uploadTimeout": "60",
     "connectionTimeout": "5",
@@ -49,7 +49,7 @@
     "launchBrowserAfterPublish": true,
     "createVirtualDirectoriesOnTargetSystem": false,
     "tcHmiServerUserName": "__SystemAdministrator",
-    "tcHmiDestinationUrl": "http://192.168.7.189:2010/",
+    "tcHmiDestinationUrl": "http://127.0.0.1:2010/",
     "publishConfiguration": "remote",
     "tcHmiIgnoreCertificateErrors": true
   },

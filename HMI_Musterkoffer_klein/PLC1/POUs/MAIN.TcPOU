@@ -15,10 +15,13 @@ VAR
 	bActivatePairingMode		AT%Q*	:	BOOL := TRUE;
 	
 	fbRunOutputs	:	FB_RunOutputs;
+	fbRunOutputs2	:	FB_RunOutputs;
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[fbRunOutputs(bEnable:= , tStepSpeed:=t#500ms , tCycleDelay:=t#1000ms , Outputs_MX:=stIoModulSlot9.stDOSOutputs );]]></ST>
+      <ST><![CDATA[fbRunOutputs(bEnable:=TRUE , tStepSpeed:=T#500MS , tCycleDelay:=T#1000MS , Outputs_MX:=stIoModulSlot9.stDOSOutputs );
+fbRunOutputs2(bEnable:= , tStepSpeed:=T#500MS , tCycleDelay:=T#1000MS , Outputs_MX:=stIoModulSlot10.stDOSOutputs );
+]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>
