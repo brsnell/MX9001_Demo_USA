@@ -59,6 +59,10 @@
       }
     ],
     "name": "%l%L_Modules%/l%"
+  },
+  {
+    "name": "Scope",
+    "page": "Pages/Desktop/Modules/Scope.content"
   }
 ]
 </script>

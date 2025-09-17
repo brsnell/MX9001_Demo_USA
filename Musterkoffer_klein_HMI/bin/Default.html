@@ -6,13 +6,13 @@
   Deployment
   +++++++++++++++++++++++++++
 	Version: 1.0.0.0
-	Date: Sep Mon 08, 2025, Time: 07:25:25
+	Date: Sep Wed 17, 2025, Time: 10:49:16
 -->
 <html lang="en" class="tchmi-html-runtime">
 <head>
   <meta charset="utf-8">
   <title>Please enter your Title...</title>
-  <meta name="tchmi-buildtime" content="2025-09-08T07:25:26">
+  <meta name="tchmi-buildtime" content="2025-09-17T10:49:17">
 
   <!-- target-densitydpi=device-dpi -->
   <link rel="manifest" crossorigin="use-credentials" href="Properties/tchmimanifest.json">
@@ -34,9 +34,9 @@ TCHMI_RUNTIME = true;
   },
   "Beckhoff.TwinCAT.HMI.EcDiagnostics": {
     "version": "22.0.7066",
-    "authors": "Beckhoff",
-    "title": "EcDiagnostics",
-    "description": "TwinCAT HMI is a development environment for web-based HMIs (Human Machine Interfaces). This package provides the extension for the TwinCAT HMI Server to enable the fieldbus diagnostics of EtherCAT topologies in TwinCAT HMI applications."
+    "authors": "",
+    "title": "",
+    "description": ""
   },
   "Beckhoff.TwinCAT.HMI.EcDiagnosticsControl": {
     "version": "14.3.210",
@@ -62,17 +62,29 @@ TCHMI_RUNTIME = true;
     "title": "ResponsiveNavigation",
     "description": "TwinCAT HMI is a development environment for web-based HMIs (Human Machine Interfaces). This package provides controls for creation of responsive navigation menus."
   },
+  "Beckhoff.TwinCAT.HMI.Scope": {
+    "version": "14.2.6818",
+    "authors": "",
+    "title": "",
+    "description": ""
+  },
+  "Beckhoff.TwinCAT.HMI.ScopeControl": {
+    "version": "14.3.229",
+    "authors": "Beckhoff",
+    "title": "ScopeControl",
+    "description": "TwinCAT HMI is a development environment for web-based HMIs (Human Machine Interfaces). This package provides a control for analysis and charting of TwinCAT Scope data in TwinCAT HMI applications."
+  },
   "Beckhoff.TwinCAT.HMI.Server.Engineering": {
     "version": "22.0.7066",
-    "authors": "Beckhoff",
-    "title": "TcHmiSrv",
-    "description": "TwinCAT HMI is a development environment for web-based HMIs (Human Machine Interfaces). This package provides the TwinCAT HMI Server for the engineering."
+    "authors": "",
+    "title": "",
+    "description": ""
   },
   "Microsoft.TypeScript.MSBuild": {
     "version": "5.9.2",
-    "authors": "Microsoft",
-    "title": "Microsoft.TypeScript.MSBuild",
-    "description": "The TypeScript MSBuild task, and matching compiler version."
+    "authors": "",
+    "title": "",
+    "description": ""
   }
 };
 </script>
@@ -86,7 +98,8 @@ TCHMI_RUNTIME = true;
     "Beckhoff.TwinCAT.HMI.EcDiagnosticsControl/": "./Beckhoff.TwinCAT.HMI.EcDiagnosticsControl/",
     "Beckhoff.TwinCAT.HMI.Framework/": "./Beckhoff.TwinCAT.HMI.Framework/",
     "Beckhoff.TwinCAT.HMI.Functions/": "./Beckhoff.TwinCAT.HMI.Functions/",
-    "Beckhoff.TwinCAT.HMI.ResponsiveNavigation/": "./Beckhoff.TwinCAT.HMI.ResponsiveNavigation/"
+    "Beckhoff.TwinCAT.HMI.ResponsiveNavigation/": "./Beckhoff.TwinCAT.HMI.ResponsiveNavigation/",
+    "Beckhoff.TwinCAT.HMI.ScopeControl/": "./Beckhoff.TwinCAT.HMI.ScopeControl/"
   },
   "scopes": {}
 }
@@ -252,6 +265,8 @@ TCHMI_RUNTIME = true;
 <script src="Beckhoff.TwinCAT.HMI.ResponsiveNavigation/TcHmiNavigationBar/TcHmiNavigationBar.js" defer=""></script>
 <script src="Beckhoff.TwinCAT.HMI.ResponsiveNavigation/TcHmiNavigationContent/TcHmiNavigationContent.js" defer=""></script>
 <script src="Beckhoff.TwinCAT.HMI.ResponsiveNavigation/TcHmiBreadcrumb/TcHmiBreadcrumb.js" defer=""></script>
+<script src="Beckhoff.TwinCAT.HMI.ScopeControl/TcHmiScopeControl/../dist/TcHmiScopeControl.esm.js" type="module"></script>
+<script src="Beckhoff.TwinCAT.HMI.ScopeControl/ScopeDisableCellClassesProvider/ScopeDisableCellClassesProvider.js" defer=""></script>
 <script src="Functions/UpdateLanguageIcon.js" defer=""></script>
 <script src="Functions/ResolutionChange.js" defer=""></script>
 </head>

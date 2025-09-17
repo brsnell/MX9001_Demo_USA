@@ -130,6 +130,13 @@
       "preloadBindings": false
     },
     {
+      "url": "Pages/Desktop/Modules/Scope.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
       "url": "Pages/Desktop/NavigationDesktop.content",
       "preload": false,
       "keepAlive": false,
@@ -264,6 +271,13 @@
     },
     {
       "url": "Pages/Smartphone/Modules/MS1010-1002-1334.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/Smartphone/Modules/Scope.content",
       "preload": false,
       "keepAlive": false,
       "loadSync": false,
@@ -545,6 +559,10 @@
     {
       "name": "Beckhoff.TwinCAT.HMI.ResponsiveNavigation",
       "basePath": "/Beckhoff.TwinCAT.HMI.ResponsiveNavigation"
+    },
+    {
+      "name": "Beckhoff.TwinCAT.HMI.ScopeControl",
+      "basePath": "/Beckhoff.TwinCAT.HMI.ScopeControl"
     }
   ],
   "keyboardLayouts": [

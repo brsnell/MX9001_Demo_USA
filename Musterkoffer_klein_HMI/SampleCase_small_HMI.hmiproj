@@ -167,6 +167,9 @@
     <Content Include="Pages\Desktop\HeaderDesktop.content">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Pages\Desktop\Modules\Scope.content">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Pages\Desktop\Modules\EtherCAT.content">
       <SubType>Content</SubType>
     </Content>
@@ -186,6 +189,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Pages\Smartphone\HeaderSmartphone.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Smartphone\Modules\Scope.content">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Pages\Smartphone\Modules\EtherCAT.content">
@@ -265,6 +271,15 @@
     <Content Include="Server\TcHmiEcDiagnostics\TcHmiEcDiagnostics.Storage.json">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Server\TcHmiScope\TcHmiScope.Config.default.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiScope\TcHmiScope.Config.remote.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiScope\TcHmiScope.Storage.json">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="UserControls\MC6015.usercontrol">
       <SubType>Content</SubType>
     </Content>
@@ -322,6 +337,7 @@
     <Folder Include="Pages\Smartphone" />
     <Folder Include="Pages\Smartphone\Modules" />
     <Folder Include="Server\TcHmiEcDiagnostics" />
+    <Folder Include="Server\TcHmiScope" />
     <Folder Include="UserControls" />
     <Folder Include="Pages\" />
     <Folder Include="Server\ADS\" />

@@ -8,11 +8,8 @@
     "page": "Pages/StartPage.content"
   },
   {
-    "name": "%l%L_Pages%/l%",
     "children": [
       {
-        "name": "%l%L_Content%/l%",
-        "showColumnName": true,
         "children": [
           {
             "name": "%l%L_PowerSupply%/l%",
@@ -25,10 +22,17 @@
           {
             "name": "IOs",
             "page": "Pages/Desktop/Modules/IOs.content"
+          },
+          {
+            "name": "Scope",
+            "page": "Pages/Desktop/Modules/Scope.content"
           }
-        ]
+        ],
+        "name": "%l%L_Content%/l%",
+        "showColumnName": true
       }
-    ]
+    ],
+    "name": "%l%L_Pages%/l%"
   }
 ]
 </script>

@@ -151,7 +151,9 @@
 			<Settings MaxCpus="2" NonWinCpus="1"/>
 			<Licenses>
 				<Target BkhfOrder="01234567">
-					<ManualSelect>{796D380F-D49E-4C0C-A05F-500052FAC883}</ManualSelect>
+					<ManualSelect>{27326EE5-AB30-4084-B15B-8CCA96CCBF0B}</ManualSelect>
+					<TargetSelect TargetId="2">{27326EE5-AB30-4084-B15B-8CCA96CCBF0B}</TargetSelect>
+					<LicenseDevice DongleHardwareId="2" DongleDevice="#x71010002" DongleLevel="50" DongleSystemId="{E32150EA-6A69-AFAB-32DE-422424BA3339}" DongleSerialNumber="0110022763" DongleCacheLicense="false"/>
 				</Target>
 			</Licenses>
 			<Tasks>
