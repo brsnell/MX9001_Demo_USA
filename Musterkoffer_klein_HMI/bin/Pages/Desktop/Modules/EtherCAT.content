@@ -2,6 +2,6 @@
 
 <div id="MS4208_2" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="61.1" data-tchmi-height-unit="%" data-tchmi-left="10" data-tchmi-left-unit="%" data-tchmi-target-user-control="UserControls/MS4208.usercontrol" data-tchmi-top="10" data-tchmi-top-unit="%" data-tchmi-width="22.1" data-tchmi-width-unit="%" data-tchmi-stms4208="%s%ADS.PLC1.MAIN.stMS4208Slot7%/s%">
 </div>
-<div id="TcHmiEcDiagnostics_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEcDiagnostics" data-tchmi-allow-zoom-and-pan="true" data-tchmi-device="Device1" data-tchmi-height="46.4" data-tchmi-height-unit="%" data-tchmi-left="45.2" data-tchmi-left-unit="%" data-tchmi-toolbox-reset-view="true" data-tchmi-top="17.5" data-tchmi-top-unit="%" data-tchmi-width="43.5" data-tchmi-width-unit="%">
+<div id="TcHmiEcDiagnostics_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEcDiagnostics" data-tchmi-allow-zoom-and-pan="true" data-tchmi-device="Device1" data-tchmi-height="46.4" data-tchmi-height-unit="%" data-tchmi-left="45.2" data-tchmi-left-unit="%" data-tchmi-toolbox-reset-view="true" data-tchmi-top="17.5" data-tchmi-top-unit="%" data-tchmi-right-unit="%" data-tchmi-right="5">
 </div>
 </div>

@@ -95,6 +95,13 @@
       "preloadBindings": false
     },
     {
+      "url": "Pages/Desktop/Modules/Comparison.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
       "url": "Pages/Desktop/Modules/EtherCAT.content",
       "preload": false,
       "keepAlive": false,
@@ -145,6 +152,13 @@
     },
     {
       "url": "Pages/Smartphone/HeaderSmartphone.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/Smartphone/Modules/Comparison.content",
       "preload": false,
       "keepAlive": false,
       "loadSync": false,

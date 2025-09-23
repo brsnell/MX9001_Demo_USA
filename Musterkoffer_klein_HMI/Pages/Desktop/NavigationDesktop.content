@@ -26,6 +26,10 @@
           {
             "name": "Scope",
             "page": "Pages/Desktop/Modules/Scope.content"
+          },
+          {
+            "name": "Comparison",
+            "page": "Pages/Desktop/Modules/Comparison.content"
           }
         ],
         "name": "%l%L_Content%/l%",

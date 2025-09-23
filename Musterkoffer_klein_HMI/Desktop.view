@@ -40,27 +40,7 @@
         }
         ]</script>><div id="TcHmiTopLevelRegion" data-tchmi-type="TcHmi.Controls.System.TcHmiRegion" data-tchmi-left="0" data-tchmi-top="0" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="2" data-tchmi-height-unit="px" data-tchmi-width-unit="px" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-right="0" data-tchmi-right-unit="px" data-tchmi-bottom="0" data-tchmi-bottom-unit="px" data-tchmi-scrolling="Auto" data-tchmi-visibility="Visible" data-tchmi-target-content="Pages/StartPage.content">
 
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
-        {
-        "event": "TcHmiTopLevelRegion.onPressed",
-        "actions": [
-        {
-        "objectType": "ControlApiFunction",
-        "active": true,
-        "control": "TcHmiNavBarMenu",
-        "fn": "closeMenu",
-        "asyncWait": true
-        },
-        {
-        "objectType": "ControlApiFunction",
-        "active": true,
-        "control": "TcHmiNavBarLanguage",
-        "fn": "closeMenu",
-        "asyncWait": true
-        }
-        ]
-        }
-        ]</script></div>><div id="TcHmiNavContentMenu" data-tchmi-type="TcHmi.Controls.ResponsiveNavigation.TcHmiNavigationContent" data-tchmi-height-mode="Content" data-tchmi-width="100" data-tchmi-height="550" data-tchmi-left="0" data-tchmi-top="0" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="2" data-tchmi-height-unit="px" data-tchmi-width-unit="%" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-zindex="20" data-tchmi-show-icons-mobile="False" data-tchmi-enable-mobile-switch="True" data-tchmi-close-test="%l%L_CloseText%/l%" data-tchmi-subtitle-font-size="130" data-tchmi-column-title-font-size="130" data-tchmi-column-element-font-size="120" data-tchmi-close-font-size="130" data-tchmi-padding-left-right="40" data-tchmi-column-element-margin-top="5" data-tchmi-mobile-element-margin-top="5" data-tchmi-auto-collapse-elements="False">
+</div>><div id="TcHmiNavContentMenu" data-tchmi-type="TcHmi.Controls.ResponsiveNavigation.TcHmiNavigationContent" data-tchmi-height-mode="Content" data-tchmi-width="100" data-tchmi-height="550" data-tchmi-left="0" data-tchmi-top="0" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="2" data-tchmi-height-unit="px" data-tchmi-width-unit="%" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-zindex="20" data-tchmi-show-icons-mobile="False" data-tchmi-enable-mobile-switch="True" data-tchmi-close-test="%l%L_CloseText%/l%" data-tchmi-subtitle-font-size="130" data-tchmi-column-title-font-size="130" data-tchmi-column-element-font-size="120" data-tchmi-close-font-size="130" data-tchmi-padding-left-right="40" data-tchmi-column-element-margin-top="5" data-tchmi-mobile-element-margin-top="5" data-tchmi-auto-collapse-elements="False">
 
 </div><div id="TcHmiNavContentLanguage" data-tchmi-type="TcHmi.Controls.ResponsiveNavigation.TcHmiNavigationContent" data-tchmi-height-mode="Content" data-tchmi-width="100" data-tchmi-height="260" data-tchmi-left="0" data-tchmi-top="0" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="1" data-tchmi-height-unit="px" data-tchmi-width-unit="%" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-show-icons-mobile="True" data-tchmi-zindex="20" data-tchmi-close-test="%l%L_CloseText%/l%" data-tchmi-column-element-font-size="130" data-tchmi-subtitle-font-size="140" data-tchmi-column-title-font-size="130">
 

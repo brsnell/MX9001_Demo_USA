@@ -131,6 +131,9 @@
     <Content Include="Functions\ResolutionChange.js">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Images\Comparison.png">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Images\icons_previous_pressed.svg">
       <SubType>Content</SubType>
     </Content>
@@ -167,6 +170,9 @@
     <Content Include="Pages\Desktop\HeaderDesktop.content">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Pages\Desktop\Modules\Comparison.content">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Pages\Desktop\Modules\Scope.content">
       <SubType>Content</SubType>
     </Content>
@@ -189,6 +195,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Pages\Smartphone\HeaderSmartphone.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Smartphone\Modules\Comparison.content">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Pages\Smartphone\Modules\Scope.content">

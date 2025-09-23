@@ -50,19 +50,19 @@
       {
         "children": [
           {
-            "name": "Diagnostics",
+            "name": "EtherCAT",
             "page": "Pages/Smartphone/Modules/EtherCAT.content"
+          },
+          {
+            "name": "Scope",
+            "page": "Pages/Smartphone/Modules/Scope.content"
           }
         ],
-        "name": "EtherCAT",
+        "name": "Diagnostics",
         "showColumnName": true
       }
     ],
     "name": "%l%L_Modules%/l%"
-  },
-  {
-    "name": "Scope",
-    "page": "Pages/Desktop/Modules/Scope.content"
   }
 ]
 </script>
