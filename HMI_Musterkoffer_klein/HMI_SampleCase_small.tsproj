@@ -164,7 +164,7 @@
 		</System>
 		<Plc>
 			<Project GUID="{F05D63A8-41F4-4034-BAB9-6D751E78827C}" Name="PLC1" PrjFilePath="PLC1\PLC1.plcproj" TmcFilePath="PLC1\PLC1.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{BA597416-21E7-17F4-3036-0C855BC53284}" TmcPath="PLC1\PLC1.tmc">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{9832CD2A-32F8-8DEE-527E-247E1076D06B}" TmcPath="PLC1\PLC1.tmc">
 					<Name>PLC1 Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Vars VarGrpType="2" AreaNo="1">
@@ -1926,7 +1926,7 @@ Only becomes active if the process data output "Control via Process Data" is set
 						<Box Id="10" BoxType="9099" BoxFlags="#x00000020">
 							<Name>Term 10 (MO1008-0000-1111)</Name>
 							<ImageId>1004</ImageId>
-							<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CfgModeSafeOp="true" CycleMBoxPollingTime="0" CoeType="39" FoeType="1" VendorId="#x00000002" ProductCode="#x811fbc0b" RevisionNo="#x00000457" InfoDataAddr="true" InfoDataDcTimes="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" SdoUploadWithMaxLength="true" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="MO1008-0000-1111 8 Ch. Dig. Input 24V, M8" Desc="MO1008-0000-1111" PortABoxInfo="#x01000008">
+							<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CfgModeSafeOp="true" CycleMBoxPollingTime="0" CoeType="39" FoeType="1" VendorId="#x00000002" ProductCode="#x811fbc0b" RevisionNo="#x00000457" InfoDataAddr="true" InfoDataDcTimes="true" TimeoutMailbox2="2000" AutoRestoreAfterWcOk="true" CheckRevisionNoType="3" PortPhys="51" SdoUploadWithMaxLength="true" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="MO1008-0000-1111 8 Ch. Dig. Input 24V, M8" Desc="MO1008-0000-1111" PortABoxInfo="#x01000008">
 								<SyncMan>001000012600010001000000800000010001001026010000</SyncMan>
 								<SyncMan>001100012200010002000000800000010001001122010000</SyncMan>
 								<SyncMan>001202002400010003000000000000000200001224010000</SyncMan>
@@ -2132,7 +2132,7 @@ Only becomes active if the process data output "Control via Process Data" is set
 						<Box Id="11" BoxType="9099" BoxFlags="#x00000020">
 							<Name>Term 11 (MO2008-0000-1111)</Name>
 							<ImageId>1005</ImageId>
-							<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CfgModeSafeOp="true" CycleMBoxPollingTime="0" CoeType="39" FoeType="1" VendorId="#x00000002" ProductCode="#x8128860b" RevisionNo="#x00000457" InfoDataAddr="true" InfoDataDcTimes="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" SdoUploadWithMaxLength="true" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="MO2008-0000-1111 8 Ch. Dig. Output 24V, M8" Desc="MO2008-0000-1111" PortABoxInfo="#x0100000a">
+							<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CfgModeSafeOp="true" CycleMBoxPollingTime="0" CoeType="39" FoeType="1" VendorId="#x00000002" ProductCode="#x8128860b" RevisionNo="#x00000457" InfoDataAddr="true" InfoDataDcTimes="true" TimeoutMailbox2="2000" AutoRestoreAfterWcOk="true" CheckRevisionNoType="3" PortPhys="51" SdoUploadWithMaxLength="true" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="MO2008-0000-1111 8 Ch. Dig. Output 24V, M8" Desc="MO2008-0000-1111" PortABoxInfo="#x0100000a">
 								<SyncMan>001000012600010001000000800000010001001026010000</SyncMan>
 								<SyncMan>001100012200010002000000800000010001001122010000</SyncMan>
 								<SyncMan>001203002400010003000000000000000300001224010000</SyncMan>
@@ -2454,7 +2454,7 @@ Only becomes active if the process data output "Control via Process Data" is set
 						<Box Id="12" BoxType="9099" BoxFlags="#x00000020">
 							<Name>Term 12 (MO2338-0000-1112)</Name>
 							<ImageId>1005</ImageId>
-							<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="39" FoeType="1" VendorId="#x00000002" ProductCode="#x812b6c8b" RevisionNo="#x00000458" BIC="1P282721SBTN0008qsps1KMO2338-0000-1112              Q1    2P49230001&#10;" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" SdoUploadWithMaxLength="true" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="MO2338-0000-1112 8 Ch. digital combi 24V 0.5A, M12" Desc="MO2338-0000-1112" PortABoxInfo="#x0100000b">
+							<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="39" FoeType="1" VendorId="#x00000002" ProductCode="#x812b6c8b" RevisionNo="#x00000458" BIC="1P282721SBTN0008qsps1KMO2338-0000-1112              Q1    2P49230001&#10;" InfoDataAddr="true" TimeoutMailbox2="2000" AutoRestoreAfterWcOk="true" CheckRevisionNoType="3" PortPhys="51" SdoUploadWithMaxLength="true" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="MO2338-0000-1112 8 Ch. digital combi 24V 0.5A, M12" Desc="MO2338-0000-1112" PortABoxInfo="#x0100000b">
 								<SyncMan>001000012600010001000000800000010001001026010000</SyncMan>
 								<SyncMan>001100012200010002000000800000010001001122010000</SyncMan>
 								<SyncMan>001203002400010003000000000000000300001224010000</SyncMan>
