@@ -2,10 +2,9 @@
 
 <div id="TcHmiImage_5" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="10" data-tchmi-height-unit="%" data-tchmi-src="Images/MX-System/MX.png" data-tchmi-top="10" data-tchmi-top-unit="%" data-tchmi-left="30" data-tchmi-left-unit="%" data-tchmi-right-unit="%" data-tchmi-right="30">
 </div>
-<div id="TcHmiImage_11" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-left="5" data-tchmi-left-unit="%" data-tchmi-src="Images/MX-System/Musterkoffer_klein.svg" data-tchmi-top="30" data-tchmi-top-unit="%" data-tchmi-height-unit="%" data-tchmi-height="10" data-tchmi-right-unit="%" data-tchmi-right="5">
-</div>
-<div id="TcHmiRectangle_6" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-left="25" data-tchmi-left-unit="%" data-tchmi-top="30" data-tchmi-top-unit="%" data-tchmi-right-unit="%" data-tchmi-right="51" data-tchmi-bottom="60.0" data-tchmi-bottom-unit="%" data-tchmi-stroke-thickness="0">
-
+<div id="TcHmiContainer_1" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="50" data-tchmi-height-unit="%" data-tchmi-left="5" data-tchmi-left-unit="%" data-tchmi-top="30" data-tchmi-top-unit="%" data-tchmi-width="90" data-tchmi-width-unit="%">
+<div id="TcHmiImage_11" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-src="Images/MX-System/Musterkoffer_klein.svg" data-tchmi-top="0" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-height-unit="%" data-tchmi-height="100">
+</div><div id="TcHmiRectangle_6" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-left="20.5" data-tchmi-left-unit="%" data-tchmi-top="0" data-tchmi-top-unit="%" data-tchmi-stroke-thickness="0" data-tchmi-width-unit="%" data-tchmi-width="29.5" data-tchmi-height-unit="%" data-tchmi-height="100">
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
   {
@@ -37,7 +36,7 @@
 
 
 </div>
-<div id="TcHmiRectangle_7" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-left="49.0" data-tchmi-left-unit="%" data-tchmi-top="30" data-tchmi-top-unit="%" data-tchmi-right-unit="%" data-tchmi-right="40" data-tchmi-bottom="60.0" data-tchmi-bottom-unit="%" data-tchmi-stroke-thickness="0">
+<div id="TcHmiRectangle_7" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-left="50" data-tchmi-left-unit="%" data-tchmi-top="0" data-tchmi-top-unit="%" data-tchmi-stroke-thickness="0" data-tchmi-width-unit="%" data-tchmi-width="9.5" data-tchmi-height-unit="%" data-tchmi-height="100">
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
   {
@@ -69,12 +68,24 @@
 
 
 </div>
-<div id="TcHmiRectangle_8" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-left="60" data-tchmi-left-unit="%" data-tchmi-top="30" data-tchmi-top-unit="%" data-tchmi-right-unit="%" data-tchmi-right="31.5" data-tchmi-bottom="60.0" data-tchmi-bottom-unit="%" data-tchmi-stroke-thickness="0">
+<div id="TcHmiRectangle_8" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-left="59.5" data-tchmi-left-unit="%" data-tchmi-top="0" data-tchmi-top-unit="%" data-tchmi-stroke-thickness="0" data-tchmi-width="10" data-tchmi-width-unit="%" data-tchmi-height-unit="%" data-tchmi-height="100">
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
   {
     "event": "%ctx%owner::Id|EventRegistrationMode=Resolve%/ctx%.onPressed",
-    "actions": []
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTopLevelRegion::TargetContent%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/ContentPath",
+          "value": "Pages/Smartphone/Modules/EtherCAT.content"
+        },
+        "asyncWait": true
+      }
+    ]
   }
 ]
 </script>
@@ -89,7 +100,7 @@
 
 
 </div>
-<div id="TcHmiRectangle_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-left="68.5" data-tchmi-left-unit="%" data-tchmi-top="30" data-tchmi-top-unit="%" data-tchmi-right-unit="%" data-tchmi-right="23.7" data-tchmi-bottom="60.0" data-tchmi-bottom-unit="%" data-tchmi-stroke-thickness="0">
+<div id="TcHmiRectangle_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-left="69.5" data-tchmi-left-unit="%" data-tchmi-top="0" data-tchmi-top-unit="%" data-tchmi-stroke-thickness="0" data-tchmi-width="9.5" data-tchmi-width-unit="%" data-tchmi-height-unit="%" data-tchmi-height="100">
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
   {
@@ -121,7 +132,7 @@
 
 
 </div>
-<div id="TcHmiRectangle_10" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-left="76.4" data-tchmi-left-unit="%" data-tchmi-top="30" data-tchmi-top-unit="%" data-tchmi-right-unit="%" data-tchmi-right="14.9" data-tchmi-bottom="60.0" data-tchmi-bottom-unit="%" data-tchmi-stroke-thickness="0">
+<div id="TcHmiRectangle_10" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-left="79" data-tchmi-left-unit="%" data-tchmi-top="0" data-tchmi-top-unit="%" data-tchmi-stroke-thickness="0" data-tchmi-width-unit="%" data-tchmi-width="10" data-tchmi-height-unit="%" data-tchmi-height="100">
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
   {
@@ -153,7 +164,7 @@
 
 
 </div>
-<div id="TcHmiRectangle_11" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-left="85.1" data-tchmi-left-unit="%" data-tchmi-top="30" data-tchmi-top-unit="%" data-tchmi-right-unit="%" data-tchmi-right="4.9" data-tchmi-bottom="60.0" data-tchmi-bottom-unit="%" data-tchmi-stroke-thickness="0">
+<div id="TcHmiRectangle_11" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-left="89" data-tchmi-left-unit="%" data-tchmi-top="0" data-tchmi-top-unit="%" data-tchmi-stroke-thickness="0" data-tchmi-width-unit="%" data-tchmi-width="10" data-tchmi-height-unit="%" data-tchmi-height="100">
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
   {
@@ -183,6 +194,8 @@
 
 
 
+
+</div>
 
 </div>
 </div>
