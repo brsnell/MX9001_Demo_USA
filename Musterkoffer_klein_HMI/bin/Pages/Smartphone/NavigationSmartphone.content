@@ -8,6 +8,10 @@
     "page": "Pages/StartPageSmartphone.content"
   },
   {
+    "name": "Comparison",
+    "page": "Pages/Smartphone/Modules/Comparison.content"
+  },
+  {
     "children": [
       {
         "children": [

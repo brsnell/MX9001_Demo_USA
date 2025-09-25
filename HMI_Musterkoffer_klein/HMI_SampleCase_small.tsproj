@@ -1029,7 +1029,7 @@
 						<Box Id="7" BoxType="9099" BoxFlags="#x00000020">
 							<Name>Term 6 (MS1010-1002-1334)</Name>
 							<ImageId>1002</ImageId>
-							<EtherCAT SlaveType="2" PdiType="#x0005" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="39" FoeType="1" VendorId="#x00000002" ProductCode="#xa4d4609b" RevisionNo="#x03005356" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="7" PortPhys="51" SdoUploadWithMaxLength="true" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="MS1010-1002-1334 power infeed +  forwarding, 230 V AC/10 A, 24 V DC/7A power supply, B17" Desc="MS1010-1002-1334" PortABoxInfo="#x01000005">
+							<EtherCAT SlaveType="2" PdiType="#x0005" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="39" FoeType="1" VendorId="#x00000002" ProductCode="#xa4d4609b" RevisionNo="#x04005356" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="7" PortPhys="51" SdoUploadWithMaxLength="true" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="MS1010-1002-1334 Power infeed + forwarding, 230 V AC/10 A, 24 V DC/7A power supply, B17" Desc="MS1010-1002-1334" PortABoxInfo="#x01000005">
 								<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
 								<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
 								<SyncMan>001200002400000003000000000000000000001224010000</SyncMan>
@@ -1038,7 +1038,7 @@
 								<Fmmu>0000000000000000001300010100000002000000000000000000000000000000</Fmmu>
 								<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
 								<BootStrapData>0010f400f410f400</BootStrapData>
-								<MBoxUserCmdData>004003000c0000000000000003000000000000000000000000000000000000002081f001040000005653000300</MBoxUserCmdData>
+								<MBoxUserCmdData>004003000c0000000000000003000000000000000000000000000000000000002081f001040000005653000400</MBoxUserCmdData>
 								<MBoxUserCmdData>004003000a0000001f000000030010000000000000000000000000000000000020f31005020000000100456e61626c6520446961674d65737361676520617320656d657267656e637900</MBoxUserCmdData>
 								<Pdo Name="PSU Inputs" Index="#x1a00" Flags="#x0010" SyncMan="3">
 									<Entry Name="Warning" Index="#x6000" Sub="#x01">
@@ -1668,8 +1668,8 @@ Bit 8 - 15 : reserved]]></Comment>
 							<EtherCAT SlaveType="1" PdiType="#x0107" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x046008d2" RevisionNo="#x00020000" BIC="1P274735SBTN999vi0me1KMS4208-2003-1112              Q1    2P4724000000  " PortPhys="12339" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="MB1120 backplane junction" Desc="MB1120-0000" PortABoxInfo="#x0100000d"/>
 							<Box Id="6" BoxType="9099" BoxFlags="#x00000020">
 								<Name>Term 6 (MS4208-2003-1112)</Name>
-								<ImageId>1002</ImageId>
-								<EtherCAT SlaveType="2" PdiType="#x0005" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="47" FoeType="1" VendorId="#x00000002" ProductCode="#xa4f07c2b" RevisionNo="#x03007988" InfoDataAddr="true" TimeoutStateChange1="6000" TimeoutMailbox2="2000" CheckRevisionNoType="7" PortPhys="4115" SdoUploadWithMaxLength="true" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="MS4208-2003-1112 EtherCAT power output, EtherCAT, 24 V DC, 8 A, M12, switchable" Desc="MS4208-2003-1112" PortABoxInfo="#x03000008">
+								<ImageId>549</ImageId>
+								<EtherCAT SlaveType="2" PdiType="#x0005" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="47" FoeType="1" VendorId="#x00000002" ProductCode="#xa4f07c2b" RevisionNo="#x04007988" InfoDataAddr="true" TimeoutStateChange1="6000" TimeoutMailbox2="2000" CheckRevisionNoType="7" PortPhys="4115" SdoUploadWithMaxLength="true" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="MS4208-2003-1112 EtherCAT power output, EtherCAT, 24 V DC, 8 A, M12, switchable" Desc="MS4208-2003-1112" PortABoxInfo="#x03000008">
 									<SyncMan>001000012600010001000000800000010001001026010000</SyncMan>
 									<SyncMan>001100012200010002000000800000010001001122010000</SyncMan>
 									<SyncMan>001206002400010003000000000000000600001224010000</SyncMan>
@@ -1678,7 +1678,7 @@ Bit 8 - 15 : reserved]]></Comment>
 									<Fmmu>0000000000000000001900010100000002000000000000000000000000000000</Fmmu>
 									<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
 									<BootStrapData>0010f400f410f400</BootStrapData>
-									<MBoxUserCmdData>004003000c0000001100000003000000000000000000000000000000000000002081f0010400000088790003646f776e6c6f6164207265766973696f6e00</MBoxUserCmdData>
+									<MBoxUserCmdData>004003000c0000001100000003000000000000000000000000000000000000002081f0010400000088790004646f776e6c6f6164207265766973696f6e00</MBoxUserCmdData>
 									<MBoxUserCmdData>004003000a0000001f000000030010000000000000000000000000000000000020f31005020000000100456e61626c6520446961674d65737361676520617320656d657267656e637900</MBoxUserCmdData>
 									<Pdo Name="EFU Us Inputs" Index="#x1a00" Flags="#x0011" SyncMan="3">
 										<Entry Name="Warning" Index="#x6000" Sub="#x01">

@@ -202,5 +202,87 @@
   300.0,
   300.0
 ]</TcHmiEditor_SelectBindingWindowColumnWidths_m_ContextTree>
+    <RecentColors>[
+  {
+    "counter": 0,
+    "color": "#FFFFFFFF"
+  },
+  {
+    "counter": 0,
+    "color": "#FFA7B7CA"
+  },
+  {
+    "counter": 0,
+    "color": "#FFDDE2E9"
+  },
+  {
+    "counter": 0,
+    "color": "#FFE0E5EB"
+  },
+  {
+    "counter": 0,
+    "color": "#FF000000"
+  },
+  {
+    "counter": 0,
+    "color": "#FF9DACBE"
+  },
+  {
+    "counter": 0,
+    "color": "#FF96A7BB"
+  },
+  {
+    "counter": 0,
+    "color": "#FF93A7BE"
+  },
+  {
+    "counter": 0,
+    "color": "#FFD4D4D4"
+  },
+  {
+    "counter": 0,
+    "color": "#FFD4D415"
+  },
+  {
+    "counter": 0,
+    "color": "#FFD4D400"
+  },
+  {
+    "counter": 0,
+    "color": "#FFD40200"
+  },
+  {
+    "counter": 0,
+    "color": "#FFD40000"
+  },
+  {
+    "counter": 0,
+    "color": "#FF020000"
+  },
+  {
+    "counter": 0,
+    "color": "#FFD4D402"
+  },
+  {
+    "counter": 0,
+    "color": "#FFD4D4FF"
+  },
+  {
+    "counter": 0,
+    "color": "#FFD415FF"
+  },
+  {
+    "counter": 0,
+    "color": "#FFD402FF"
+  },
+  {
+    "counter": 0,
+    "color": "#FFD400FF"
+  },
+  {
+    "counter": 0,
+    "color": "#FF1500FF"
+  }
+]</RecentColors>
   </PropertyGroup>
 </Project>
