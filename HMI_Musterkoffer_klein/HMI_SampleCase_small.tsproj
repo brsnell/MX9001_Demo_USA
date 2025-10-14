@@ -11,7 +11,7 @@
 			</ArrayInfo>
 		</DataType>
 		<DataType>
-			<Name GUID="{18071995-0000-0000-0000-002000000001}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..0] OF BIT</Name>
+			<Name GUID="{18071995-0000-0000-0000-002000000001}" IecBaseType="true" BitType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..0] OF BIT</Name>
 			<BitSize>1</BitSize>
 			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
 			<ArrayInfo>
@@ -20,25 +20,7 @@
 			</ArrayInfo>
 		</DataType>
 		<DataType>
-			<Name GUID="{18071995-0000-0000-0000-002000000010}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..1] OF BYTE</Name>
-			<BitSize>16</BitSize>
-			<BaseType GUID="{18071995-0000-0000-0000-000000000001}">BYTE</BaseType>
-			<ArrayInfo>
-				<LBound>0</LBound>
-				<Elements>2</Elements>
-			</ArrayInfo>
-		</DataType>
-		<DataType>
-			<Name GUID="{18071995-0000-0000-0000-002000000020}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..3] OF BYTE</Name>
-			<BitSize>32</BitSize>
-			<BaseType GUID="{18071995-0000-0000-0000-000000000001}">BYTE</BaseType>
-			<ArrayInfo>
-				<LBound>0</LBound>
-				<Elements>4</Elements>
-			</ArrayInfo>
-		</DataType>
-		<DataType>
-			<Name GUID="{18071995-0000-0000-0000-00200000000E}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..13] OF BIT</Name>
+			<Name GUID="{18071995-0000-0000-0000-00200000000E}" IecBaseType="true" BitType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..13] OF BIT</Name>
 			<BitSize>14</BitSize>
 			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
 			<ArrayInfo>
@@ -53,6 +35,15 @@
 			<ArrayInfo>
 				<LBound>0</LBound>
 				<Elements>9</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000010}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..1] OF BYTE</Name>
+			<BitSize>16</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000001}">BYTE</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>2</Elements>
 			</ArrayInfo>
 		</DataType>
 		<DataType>
@@ -89,6 +80,15 @@
 			<ArrayInfo>
 				<LBound>0</LBound>
 				<Elements>8</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000020}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..3] OF BYTE</Name>
+			<BitSize>32</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000001}">BYTE</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>4</Elements>
 			</ArrayInfo>
 		</DataType>
 		<DataType>
@@ -164,11 +164,19 @@
 		</System>
 		<Plc>
 			<Project GUID="{F05D63A8-41F4-4034-BAB9-6D751E78827C}" Name="PLC1" PrjFilePath="PLC1\PLC1.plcproj" TmcFilePath="PLC1\PLC1.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{9832CD2A-32F8-8DEE-527E-247E1076D06B}" TmcPath="PLC1\PLC1.tmc">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{76642476-0297-9687-4003-4EC5A6CF3948}" TmcPath="PLC1\PLC1.tmc">
 					<Name>PLC1 Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Vars VarGrpType="2" AreaNo="1">
 						<Name>PlcTask Outputs</Name>
+						<Var>
+							<Name>MAIN.bEnableBluetoothDiagnosis</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.bActivatePairingMode</Name>
+							<Type>BOOL</Type>
+						</Var>
 						<Var>
 							<Name>MAIN.stMS4208Slot7.stEFUOutputsUs.bEnable</Name>
 							<Type>BOOL</Type>
@@ -303,14 +311,6 @@
 						</Var>
 						<Var>
 							<Name>MAIN.stIoModulSlot10.stEFUOutputs.bReset</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>MAIN.bEnableBluetoothDiagnosis</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>MAIN.bActivatePairingMode</Name>
 							<Type>BOOL</Type>
 						</Var>
 					</Vars>
@@ -922,84 +922,46 @@
 							<SyncMan>001000012600010001000000400000010001001026010000</SyncMan>
 							<SyncMan>001100012200010002000000400000010001001122010000</SyncMan>
 							<SyncMan>001202002400010003000000000000000200001224010000</SyncMan>
-							<SyncMan>b01304002000010004000000000000000400b01320010000</SyncMan>
+							<SyncMan>b01302002000010004000000000000000400b01320010000</SyncMan>
 							<Fmmu>0000000000000000001200020100000001000000000000000000000000000000</Fmmu>
 							<Fmmu>0000000000000000b01300010100000002000000000000000000000000000000</Fmmu>
 							<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
 							<BootStrapData>0010f400f410f400</BootStrapData>
 							<MBoxUserCmdData>004003000a0000001f000000030010000000000000000000000000000000000020f31005020000000100456e61626c6520446961674d65737361676520617320656d657267656e637900</MBoxUserCmdData>
 							<Pdo Name="BT Inputs" Index="#x1a00" Flags="#x0010" SyncMan="3">
-								<Entry Name="Status__Dongle Present" Index="#x6000" Sub="#x01">
+								<Entry Name="Dongle Present" Index="#x6000" Sub="#x01">
 									<Type>BIT</Type>
-									<Comment><![CDATA[A device is connected via bluetooth]]></Comment>
 								</Entry>
-								<Entry Name="Status__Bluetooth Enabled" Index="#x6000" Sub="#x02">
+								<Entry Name="Bluetooth Enabled" Index="#x6000" Sub="#x02">
 									<Type>BIT</Type>
-									<Comment><![CDATA[Bluetooth diagnosis is enabled]]></Comment>
 								</Entry>
-								<Entry Name="Status__Pairing" Index="#x6000" Sub="#x03">
+								<Entry Name="Pairing Active" Index="#x6000" Sub="#x03">
 									<Type>BIT</Type>
-									<Comment><![CDATA[Waiting for bluetooth connection]]></Comment>
 								</Entry>
-								<Entry Name="Status__Connected" Index="#x6000" Sub="#x04">
+								<Entry Name="Connected" Index="#x6000" Sub="#x04">
 									<Type>BIT</Type>
-									<Comment><![CDATA[A device is connected via bluetooth]]></Comment>
 								</Entry>
-								<Entry Name="Status__">
+								<Entry>
 									<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
 								</Entry>
-								<Entry Name="Status__Diag" Index="#x6000" Sub="#x0d">
+								<Entry Name="Diag" Index="#x6000" Sub="#x0d">
 									<Type>BIT</Type>
 								</Entry>
-								<Entry Name="Status__">
+								<Entry>
 									<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
 								</Entry>
-								<Entry Name="Status__Input cycle counter" Index="#x6000" Sub="#x0f">
+								<Entry Name="Input cycle counter" Index="#x6000" Sub="#x0f">
 									<Type>BIT2</Type>
-								</Entry>
-								<Entry Name="Status__">
-									<Type GUID="{18071995-0000-0000-0000-002000000010}">ARRAY [0..1] OF BYTE</Type>
-								</Entry>
-							</Pdo>
-							<Pdo Name="BT Demo Counter" Index="#x1a01" Flags="#x0010">
-								<Entry Name="Demo Counter" Index="#x6001" Sub="#x11">
-									<Type>INT</Type>
-								</Entry>
-							</Pdo>
-							<Pdo Name="DEV Diag" Index="#x1a10" Flags="#x0010">
-								<Entry Name="Run" Index="#xf915" Sub="#x01">
-									<Type>UDINT</Type>
-								</Entry>
-								<Entry Name="Bluetooth" Index="#xf915" Sub="#x02">
-									<Type>UDINT</Type>
-								</Entry>
-								<Entry>
-									<Type GUID="{18071995-0000-0000-0000-002000000020}">ARRAY [0..3] OF BYTE</Type>
-								</Entry>
-								<Entry>
-									<Type GUID="{18071995-0000-0000-0000-002000000020}">ARRAY [0..3] OF BYTE</Type>
-								</Entry>
-								<Entry>
-									<Type GUID="{18071995-0000-0000-0000-002000000020}">ARRAY [0..3] OF BYTE</Type>
-								</Entry>
-								<Entry>
-									<Type GUID="{18071995-0000-0000-0000-002000000020}">ARRAY [0..3] OF BYTE</Type>
-								</Entry>
-								<Entry>
-									<Type GUID="{18071995-0000-0000-0000-002000000020}">ARRAY [0..3] OF BYTE</Type>
-								</Entry>
-								<Entry>
-									<Type GUID="{18071995-0000-0000-0000-002000000020}">ARRAY [0..3] OF BYTE</Type>
 								</Entry>
 							</Pdo>
 							<Pdo Name="BT Outputs" Index="#x1600" InOut="1" Flags="#x0010" SyncMan="2">
-								<Entry Name="Control__Enable Bluetooth Diagnosis" Index="#x7000" Sub="#x01">
+								<Entry Name="Enable Bluetooth" Index="#x7000" Sub="#x01">
 									<Type>BIT</Type>
 								</Entry>
-								<Entry Name="Control__Activate Pairing Mode" Index="#x7000" Sub="#x02">
+								<Entry Name="Activate Pairing" Index="#x7000" Sub="#x02">
 									<Type>BIT</Type>
 								</Entry>
-								<Entry Name="Control__">
+								<Entry>
 									<Type GUID="{18071995-0000-0000-0000-00200000000E}">ARRAY [0..13] OF BIT</Type>
 								</Entry>
 							</Pdo>
@@ -2828,8 +2790,8 @@ Only becomes active if the process data output "Control via Process Data" is set
 		<MappingInfo Identifier="{00000000-2001-0850-0020-500810000403}" Id="#x02030010"/>
 		<OwnerA Name="TIPC^PLC1^PLC1 Instance">
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 2 (MB1100-0002)">
-				<Link VarA="PlcTask Outputs^MAIN.bActivatePairingMode" VarB="BT Outputs^Control^Activate Pairing Mode"/>
-				<Link VarA="PlcTask Outputs^MAIN.bEnableBluetoothDiagnosis" VarB="BT Outputs^Control^Enable Bluetooth Diagnosis"/>
+				<Link VarA="PlcTask Outputs^MAIN.bActivatePairingMode" VarB="BT Outputs^Activate Pairing"/>
+				<Link VarA="PlcTask Outputs^MAIN.bEnableBluetoothDiagnosis" VarB="BT Outputs^Enable Bluetooth"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 2 (MB1100-0002)^Term 10 (MO1008-0000-1111)">
 				<Link VarA="PlcTask Inputs^MAIN.stIoModulSlot8.stDISDiagnosis.bWirebreakCh1" VarB="DIP Diagnosis^Wirebreak Ch1 X01-4"/>
