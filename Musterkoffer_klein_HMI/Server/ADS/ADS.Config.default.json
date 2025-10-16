@@ -18,6 +18,22 @@
     "NEW_HANDLES_PER_SUM_REQUEST_LIMIT": 100,
     "RESPONSE_SIZE_LIMIT": 2097152,
     "RUNTIMES": {
+        "NC": {
+            "ENABLED": true,
+            "NETID": "127.0.0.1.1.1",
+            "PORT": 500,
+            "READ_ONLY": false,
+            "SYMBOLS": {},
+            "USE_WHITELISTING": false
+        },
+        "NC-Task1": {
+            "ENABLED": true,
+            "NETID": "127.0.0.1.1.1",
+            "PORT": 501,
+            "READ_ONLY": false,
+            "SYMBOLS": {},
+            "USE_WHITELISTING": false
+        },
         "PLC1": {
             "ENABLED": true,
             "NETID": "172.17.32.12.1.1",

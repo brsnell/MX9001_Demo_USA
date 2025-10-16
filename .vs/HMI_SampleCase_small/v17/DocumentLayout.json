@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Source\\GitHub\\MX9001_Demo_USA\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4B88654B-9D44-484C-9768-04E68CD97A5F}|Musterkoffer_klein_HMI\\SampleCase_small_HMI.hmiproj|D:\\Source\\GitHub\\MX9001_Demo_USA\\Musterkoffer_klein_HMI\\Properties\\tchmipublish.config.json||{98BA924B-FDDE-443F-9DC0-5E748A994C0E}",
+      "RelativeMoniker": "D:0:0:{4B88654B-9D44-484C-9768-04E68CD97A5F}|Musterkoffer_klein_HMI\\SampleCase_small_HMI.hmiproj|solutionrelative:Musterkoffer_klein_HMI\\Properties\\tchmipublish.config.json||{98BA924B-FDDE-443F-9DC0-5E748A994C0E}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B88654B-9D44-484C-9768-04E68CD97A5F}|Musterkoffer_klein_HMI\\SampleCase_small_HMI.hmiproj|D:\\Source\\GitHub\\MX9001_Demo_USA\\Musterkoffer_klein_HMI\\Pages\\Desktop\\Modules\\MotionInterface.content||{5D9FBDFB-BFD6-4B5F-871D-4B35C4B2E6E2}|Html",
+      "RelativeMoniker": "D:0:0:{4B88654B-9D44-484C-9768-04E68CD97A5F}|Musterkoffer_klein_HMI\\SampleCase_small_HMI.hmiproj|solutionrelative:Musterkoffer_klein_HMI\\Pages\\Desktop\\Modules\\MotionInterface.content||{5D9FBDFB-BFD6-4B5F-871D-4B35C4B2E6E2}|Html"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +18,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "tchmipublish.config.json[SampleCase_small_HMI]",
+              "DocumentMoniker": "D:\\Source\\GitHub\\MX9001_Demo_USA\\Musterkoffer_klein_HMI\\Properties\\tchmipublish.config.json",
+              "RelativeDocumentMoniker": "Musterkoffer_klein_HMI\\Properties\\tchmipublish.config.json",
+              "ToolTip": "D:\\Source\\GitHub\\MX9001_Demo_USA\\Musterkoffer_klein_HMI\\Properties\\tchmipublish.config.json[SampleCase_small_HMI]",
+              "RelativeToolTip": "Musterkoffer_klein_HMI\\Properties\\tchmipublish.config.json[SampleCase_small_HMI]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-16T20:47:26.565Z",
+              "EditorCaption": "[SampleCase_small_HMI]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MotionInterface.content",
+              "DocumentMoniker": "D:\\Source\\GitHub\\MX9001_Demo_USA\\Musterkoffer_klein_HMI\\Pages\\Desktop\\Modules\\MotionInterface.content",
+              "RelativeDocumentMoniker": "Musterkoffer_klein_HMI\\Pages\\Desktop\\Modules\\MotionInterface.content",
+              "ToolTip": "D:\\Source\\GitHub\\MX9001_Demo_USA\\Musterkoffer_klein_HMI\\Pages\\Desktop\\Modules\\MotionInterface.content",
+              "RelativeToolTip": "Musterkoffer_klein_HMI\\Pages\\Desktop\\Modules\\MotionInterface.content",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-10-16T20:43:40.576Z",
+              "EditorCaption": ""
             }
           ]
         }
