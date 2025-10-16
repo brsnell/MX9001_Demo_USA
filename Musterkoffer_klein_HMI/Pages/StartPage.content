@@ -32,6 +32,27 @@
 <div id="TcHmiRectangle_3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="31.8" data-tchmi-height-unit="%" data-tchmi-left="50.2" data-tchmi-left-unit="%" data-tchmi-top="25.0" data-tchmi-top-unit="%" data-tchmi-width="5.3" data-tchmi-width-unit="%" data-tchmi-stroke-thickness="0">
 
 
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%ctx%owner::Id|EventRegistrationMode=Resolve%/ctx%.onMouseClick",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTopLevelRegion::TargetContent%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/ContentPath",
+          "value": "Pages/Desktop/Modules/MotionInterface.content"
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
 </div>
 <div id="TcHmiRectangle_4" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="31.8" data-tchmi-height-unit="%" data-tchmi-left="55.5" data-tchmi-left-unit="%" data-tchmi-top="25.0" data-tchmi-top-unit="%" data-tchmi-width="5.3" data-tchmi-width-unit="%" data-tchmi-stroke-thickness="0">
 

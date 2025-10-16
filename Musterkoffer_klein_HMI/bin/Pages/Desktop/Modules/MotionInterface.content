@@ -1,5 +1,5 @@
 <div id="MotionInterface_1" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="800" data-tchmi-height="640">
 
-<div id="TcHmiMotionControl_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiMotion.TcHmiMotionControl" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-main-nc="NC" data-tchmi-nc-task="NC-Task1" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-current-axis="1">
+<div id="TcHmiMotionControl_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiMotion.TcHmiMotionControl" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-main-nc="NC" data-tchmi-nc-task="NC-Task1" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-current-axis="0">
 </div>
 </div>
