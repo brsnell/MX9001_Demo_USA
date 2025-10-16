@@ -46,3 +46,4 @@ OpenFrameworks.gitignore
 
 
 ### TwinCAT3.VisualStudio Stack ###
+*.~u
