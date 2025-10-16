@@ -24,6 +24,10 @@
             "page": "Pages/Desktop/Modules/IOs.content"
           },
           {
+            "name": "Motion",
+            "page": "Pages/Desktop/Modules/MotionInterface.content"
+          },
+          {
             "name": "Scope",
             "page": "Pages/Desktop/Modules/Scope.content"
           },

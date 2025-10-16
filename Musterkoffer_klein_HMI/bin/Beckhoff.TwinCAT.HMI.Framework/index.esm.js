@@ -1,14 +1,14 @@
 // All public exports of this package for ecmascript module import
 
-export * from './Controls/System/dist/TcHmiControl.esm.js';
-export * from './Controls/System/dist/TcHmiContainerControl.esm.js';
-export * from './Controls/System/dist/TcHmiContainer.esm.js';
-export * from './Controls/System/dist/TcHmiGrid.esm.js';
-export * from './Controls/System/dist/TcHmiPartial.esm.js';
-export * from './Controls/System/dist/TcHmiContent.esm.js';
-export * from './Controls/System/dist/TcHmiView.esm.js';
-export * from './Controls/System/dist/TcHmiUserControl.esm.js';
-export * from './Controls/System/dist/TcHmiRegion.esm.js';
-export * from './Controls/System/dist/TcHmiUserControlHost.esm.js';
-export * from './Controls/System/dist/TcHmiHtmlHost.esm.js';
-export * from './Controls/System/dist/TcHmiPopup.esm.js';
+export * as TcHmiControl from './dist/Controls/System/TcHmiControl/TcHmiControl.esm.js';
+export * as TcHmiContainerControl from './dist/Controls/System/TcHmiContainerControl/TcHmiContainerControl.esm.js';
+export * as TcHmiContainer from './dist/Controls/System/TcHmiContainer/TcHmiContainer.esm.js';
+export * as TcHmiGrid from './dist/Controls/System/TcHmiGrid/TcHmiGrid.esm.js';
+export * as TcHmiPartial from './dist/Controls/System/TcHmiPartial/TcHmiPartial.esm.js';
+export * as TcHmiContent from './dist/Controls/System/TcHmiContent/TcHmiContent.esm.js';
+export * as TcHmiView from './dist/Controls/System/TcHmiView/TcHmiView.esm.js';
+export * as TcHmiUserControl from './dist/Controls/System/TcHmiUserControl/TcHmiUserControl.esm.js';
+export * as TcHmiRegion from './dist/Controls/System/TcHmiRegion/TcHmiRegion.esm.js';
+export * as TcHmiUserControlHost from './dist/Controls/System/TcHmiUserControlHost/TcHmiUserControlHost.esm.js';
+export * as TcHmiHtmlHost from './dist/Controls/System/TcHmiHtmlHost/TcHmiHtmlHost.esm.js';
+export * as TcHmiPopup from './dist/Controls/System/TcHmiPopup/TcHmiPopup.esm.js';

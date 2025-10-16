@@ -1,5 +1,5 @@
 {
-  "$schema": "./../../Packages/Beckhoff.TwinCAT.HMI.Framework.14.3.212/runtimes/native1.12-tchmi/Schema/TchmiConfig.Schema.json",
+  "$schema": "./../../Packages/Beckhoff.TwinCAT.HMI.Framework.14.3.258/runtimes/native1.12-tchmi/Schema/TchmiConfig.Schema.json",
   "basePath": "./Beckhoff.TwinCAT.HMI.Framework",
   "scaleMode": "None",
   "startupView": "Desktop.view",
@@ -12,7 +12,8 @@
     "websocketIntervalTime": 500,
     "websocketTimeout": 20000,
     "websocketSystemTimeout": 60000,
-    "websocketSubscriptionMode": null
+    "websocketSubscriptionMode": null,
+    "disableOptionalSystemSubscriptions": false
   },
   "activeTheme": "Base",
   "themes": {
@@ -569,6 +570,10 @@
     {
       "name": "Beckhoff.TwinCAT.HMI.Functions",
       "basePath": "/Beckhoff.TwinCAT.HMI.Functions"
+    },
+    {
+      "name": "Beckhoff.TwinCAT.HMI.Motion",
+      "basePath": "/Beckhoff.TwinCAT.HMI.Motion"
     },
     {
       "name": "Beckhoff.TwinCAT.HMI.ResponsiveNavigation",

@@ -5447,6 +5447,14 @@
       ],
       "default": "Change"
     },
+    "TcHmi.Controls.Beckhoff.ContentTabs.OverflowMode": {
+      "type": "string",
+      "enum": [
+        "Popup",
+        "Scroll"
+      ],
+      "default": "Popup"
+    },
     "TcHmi.Controls.Beckhoff.TcHmiCheckbox": {
       "$schema": "http://json-schema.org/draft-04/schema",
       "type": "object",
@@ -10310,6 +10318,108 @@
         }
       ]
     },
+    "TcHmi.Controls.Beckhoff.TcHmiTimespanPicker.TimeUnits": {
+      "title": "TimeUnits",
+      "type": "object",
+      "propertiesMeta": [
+        {
+          "name": "years",
+          "category": "General",
+          "displayName": "Years",
+          "displayPriority": 10,
+          "description": "Defines whether the year should be displayed.",
+          "defaultValue": true,
+          "defaultValueInternal": false
+        },
+        {
+          "name": "months",
+          "category": "General",
+          "displayName": "Months",
+          "displayPriority": 15,
+          "description": "Defines whether the month should be displayed.",
+          "defaultValue": true,
+          "defaultValueInternal": false
+        },
+        {
+          "name": "days",
+          "category": "General",
+          "displayName": "Days",
+          "displayPriority": 20,
+          "description": "Defines whether the day should be displayed.",
+          "defaultValue": true,
+          "defaultValueInternal": false
+        },
+        {
+          "name": "hours",
+          "category": "General",
+          "displayName": "Hours",
+          "displayPriority": 25,
+          "description": "Defines whether the hour should be displayed.",
+          "defaultValue": true,
+          "defaultValueInternal": false
+        },
+        {
+          "name": "minutes",
+          "category": "General",
+          "displayName": "Minutes",
+          "displayPriority": 30,
+          "description": "Defines whether the minute should be displayed.",
+          "defaultValue": true,
+          "defaultValueInternal": false
+        },
+        {
+          "name": "seconds",
+          "category": "General",
+          "displayName": "Seconds",
+          "displayPriority": 35,
+          "description": "Defines whether the second should be displayed.",
+          "defaultValue": true,
+          "defaultValueInternal": false
+        },
+        {
+          "name": "milliseconds",
+          "category": "General",
+          "displayName": "Milliseconds",
+          "displayPriority": 40,
+          "description": "Defines whether the millisecond should be displayed.",
+          "defaultValue": true,
+          "defaultValueInternal": false
+        }
+      ],
+      "properties": {
+        "years": {
+          "type": "boolean"
+        },
+        "months": {
+          "type": "boolean"
+        },
+        "days": {
+          "type": "boolean"
+        },
+        "hours": {
+          "type": "boolean"
+        },
+        "minutes": {
+          "type": "boolean"
+        },
+        "seconds": {
+          "type": "boolean"
+        },
+        "milliseconds": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "years",
+        "months",
+        "days",
+        "hours",
+        "minutes",
+        "seconds",
+        "milliseconds"
+      ]
+    },
     "TcHmi.Controls.Beckhoff.TcHmiToggleButton": {
       "$schema": "http://json-schema.org/draft-04/schema",
       "type": "object",
@@ -11038,6 +11148,72 @@
       "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
       "frameworkControlType": "TcHmiTrendLineChart",
       "frameworkControlNamespace": "TcHmi.Controls.Beckhoff"
+    },
+    "TcHmi.Controls.Beckhoff.TcHmiTrendLineChart.StatisticalDataConfiguration": {
+      "type": "object",
+      "title": "StatisticalDataConfiguration",
+      "properties": {
+        "minimum": {
+          "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiTrendLineChart.StatisticalDataField"
+        },
+        "maximum": {
+          "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiTrendLineChart.StatisticalDataField"
+        },
+        "average": {
+          "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiTrendLineChart.StatisticalDataField"
+        }
+      },
+      "additionalProperties": false
+    },
+    "TcHmi.Controls.Beckhoff.TcHmiTrendLineChart.StatisticalDataField": {
+      "type": "object",
+      "title": "StatisticalDataField",
+      "description": "Defines one statistical data field.",
+      "propertiesMeta": [
+        {
+          "name": "showColumn",
+          "category": "General",
+          "displayName": "Show Column",
+          "displayPriority": 10,
+          "description": "Describes whether the column should be displayed.",
+          "defaultValue": true,
+          "defaultValueInternal": true
+        },
+        {
+          "name": "decimalPlaces",
+          "category": "General",
+          "displayName": "Decimal Places",
+          "displayPriority": 20,
+          "description": "Describes the number of decimal places.",
+          "defaultValue": null,
+          "defaultValueInternal": null
+        },
+        {
+          "name": "unit",
+          "category": "General",
+          "displayName": "Unit",
+          "displayPriority": 30,
+          "description": "Describes the unit. Is written after the value.",
+          "defaultValue": null,
+          "defaultValueInternal": null
+        }
+      ],
+      "properties": {
+        "showColumn": {
+          "type": "boolean"
+        },
+        "decimalPlaces": {
+          "type": "number",
+          "minimum": 0
+        },
+        "unit": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "showColumn"
+      ],
+      "additionalProperties": false
     },
     "TcHmi.Controls.Beckhoff.TcHmiTrendLineChart.ChartEnd": {
       "anyOf": [
@@ -12372,7 +12548,7 @@
     "TcHmi.Controls.Beckhoff.TcHmiUserGuidance.UserControlInterop": {
       "type": "object",
       "title": "User Control Interop",
-      "description": "The User Control Interop object used by the User Guidance control. A User Control with a parameter of this type can enable the 'Next' button of the User Guidance control.",
+      "description": "The User Control Interop object used by the User Guidance control. \nA User Control with a parameter of this type can enable the 'Next' button of the User Guidance control.",
       "properties": {
         "confirmNext": {
           "type": "boolean"
@@ -12636,6 +12812,15 @@
         }
       },
       "additionalProperties": false
+    },
+    "TcHmi.Controls.Beckhoff.TcHmiMotion.TcHmiMotionControl": {
+      "type": "object",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkControlType": "TcHmiMotionControl",
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff.TcHmiMotion"
+    },
+    "TcHmiMotionControl": {
+      "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiMotion.TcHmiMotionControl"
     },
     "TcHmi.Controls.ResponsiveNavigation.TcHmiNavigationBar": {
       "type": "object",
