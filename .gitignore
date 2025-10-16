@@ -39,6 +39,7 @@ _Libraries/
 _ModuleInstall/
 _Deployment/
 _Repository/
+.vs/
 
 ### TwinCAT3.OpenFrameworks Stack ###
 OpenFrameworks.gitignore
