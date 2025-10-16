@@ -209,6 +209,9 @@
     <Content Include="Pages\Smartphone\Modules\Comparison.content">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Pages\Smartphone\Modules\MotionInterface.content">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Pages\Smartphone\Modules\Scope.content">
       <SubType>Content</SubType>
     </Content>
