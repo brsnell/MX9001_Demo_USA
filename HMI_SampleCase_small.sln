@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # TcXaeShell Solution File, Format Version 11.00
-VisualStudioVersion = 17.10.35827.194
+VisualStudioVersion = 15.0.34829.251
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{B1E792BE-AA5F-4E3C-8C82-674BF9C0715B}") = "HMI_SampleCase_small", "HMI_Musterkoffer_klein\HMI_SampleCase_small.tsproj", "{0E0D4E67-33DA-4EED-8885-7CDEDD64F31A}"
 EndProject
