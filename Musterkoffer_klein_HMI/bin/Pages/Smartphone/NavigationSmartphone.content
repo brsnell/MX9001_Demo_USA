@@ -36,6 +36,10 @@
           {
             "name": "MO7221",
             "page": "Pages/Smartphone/Modules/MO7221-9016-1114.content"
+          },
+          {
+            "name": "Motion Interface",
+            "page": "Pages/Smartphone/Modules/MotionInterface.content"
           }
         ],
         "name": "Drives",
