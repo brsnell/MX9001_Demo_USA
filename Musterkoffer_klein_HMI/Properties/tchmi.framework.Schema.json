@@ -1,80 +1,89 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema",
   "definitions": {
-    "AccessConfig": {
-      "definitions": {
-        "access": {
-          "title": "Access",
-          "type": "object",
-          "engineeringColumns": [
-            "accessright",
-            "group",
-            "permission"
-          ],
-          "propertiesMeta": [
-            {
-              "name": "accessright",
-              "displayName": "Accessright",
-              "category": "General",
-              "displayPriority": 10,
-              "description": "Right which this rule defines."
-            },
-            {
-              "name": "group",
-              "displayName": "Group",
-              "category": "General",
-              "displayPriority": 10,
-              "description": "Group to which this access right is given."
-            },
-            {
-              "name": "permission",
-              "displayName": "Permission",
-              "category": "General",
-              "displayPriority": 10,
-              "description": "Permission for this access rule. \nAllow of one group overrides Deny/Inherit of another group. \nDeny will result in deny if we have no Allow of another group. \nInherit will ask parent control when we got no Allow/Deny. If the parent does not define something there will be a specified default."
-            }
-          ],
-          "properties": {
-            "accessright": {
-              "anyOf": [
-                {
-                  "type": "string",
-                  "enum": [
-                    "operate",
-                    "observe"
-                  ]
-                },
-                {
-                  "type": "string",
-                  "minLength": 1
-                }
-              ],
-              "default": "operate"
-            },
-            "group": {
-              "type": "string",
-              "minLength": 1
-            },
-            "permission": {
-              "type": "string",
-              "enum": [
-                "Allow",
-                "Deny",
-                "Inherit"
-              ]
-            }
-          },
-          "additionalProperties": false,
-          "required": [
-            "accessright",
-            "group",
-            "permission"
+    "AccessConfigBase": {
+      "title": "Access",
+      "type": "object",
+      "engineeringColumns": [
+        "accessright",
+        "group",
+        "permission"
+      ],
+      "propertiesMeta": [
+        {
+          "name": "accessright",
+          "displayName": "Accessright",
+          "category": "General",
+          "displayPriority": 10,
+          "description": "Right which this rule defines."
+        },
+        {
+          "name": "group",
+          "displayName": "Group",
+          "category": "General",
+          "displayPriority": 10,
+          "description": "Group to which this access right is given."
+        },
+        {
+          "name": "permission",
+          "displayName": "Permission",
+          "category": "General",
+          "displayPriority": 10,
+          "description": "Permission for this access rule. \nAllow of one group overrides Deny/Inherit of another group. \nDeny will result in deny if we have no Allow of another group. \nInherit will ask parent control when we got no Allow/Deny. If the parent does not define something there will be a specified default."
+        }
+      ],
+      "properties": {
+        "accessright": {
+          "type": "string"
+        },
+        "group": {
+          "type": "string",
+          "minLength": 1
+        },
+        "permission": {
+          "type": "string",
+          "enum": [
+            "Allow",
+            "Deny",
+            "Inherit"
           ]
         }
       },
+      "additionalProperties": false,
+      "required": [
+        "accessright",
+        "group",
+        "permission"
+      ]
+    },
+    "AccessConfig": {
       "type": "array",
       "items": {
-        "$ref": "#/definitions/AccessConfig/definitions/access"
+        "allOf": [
+          {
+            "$ref": "#/definitions/AccessConfigBase"
+          },
+          {
+            "properties": {
+              "accessright": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "enum": [
+                      "operate",
+                      "observe"
+                    ]
+                  },
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                ],
+                "default": "operate"
+              }
+            }
+          }
+        ]
       }
     },
     "BorderRadius": {
@@ -647,6 +656,38 @@
       "type": "string",
       "minLength": 1
     },
+    "DOMEvent": {
+      "type": "object",
+      "frameworkInstanceOf": "Event"
+    },
+    "DOMMouseEvent": {
+      "type": "object",
+      "frameworkInstanceOf": "MouseEvent"
+    },
+    "DOMErrorEvent": {
+      "type": "object",
+      "frameworkInstanceOf": "ErrorEvent"
+    },
+    "DOMInputEvent": {
+      "type": "object",
+      "frameworkInstanceOf": "InputEvent"
+    },
+    "DOMFocusEvent": {
+      "type": "object",
+      "frameworkInstanceOf": "FocusEvent"
+    },
+    "DOMPointerEvent": {
+      "type": "object",
+      "frameworkInstanceOf": "PointerEvent"
+    },
+    "DOMTouchEvent": {
+      "type": "object",
+      "frameworkInstanceOf": "TouchEvent"
+    },
+    "DOMWheelEvent": {
+      "type": "object",
+      "frameworkInstanceOf": "WheelEvent"
+    },
     "Empty": {
       "type": "string",
       "enum": [
@@ -875,6 +916,10 @@
         "Center",
         "Right"
       ]
+    },
+    "HTMLElement": {
+      "type": "object",
+      "frameworkInstanceOf": "HTMLElement"
     },
     "Id": {
       "type": "string",
@@ -3311,6 +3356,29 @@
         "additionalProperties": false
       }
     },
+    "TcHmi.Controls.System.TcHmiPopup.ResultEventObject": {
+      "type": "object",
+      "properties": {
+        "result": {}
+      },
+      "additionalProperties": false
+    },
+    "TcHmiPopupResultEventObject": {
+      "$ref": "tchmi:framework#/definitions/TcHmi.Controls.System.TcHmiPopup.ResultEventObject"
+    },
+    "TcHmi.Controls.System.TcHmiPopup.ButtonPressedEventObject": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "value": {}
+      },
+      "additionalProperties": false
+    },
+    "TcHmiPopupButtonPressedEventObject": {
+      "$ref": "tchmi:framework#/definitions/TcHmi.Controls.System.TcHmiPopup.ButtonPressedEventObject"
+    },
     "TcHmi.Controls.System.TcHmiContainer": {
       "$schema": "http://json-schema.org/draft-04/schema",
       "type": "object",
@@ -4738,11 +4806,29 @@
         }
       ]
     },
+    "TcHmi.Controls.Beckhoff.TcHmiButton.StateChangedEventObject": {
+      "type": "object",
+      "properties": {
+        "control": {
+          "$ref": "tchmi:framework#/definitions/Control"
+        },
+        "state": {
+          "type": "boolean"
+        },
+        "stateOld": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
     "TcHmiButton": {
       "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiButton"
     },
     "TcHmiButtonStateSymbol": {
       "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiButton.StateSymbol"
+    },
+    "TcHmiButtonStateChangedEventObject": {
+      "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiButton.StateChangedEventObject"
     },
     "ChartBarGraphColorList": {
       "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiHorizontalBarChart.ChartBarGraphColorList"
@@ -5455,6 +5541,24 @@
       ],
       "default": "Popup"
     },
+    "TcHmi.Controls.Beckhoff.TcHmiCalculator": {
+      "$schema": "http://json-schema.org/draft-04/schema",
+      "type": "object",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkControlType": "TcHmiCalculator",
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff"
+    },
+    "TcHmiCalculator": {
+      "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiCalculator"
+    },
+    "TcHmi.Controls.Beckhoff.TcHmiCalculator.LayoutName": {
+      "type": "string",
+      "enum": [
+        "Standard",
+        "Scientific"
+      ],
+      "default": "Standard"
+    },
     "TcHmi.Controls.Beckhoff.TcHmiCheckbox": {
       "$schema": "http://json-schema.org/draft-04/schema",
       "type": "object",
@@ -5481,11 +5585,29 @@
         "Right"
       ]
     },
+    "TcHmi.Controls.Beckhoff.TcHmiCheckbox.StateChangedEventObject": {
+      "type": "object",
+      "properties": {
+        "control": {
+          "$ref": "tchmi:framework#/definitions/Control"
+        },
+        "state": {
+          "type": "boolean"
+        },
+        "stateOld": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
     "TcHmiCheckbox": {
       "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiCheckbox"
     },
     "TcHmiCheckboxStateSymbol": {
       "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiCheckbox.StateSymbol"
+    },
+    "TcHmiCheckboxStateChangedEventObject": {
+      "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiCheckbox.StateChangedEventObject"
     },
     "DropDownStyle": {
       "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiCombobox.DropDownStyle"
@@ -5510,6 +5632,14 @@
         "Mobile"
       ],
       "default": "Classic"
+    },
+    "TcHmi.Controls.Beckhoff.TcHmiCombobox.ImagePosition": {
+      "type": "string",
+      "enum": [
+        "LeftOfText",
+        "RightOfText"
+      ],
+      "default": "LeftOfText"
     },
     "TcHmi.Controls.Beckhoff.TcHmiCombobox.ListItem": {
       "title": "List Item",
@@ -5557,6 +5687,15 @@
           "description": "An optional category which will be displayed above the item as a label (like <optgroup> in HTML).\nConsecutive items that have the exact same category will all be displayed under one category.\nHowever, if two items have the same category, but are not back to back, the category will be displayed twice to preserve the original item order.\nFor example items with categories [A, A, B, A] will create the category A with two entries, one category B with a single entry and after that again the category A with a single entry.",
           "defaultValue": null,
           "defaultValueInternal": null
+        },
+        {
+          "name": "image",
+          "displayName": "Image",
+          "category": "General",
+          "displayPriority": 10,
+          "description": "An optional path to the image for this item.",
+          "defaultValue": null,
+          "defaultValueInternal": null
         }
       ],
       "properties": {
@@ -5569,12 +5708,28 @@
         "value": {},
         "category": {
           "type": "string"
+        },
+        "image": {
+          "$ref": "tchmi:framework#/definitions/Path"
         }
       },
       "additionalProperties": false,
       "required": [
         "text"
       ]
+    },
+    "TcHmi.Controls.Beckhoff.TcHmiCombobox.SelectionChangedEventObject": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "number"
+        },
+        "text": {
+          "type": "string"
+        },
+        "value": {}
+      },
+      "additionalProperties": false
     },
     "TcHmi.Controls.Beckhoff.TcHmiCombobox.ListItemList": {
       "title": "ListItemList",
@@ -5612,6 +5767,9 @@
           }
         }
       ]
+    },
+    "TcHmiComboboxSelectionChangedEventObject": {
+      "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiCombobox.SelectionChangedEventObject"
     },
     "DGColumnDefinitionList": {
       "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiDatagrid.ColumnDefinitionList"
@@ -6619,6 +6777,27 @@
     },
     "TcHmiDatagrid": {
       "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiDatagrid"
+    },
+    "TcHmi.Controls.Beckhoff.TcHmiDatagrid.DataChangedEventObject": {
+      "type": "object",
+      "properties": {
+        "index": {
+          "type": "number"
+        },
+        "property": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "value": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "TcHmiDatagridDataChangedEventObject": {
+      "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiDatagrid.DataChangedEventObject"
     },
     "TcHmi.Controls.Beckhoff.TcHmiDateTimeDisplay": {
       "type": "object",
@@ -7784,6 +7963,101 @@
         "Calculator"
       ]
     },
+    "TcHmi.Controls.Beckhoff.TcHmiKeyboard.KeyPressedEventObjects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "element": {
+            "$ref": "tchmi:framework#/definitions/HTMLElement"
+          },
+          "key": {
+            "additionalProperties": false,
+            "properties": {
+              "code": {
+                "type": "string"
+              },
+              "key": {
+                "type": "string"
+              },
+              "unmodifiedKey": {
+                "type": "string"
+              },
+              "location": {
+                "type": "string",
+                "enum": [
+                  "standard",
+                  "left",
+                  "right",
+                  "numpad"
+                ]
+              }
+            },
+            "required": [
+              "code",
+              "key",
+              "unmodifiedKey",
+              "location"
+            ],
+            "type": "object"
+          }
+        },
+        "required": [
+          "key",
+          "element"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "TcHmiKeyboardKeyPressedEventObjects": {
+      "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiKeyboard.KeyPressedEventObjects"
+    },
+    "TcHmi.Controls.Beckhoff.TcHmiKeyboard.Layout": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "dimensions": {
+          "width": "number",
+          "height": "number"
+        },
+        "keys": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "TcHmiKeyboardLayout": {
+      "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiKeyboard.Layout"
+    },
+    "TcHmi.Controls.Beckhoff.TcHmiKeyboard.LayoutFileEventObject": {
+      "type": "object",
+      "properties": {
+        "layoutFile": {
+          "$ref": "tchmi:framework#/definitions/TcHmiKeyboardLayout"
+        }
+      },
+      "additionalProperties": false
+    },
+    "TcHmiKeyboardLayoutFileEventObject": {
+      "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiKeyboard.LayoutFileEventObject"
+    },
+    "TcHmi.Controls.Beckhoff.TcHmiKeyboard.LayoutEventObject": {
+      "type": "object",
+      "properties": {
+        "layout": {
+          "$ref": "tchmi:framework#/definitions/TcHmiKeyboardLayout"
+        }
+      },
+      "additionalProperties": false
+    },
+    "TcHmiKeyboardLayoutEventObject": {
+      "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiKeyboard.LayoutEventObject"
+    },
     "TcHmi.Controls.Beckhoff.TcHmiPieChart": {
       "$schema": "http://json-schema.org/draft-04/schema",
       "type": "object",
@@ -8204,6 +8478,15 @@
             "defaultValueInternal": "None"
           },
           {
+            "name": "fillModeReferenceLine",
+            "displayName": "Fill Mode Reference Line",
+            "category": "General",
+            "displayPriority": 10,
+            "description": "The name of the reference line that is used as the base for the fillMode.",
+            "defaultValue": null,
+            "defaultValueInternal": "None"
+          },
+          {
             "name": "fillColor",
             "displayName": "Fill Color",
             "category": "Colors",
@@ -8285,8 +8568,12 @@
               "Top",
               "Bottom",
               "Center",
-              "Source"
+              "Source",
+              "ReferenceLine"
             ]
+          },
+          "fillModeReferenceLine": {
+            "type": "string"
           },
           "fillColor": {
             "$ref": "tchmi:framework#/definitions/SolidColor"
@@ -8300,8 +8587,40 @@
             "type": "array",
             "items": {
               "type": "object",
+              "propertiesMeta": [
+                {
+                  "name": "color",
+                  "displayName": "Line Color",
+                  "category": "Colors",
+                  "displayPriority": 10,
+                  "description": "Color for this line expression",
+                  "defaultValue": "%tr%Control::TcHmi.Controls.Beckhoff.TcHmiLineChart::DefaultColorRangeColor%/tr%",
+                  "defaultValueInternal": null
+                },
+                {
+                  "name": "fillColor",
+                  "displayName": "Fill Color",
+                  "category": "Colors",
+                  "displayPriority": 10,
+                  "description": "Color for the fill area",
+                  "defaultValue": "%tr%Control::TcHmi.Controls.Beckhoff.TcHmiLineChart::DefaultFillColorRangeColor%/tr%",
+                  "defaultValueInternal": null
+                },
+                {
+                  "name": "expression",
+                  "displayName": "Expression",
+                  "category": "General",
+                  "displayPriority": 10,
+                  "description": "Expressions for colorRanges",
+                  "defaultValue": null,
+                  "defaultValueInternal": null
+                }
+              ],
               "properties": {
                 "color": {
+                  "$ref": "tchmi:framework#/definitions/SolidColor"
+                },
+                "fillColor": {
                   "$ref": "tchmi:framework#/definitions/SolidColor"
                 },
                 "expression": {
@@ -8579,6 +8898,25 @@
           "description": "If showAxisIfNoData is true, the axis is always displayed; if false, the axis is only displayed if there are data sets assigned to the axis.",
           "defaultValue": null,
           "defaultValueInternal": true
+        },
+        {
+          "name": "format",
+          "displayName": "Format",
+          "category": "General",
+          "displayPriority": 22,
+          "description": "A formatting function to format the yAxis values (HTML not allowed) which is called with each entry.",
+          "allowedFunctions": {
+            "returnType": "tchmi:general#/definitions/String",
+            "requiredArguments": [
+              {
+                "type": "tchmi:general#/definitions/Number",
+                "description": "The yAxis label to format."
+              }
+            ],
+            "requiredWaitMode": "Synchronous"
+          },
+          "defaultValue": null,
+          "defaultValueInternal": null
         }
       ],
       "properties": {
@@ -8655,6 +8993,9 @@
         },
         "showAxisIfNoData": {
           "type": "boolean"
+        },
+        "format": {
+          "$ref": "tchmi:framework#/definitions/Function"
         }
       },
       "additionalProperties": false,
@@ -9390,6 +9731,18 @@
         "additionalProperties": false
       }
     },
+    "TcHmi.Controls.Beckhoff.TcHmiObjectBrowser.PathEventObject": {
+      "type": "object",
+      "properties": {
+        "path": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "TcHmiObjectBrowserPathEventObject": {
+      "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiObjectBrowser.PathEventObject"
+    },
     "TcHmi.Controls.Beckhoff.TcHmiPasswordInput": {
       "$schema": "http://json-schema.org/draft-04/schema",
       "type": "object",
@@ -9516,6 +9869,24 @@
     "TcHmiRadioButtonStateSymbol": {
       "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiRadioButton.StateSymbol"
     },
+    "TcHmi.Controls.Beckhoff.TcHmiRadioButton.StateChangedEventObject": {
+      "type": "object",
+      "properties": {
+        "control": {
+          "$ref": "tchmi:framework#/definitions/Control"
+        },
+        "state": {
+          "type": "boolean"
+        },
+        "stateOld": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "TcHmiRadioButtonStateChangedEventObject": {
+      "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiRadioButton.StateChangedEventObject"
+    },
     "TcHmi.Controls.Beckhoff.TcHmiRecipeEdit": {
       "$schema": "http://json-schema.org/draft-04/schema",
       "type": "object",
@@ -9533,6 +9904,33 @@
     "TcHmiRecipeEdit": {
       "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiRecipeEdit"
     },
+    "TcHmi.Controls.Beckhoff.TcHmiRecipeEdit.RecipeEventObject": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "recipe": {
+          "type": "object"
+        }
+      },
+      "additionalProperties": false
+    },
+    "TcHmiRecipeEditRecipeEventObject": {
+      "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiRecipeEdit.RecipeEventObject"
+    },
+    "TcHmi.Controls.Beckhoff.TcHmiRecipeEdit.RecipeNameEventObject": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "TcHmiRecipeEditRecipeNameEventObject": {
+      "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiRecipeEdit.RecipeNameEventObject"
+    },
     "TcHmi.Controls.Beckhoff.TcHmiRecipeSelect": {
       "$schema": "http://json-schema.org/draft-04/schema",
       "type": "object",
@@ -9549,6 +9947,18 @@
     },
     "TcHmiRecipeSelect": {
       "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiRecipeSelect"
+    },
+    "TcHmi.Controls.Beckhoff.TcHmiRecipeSelect.RecipeNameEventObject": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "TcHmiRecipeSelectRecipeNameEventObject": {
+      "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiRecipeSelect.RecipeNameEventObject"
     },
     "TcHmi.Controls.Beckhoff.TcHmiRectangle": {
       "$schema": "http://json-schema.org/draft-04/schema",
@@ -9980,11 +10390,8 @@
         "hidden": {
           "type": "boolean"
         },
-        "horizontalAlignment": {
-          "$ref": "tchmi:framework#/definitions/HorizontalAlignment"
-        },
-        "verticalAlignment": {
-          "$ref": "tchmi:framework#/definitions/VerticalAlignment"
+        "accessRights": {
+          "$ref": "tchmi:framework#/definitions/AccessConfig"
         },
         "icon": {
           "type": "object",
@@ -10134,24 +10541,6 @@
           "defaultValueInternal": false
         },
         {
-          "name": "horizontalAlignment",
-          "displayName": "Horizontal Alignment",
-          "category": "General",
-          "displayPriority": 20,
-          "description": "Horizontal alignment of the text in the tab bar.",
-          "defaultValue": "Left",
-          "defaultValueInternal": "Left"
-        },
-        {
-          "name": "verticalAlignment",
-          "displayName": "Vertical Alignment",
-          "category": "General",
-          "displayPriority": 21,
-          "description": "Vertical alignment of the text in the tab bar.",
-          "defaultValue": "Center",
-          "defaultValueInternal": "Center"
-        },
-        {
           "name": "icon",
           "displayName": "Icon",
           "category": "General",
@@ -10162,6 +10551,16 @@
         }
       ],
       "additionalProperties": false,
+      "patternProperties": {
+        "horizontalAlignment": {
+          "$ref": "tchmi:framework#/definitions/HorizontalAlignment",
+          "description": "Allow, but kind of hide deprecated property for engineering"
+        },
+        "verticalAlignment": {
+          "$ref": "tchmi:framework#/definitions/VerticalAlignment",
+          "description": "Allow, but kind of hide deprecated property for engineering"
+        }
+      },
       "required": [
         "name"
       ]
@@ -10429,6 +10828,24 @@
     },
     "TcHmiToggleButton": {
       "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiToggleButton"
+    },
+    "TcHmi.Controls.Beckhoff.TcHmiToggleButton.StateChangedEventObject": {
+      "type": "object",
+      "properties": {
+        "control": {
+          "$ref": "tchmi:framework#/definitions/Control"
+        },
+        "state": {
+          "type": "boolean"
+        },
+        "stateOld": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "TcHmiToggleButtonStateChangedEventObject": {
+      "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiToggleButton.StateChangedEventObject"
     },
     "TcHmi.Controls.Beckhoff.TcHmiToggleSwitch": {
       "$schema": "http://json-schema.org/draft-04/schema",
@@ -11136,6 +11553,62 @@
         "schema"
       ]
     },
+    "TcHmi.Controls.Beckhoff.TchmiTreeView.DataChangeEventObject": {
+      "type": "object",
+      "properties": {
+        "index": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          }
+        },
+        "property": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "value": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "TchmiTreeViewDataChangeEventObject": {
+      "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TchmiTreeView.DataChangeEventObject"
+    },
+    "TcHmi.Controls.Beckhoff.TchmiTreeView.IndexEventObject": {
+      "type": "object",
+      "properties": {
+        "index": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "TchmiTreeViewIndexEventObject": {
+      "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TchmiTreeView.IndexEventObject"
+    },
+    "TcHmi.Controls.Beckhoff.TchmiTreeView.UpdateTableTypeEventObject": {
+      "type": "object",
+      "properties": {
+        "updateTableType": {
+          "type": "string",
+          "enum": [
+            "dataChange",
+            "configChange",
+            "scroll"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "TchmiTreeViewUpdateTableTypeEventObject": {
+      "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TchmiTreeView.UpdateTableTypeEventObject"
+    },
     "ChartMenuBarPosition": {
       "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiTrendLineChart.ChartMenuBarPosition"
     },
@@ -11232,8 +11705,7 @@
             "Latest"
           ]
         }
-      ],
-      "default": "Latest"
+      ]
     },
     "TcHmi.Controls.Beckhoff.TcHmiTrendLineChart.ChartLineGraphDescriptionDefinitionList": {
       "$schema": "http://json-schema.org/draft-04/schema",
@@ -11362,6 +11834,15 @@
             "defaultValueInternal": "None"
           },
           {
+            "name": "fillModeReferenceLine",
+            "displayName": "Fill Mode Reference Line",
+            "category": "General",
+            "displayPriority": 10,
+            "description": "The name of the reference line that is used as the base for the fillMode.",
+            "defaultValue": null,
+            "defaultValueInternal": "None"
+          },
+          {
             "name": "fillColor",
             "displayName": "Fill Color",
             "category": "Colors",
@@ -11444,8 +11925,12 @@
               "None",
               "HorizontalZero",
               "Top",
-              "Bottom"
+              "Bottom",
+              "ReferenceLine"
             ]
+          },
+          "fillModeReferenceLine": {
+            "type": "string"
           },
           "fillColor": {
             "$ref": "tchmi:framework#/definitions/SolidColor"
@@ -11459,8 +11944,40 @@
             "type": "array",
             "items": {
               "type": "object",
+              "propertiesMeta": [
+                {
+                  "name": "color",
+                  "displayName": "Line Color",
+                  "category": "Colors",
+                  "displayPriority": 10,
+                  "description": "Color for this line expression",
+                  "defaultValue": "%tr%Control::TcHmi.Controls.Beckhoff.TcHmiTrendLineChart::DefaultColorRangeColor%/tr%",
+                  "defaultValueInternal": null
+                },
+                {
+                  "name": "fillColor",
+                  "displayName": "Fill Color",
+                  "category": "Colors",
+                  "displayPriority": 10,
+                  "description": "Color for the fill area",
+                  "defaultValue": "%tr%Control::TcHmi.Controls.Beckhoff.TcHmiTrendLineChart::DefaultFillColorRangeColor%/tr%",
+                  "defaultValueInternal": null
+                },
+                {
+                  "name": "expression",
+                  "displayName": "Expression",
+                  "category": "General",
+                  "displayPriority": 10,
+                  "description": "Expressions for colorRanges",
+                  "defaultValue": null,
+                  "defaultValueInternal": null
+                }
+              ],
               "properties": {
                 "color": {
+                  "$ref": "tchmi:framework#/definitions/SolidColor"
+                },
+                "fillColor": {
                   "$ref": "tchmi:framework#/definitions/SolidColor"
                 },
                 "expression": {
@@ -11577,8 +12094,7 @@
             "First"
           ]
         }
-      ],
-      "default": "First"
+      ]
     },
     "TcHmi.Controls.Beckhoff.TcHmiTrendLineChart.TimePreset": {
       "$schema": "http://json-schema.org/draft-04/schema",
@@ -11943,6 +12459,25 @@
           "description": "If showAxisIfNoData is true, the axis is always displayed; if false, the axis is only displayed if there are data sets assigned to the axis.",
           "defaultValue": null,
           "defaultValueInternal": true
+        },
+        {
+          "name": "format",
+          "displayName": "Format",
+          "category": "General",
+          "displayPriority": 22,
+          "description": "A formatting function to format the yAxis values (HTML not allowed) which is called with each entry.",
+          "allowedFunctions": {
+            "returnType": "tchmi:general#/definitions/String",
+            "requiredArguments": [
+              {
+                "type": "tchmi:general#/definitions/Number",
+                "description": "The yAxis label to format."
+              }
+            ],
+            "requiredWaitMode": "Synchronous"
+          },
+          "defaultValue": null,
+          "defaultValueInternal": null
         }
       ],
       "properties": {
@@ -12019,6 +12554,9 @@
         },
         "showAxisIfNoData": {
           "type": "boolean"
+        },
+        "format": {
+          "$ref": "tchmi:framework#/definitions/Function"
         }
       },
       "additionalProperties": false,
@@ -12685,6 +13223,33 @@
     },
     "TcHmiUserManagement": {
       "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiUserManagement"
+    },
+    "TcHmi.Controls.Beckhoff.TcHmiUserManagement.AccessConfig": {
+      "type": "array",
+      "items": {
+        "allOf": [
+          {
+            "$ref": "tchmi:framework#/definitions/AccessConfigBase"
+          },
+          {
+            "properties": {
+              "accessright": {
+                "type": "string",
+                "enum": [
+                  "operate",
+                  "observe",
+                  "EditUserProperties",
+                  "UserManagement"
+                ],
+                "default": "operate"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "TcHmiUserManagementAccessConfig": {
+      "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiUserManagement.AccessConfig"
     },
     "TcHmi.Controls.Beckhoff.TcHmiVideo": {
       "$schema": "http://json-schema.org/draft-04/schema",

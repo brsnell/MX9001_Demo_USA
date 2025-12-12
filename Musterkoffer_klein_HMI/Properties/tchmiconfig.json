@@ -1,5 +1,5 @@
 {
-  "$schema": "./../../Packages/Beckhoff.TwinCAT.HMI.Framework.14.3.258/runtimes/native1.12-tchmi/Schema/TchmiConfig.Schema.json",
+  "$schema": "./../../Packages/Beckhoff.TwinCAT.HMI.Framework.14.3.332/runtimes/native1.12-tchmi/Schema/TchmiConfig.Schema.json",
   "basePath": "./Beckhoff.TwinCAT.HMI.Framework",
   "scaleMode": "None",
   "startupView": "Desktop.view",
@@ -87,6 +87,7 @@
       "url": "UserControls/MS4208.usercontrol"
     }
   ],
+  "controls": [],
   "content": [
     {
       "url": "Pages/Desktop/HeaderDesktop.content",
@@ -358,7 +359,8 @@
       }
     },
     "themedResources": {},
-    "timer": {}
+    "timer": {},
+    "package": {}
   },
   "intervals": {},
   "trigger": [
@@ -557,31 +559,52 @@
   "packages": [
     {
       "name": "Beckhoff.TwinCAT.HMI.Controls",
-      "basePath": "/Beckhoff.TwinCAT.HMI.Controls"
+      "basePath": "/Beckhoff.TwinCAT.HMI.Controls",
+      "symbols": {
+        "package": {}
+      }
     },
     {
       "name": "Beckhoff.TwinCAT.HMI.EcDiagnosticsControl",
-      "basePath": "/Beckhoff.TwinCAT.HMI.EcDiagnosticsControl"
+      "basePath": "/Beckhoff.TwinCAT.HMI.EcDiagnosticsControl",
+      "symbols": {
+        "package": {}
+      }
     },
     {
       "name": "Beckhoff.TwinCAT.HMI.Framework",
-      "basePath": "/Beckhoff.TwinCAT.HMI.Framework"
+      "basePath": "/Beckhoff.TwinCAT.HMI.Framework",
+      "symbols": {
+        "package": {}
+      }
     },
     {
       "name": "Beckhoff.TwinCAT.HMI.Functions",
-      "basePath": "/Beckhoff.TwinCAT.HMI.Functions"
+      "basePath": "/Beckhoff.TwinCAT.HMI.Functions",
+      "symbols": {
+        "package": {}
+      }
     },
     {
       "name": "Beckhoff.TwinCAT.HMI.Motion",
-      "basePath": "/Beckhoff.TwinCAT.HMI.Motion"
+      "basePath": "/Beckhoff.TwinCAT.HMI.Motion",
+      "symbols": {
+        "package": {}
+      }
     },
     {
       "name": "Beckhoff.TwinCAT.HMI.ResponsiveNavigation",
-      "basePath": "/Beckhoff.TwinCAT.HMI.ResponsiveNavigation"
+      "basePath": "/Beckhoff.TwinCAT.HMI.ResponsiveNavigation",
+      "symbols": {
+        "package": {}
+      }
     },
     {
       "name": "Beckhoff.TwinCAT.HMI.ScopeControl",
-      "basePath": "/Beckhoff.TwinCAT.HMI.ScopeControl"
+      "basePath": "/Beckhoff.TwinCAT.HMI.ScopeControl",
+      "symbols": {
+        "package": {}
+      }
     }
   ],
   "keyboardLayouts": [
