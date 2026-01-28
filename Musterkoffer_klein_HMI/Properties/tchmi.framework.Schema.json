@@ -2539,7 +2539,7 @@
                     "Synchronous",
                     "Asynchronous"
                   ],
-                  "description": "Synchronous: Next step will called after last JavaScript line. Asynchronous: Next step will called after calling ctx.success() or ctx.error(TcHmi.Errors.ERROR)"
+                  "description": "Synchronous: Next step will be called after last JavaScript line. Asynchronous: Next step will be called after calling ctx.success() or ctx.error(TcHmi.Errors.ERROR)"
                 },
                 "success": {
                   "type": "array",
@@ -2553,7 +2553,7 @@
                   "items": {
                     "$ref": "#/definitions/Trigger/definitions/action"
                   },
-                  "description": "Steps which will be called after call of ctx.success() with Asynchronous or an exception with Synchronous."
+                  "description": "Steps which will be called after the call to ctx.error() with Asynchronous or after an exception with Synchronous."
                 },
                 "active": {
                   "type": "boolean",
@@ -13916,6 +13916,27 @@
           }
         }
       ]
+    },
+    "TcHmi.Controls.ResponsiveNavigation.TcHmiNavigationBar.PageEventObject": {
+      "type": "object",
+      "properties": {
+        "parameter": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "page": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "TcHmiNavigationBarPageEventObject": {
+      "$ref": "tchmi:framework#/definitions/TcHmi.Controls.ResponsiveNavigation.TcHmiNavigationBar.PageEventObject"
     },
     "TcHmi.Controls.ResponsiveNavigation.TcHmiNavigationContent": {
       "type": "object",
