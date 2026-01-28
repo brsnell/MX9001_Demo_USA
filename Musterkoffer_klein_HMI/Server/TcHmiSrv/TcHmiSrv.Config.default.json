@@ -10010,7 +10010,7 @@
         "/Beckhoff.TwinCAT.HMI.EcDiagnosticsControl": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.EcDiagnosticsControl.14.3.340\\runtimes\\native1.12-tchmi",
         "/Beckhoff.TwinCAT.HMI.Framework": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.Framework.14.3.360\\runtimes\\native1.12-tchmi",
         "/Beckhoff.TwinCAT.HMI.Functions": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.Functions.14.3.340\\runtimes\\native1.12-tchmi",
-        "/Beckhoff.TwinCAT.HMI.Motion": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.Motion.14.3.307\\runtimes\\native1.12-tchmi",
+        "/Beckhoff.TwinCAT.HMI.Motion": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.Motion.14.3.342\\runtimes\\native1.12-tchmi",
         "/Beckhoff.TwinCAT.HMI.ResponsiveNavigation": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.ResponsiveNavigation.14.3.341\\runtimes\\native1.12-tchmi",
         "/Beckhoff.TwinCAT.HMI.ScopeControl": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.ScopeControl.14.3.340\\runtimes\\native1.12-tchmi",
         "/bin": "..\\..\\Musterkoffer_klein_HMI\\bin\\"

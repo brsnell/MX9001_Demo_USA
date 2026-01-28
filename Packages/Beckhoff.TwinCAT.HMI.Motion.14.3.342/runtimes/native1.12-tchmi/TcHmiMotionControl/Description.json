@@ -5,16 +5,17 @@
     "namespace": "TcHmi.Controls.Beckhoff.TcHmiMotion",
     "displayName": "Motion Control",
     "version": {
-        "full": "14.3.307.0",
+        "full": "14.3.342.0",
         "major": 14,
         "minor": 3,
-        "build": 307,
+        "build": 342,
         "revision": 0
     },
     "visible": true,
     "themeable": "Standard",
     "base": "TcHmi.Controls.System.TcHmiControl",
     "description": "A control to observe basic axis data and move axes.",
+    "defaultDesignerEvent": "",
     "properties": {
         "containerControl": false,
         "geometry": {
