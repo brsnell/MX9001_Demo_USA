@@ -3,15 +3,16 @@
   <PropertyGroup>
     <Name>Drive Manager 2</Name>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{6ab0e511-ad4b-4593-8d2d-5bad52c04fdc}</ProjectGuid>
-    <TcPath>
-    </TcPath>
+    <ProjectGuid>{2733c8e9-5cd4-4789-8f6d-f3c1045d5398}</ProjectGuid>
+    <TcPath>..\HMI_Musterkoffer_klein\HMI_SampleCase_small.tsproj</TcPath>
     <AssemblyName>SampleCase_DM2</AssemblyName>
     <RootNamespace>SampleCase_DM2</RootNamespace>
+    <SaveDriveDataAsFiles>False</SaveDriveDataAsFiles>
   </PropertyGroup>
   <ItemGroup>
     <Content Include="Term 7 %28MO7221-0000-1114%29.tcdmdrv">
       <SubType>Content</SubType>
+      <IoItemPathName>TIID^Device 1 (EtherCAT)^Term 1 (MB1200-0000)^Term 2 (MB1100-0002)^Term 7 (MO7221-0000-1114)</IoItemPathName>
     </Content>
   </ItemGroup>
 </Project>
