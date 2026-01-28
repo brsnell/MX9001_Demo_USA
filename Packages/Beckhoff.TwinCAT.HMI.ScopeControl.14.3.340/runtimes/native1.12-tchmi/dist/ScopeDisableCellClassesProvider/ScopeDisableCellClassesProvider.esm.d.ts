@@ -1,0 +1,2 @@
+export declare function ScopeDisableCellClassesProvider(rowData: any, rowIndex: number, rowNumber: number, controlId: string): string[];
+//# sourceMappingURL=ScopeDisableCellClassesProvider.esm.d.ts.map

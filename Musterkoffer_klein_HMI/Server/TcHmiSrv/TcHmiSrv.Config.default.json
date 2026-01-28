@@ -1197,7 +1197,7 @@
                 ]
             },
             "NAME": "TcHmiScope",
-            "PATH": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.Scope.14.2.7198\\runtimes\\win\\net472\\",
+            "PATH": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.Scope.14.2.7563\\runtimes\\win\\net472\\",
             "REQUIRED": false,
             "STARTUPTYPE": 1
         },
@@ -5554,32 +5554,17 @@
                 "function": true,
                 "writeValue": {
                     "properties": {
-                        "extensionName": {
-                            "description": "Name of the extension.",
-                            "type": "string"
-                        },
-                        "fileName": {
-                            "description": "Name of the file.",
-                            "type": "string"
-                        },
-                        "guid": {
-                            "description": "Guid of the uploaded record.",
-                            "type": "string"
-                        },
                         "persist": {
                             "description": "Whether a file should be persisted (after shutdown of the extension the file will be deleted).",
                             "type": "boolean"
                         },
-                        "userName": {
-                            "description": "Name of the user.",
+                        "relativePath": {
+                            "description": "Relative file path.",
                             "type": "string"
                         }
                     },
                     "required": [
-                        "userName",
-                        "extensionName",
-                        "fileName",
-                        "guid",
+                        "relativePath",
                         "persist"
                     ],
                     "type": "object"
@@ -5709,33 +5694,13 @@
                 "writeValue": {
                     "items": {
                         "properties": {
-                            "extensionName": {
-                                "description": "Name of the extension.",
-                                "type": "string"
-                            },
-                            "fileName": {
-                                "description": "Name of the file.",
-                                "type": "string"
-                            },
-                            "guid": {
-                                "description": "Guid of the uploaded record.",
-                                "type": "string"
-                            },
-                            "persist": {
-                                "description": "Whether a file should be persisted (after shutdown of the extension the file will be deleted).",
-                                "type": "boolean"
-                            },
-                            "userName": {
-                                "description": "Name of the user.",
+                            "relativePath": {
+                                "description": "Relative file path.",
                                 "type": "string"
                             }
                         },
                         "required": [
-                            "userName",
-                            "extensionName",
-                            "fileName",
-                            "guid",
-                            "persist"
+                            "relativePath"
                         ],
                         "type": "object"
                     },
@@ -5938,8 +5903,8 @@
                 "function": true,
                 "items": {
                     "properties": {
-                        "extensionName": {
-                            "description": "Name of the extension.",
+                        "displayName": {
+                            "description": "Display name",
                             "type": "string"
                         },
                         "fileName": {
@@ -5954,8 +5919,8 @@
                             "description": "Whether a file should be persisted (after shutdown of the extension the file will be deleted).",
                             "type": "boolean"
                         },
-                        "userName": {
-                            "description": "Name of the user.",
+                        "relativePath": {
+                            "description": "Relative file path.",
                             "type": "string"
                         }
                     },
@@ -6020,33 +5985,13 @@
                 "type": "array",
                 "writeValue": {
                     "properties": {
-                        "extensionName": {
-                            "description": "Name of the extension.",
-                            "type": "string"
-                        },
-                        "fileName": {
-                            "description": "Name of the file.",
-                            "type": "string"
-                        },
-                        "guid": {
-                            "description": "Guid of the uploaded record.",
-                            "type": "string"
-                        },
-                        "persist": {
-                            "description": "Whether a file should be persisted (after shutdown of the extension the file will be deleted).",
-                            "type": "boolean"
-                        },
-                        "userName": {
-                            "description": "Name of the user.",
+                        "relativePath": {
+                            "description": "Relative file path.",
                             "type": "string"
                         }
                     },
                     "required": [
-                        "userName",
-                        "extensionName",
-                        "fileName",
-                        "guid",
-                        "persist"
+                        "relativePath"
                     ],
                     "type": "object"
                 }
@@ -7330,8 +7275,8 @@
                 "function": true,
                 "items": {
                     "properties": {
-                        "extensionName": {
-                            "description": "Name of the extension.",
+                        "displayName": {
+                            "description": "Display name",
                             "type": "string"
                         },
                         "fileName": {
@@ -7346,8 +7291,8 @@
                             "description": "Whether a file should be persisted (after shutdown of the extension the file will be deleted).",
                             "type": "boolean"
                         },
-                        "userName": {
-                            "description": "Name of the user.",
+                        "relativePath": {
+                            "description": "Relative file path.",
                             "type": "string"
                         }
                     },
@@ -7881,7 +7826,7 @@
                         "type": "string"
                     },
                     "name": {
-                        "description": "The full path of the scope record file.",
+                        "description": "The relative path of the scope record file.",
                         "type": "string"
                     }
                 },
@@ -7902,8 +7847,8 @@
                                     "description": "Name of chart to show.",
                                     "type": "string"
                                 },
-                                "extensionName": {
-                                    "description": "Name of extension.",
+                                "displayName": {
+                                    "description": "Display name",
                                     "type": "string"
                                 },
                                 "fileName": {
@@ -7918,18 +7863,14 @@
                                     "description": "Whether to delete the file after extension shutdown. ",
                                     "type": "boolean"
                                 },
-                                "userName": {
-                                    "description": "Name of user.",
+                                "relativePath": {
+                                    "description": "Relative file path.",
                                     "type": "string"
                                 }
                             },
                             "required": [
-                                "extensionName",
-                                "userName",
-                                "fileName",
-                                "chartName",
-                                "guid",
-                                "persist"
+                                "relativePath",
+                                "chartName"
                             ],
                             "type": "object"
                         }
@@ -10071,7 +10012,7 @@
         "/Beckhoff.TwinCAT.HMI.Functions": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.Functions.14.3.307\\runtimes\\native1.12-tchmi",
         "/Beckhoff.TwinCAT.HMI.Motion": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.Motion.14.3.307\\runtimes\\native1.12-tchmi",
         "/Beckhoff.TwinCAT.HMI.ResponsiveNavigation": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.ResponsiveNavigation.14.3.307\\runtimes\\native1.12-tchmi",
-        "/Beckhoff.TwinCAT.HMI.ScopeControl": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.ScopeControl.14.3.277\\runtimes\\native1.12-tchmi",
+        "/Beckhoff.TwinCAT.HMI.ScopeControl": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.ScopeControl.14.3.340\\runtimes\\native1.12-tchmi",
         "/bin": "..\\..\\Musterkoffer_klein_HMI\\bin\\"
     }
 }
