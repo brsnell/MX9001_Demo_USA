@@ -14,12 +14,98 @@ VAR
 	bEnableBluetoothDiagnosis	AT%Q* 	:  	BOOL := TRUE;
 	bActivatePairingMode		AT%Q*	:	BOOL := TRUE;
 	
-	fbRunOutputs	:	FB_RunOutputs;
+	fbRunOutputs						:	FB_RunOutputs;
 	
+	fbGetAllSlaveStates 				: FB_EcGetAllSlaveStates;
+	fbGetAllSlaveConfigs				: FB_EcGetConfSlaves;
+	stAMSNetID					AT %I*	: AMSNETID;
+	arrEtherCATSlaves					: ARRAY [0..EC_MAX_SLAVES] OF ST_EcSlaveState;
+	arrEtherCATSlavesConf				: ARRAY [0..EC_MAX_SLAVES] OF ST_EcSlaveConfigData;
+	nConfiguredSlaveCount		AT %I*	: UINT;
+	nFoundSlaveCount					: UINT;
+
+	nEtherCATDiagState					: UDINT := 0;
+	nForLoopIdx							: UINT := 0;
+	bError: BOOL;
+	fbRequestSlaveState: FB_EcReqSlaveState;
+	
+	nStackIDX							: UINT := 0;
+	arrStack							: ARRAY [0..EC_MAX_SLAVES] OF UINT;
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[fbRunOutputs(bEnable:=TRUE , tStepSpeed:=T#500MS , tCycleDelay:=T#1000MS , Outputs_MX:=stIoModulSlot9.stDOSOutputs );]]></ST>
+      <ST><![CDATA[fbRunOutputs(bEnable:=TRUE , tStepSpeed:=T#500MS , tCycleDelay:=T#1000MS , Outputs_MX:=stIoModulSlot9.stDOSOutputs );
+(* This should be a State Machine Doesn't have to be FAST*)
+// Loop through configured number of slaves
+// Capture which slaves are NOT in OP
+// Clear Errors on List
+// Set Devices to OP
+fbGetAllSlaveStates(sNetId:= F_CreateAmsNetId(stAMSNetID), pStateBuf:=ADR(arrEtherCATSlaves), cbBufLen:=SIZEOF(arrEtherCATSlaves), nSlaves=>nFoundSlaveCount);
+fbGetAllSlaveConfigs(sNetId:=F_CreateAmsNetId(stAMSNetID), pArrEcConfSlaveInfo:=ADR(arrEtherCATSlavesConf), cbBufLen:=SIZEOF(arrEtherCATSlavesConf));
+fbRequestSlaveState(
+	sNetId:=F_CreateAmsNetId(stAMSNetID) , 
+	nSlaveAddr:= , 
+	bExecute:= , 
+	tTimeout:= , 
+	state:= 8, 
+	bBusy=> , 
+	bError=> , 
+	nErrId=> );
+
+CASE nEtherCATDiagState OF
+	0: //INIT
+	fbGetAllSlaveConfigs.bExecute:=TRUE;
+	nEtherCATDiagState:=nEtherCATDiagState+1;
+	
+	1: //SET READ
+	fbGetAllSlaveStates.bExecute := TRUE;
+	IF fbGetAllSlaveStates.bBusy THEN
+		nEtherCATDiagState:=nEtherCATDiagState+1;
+	END_IF
+	
+	2: //READ DONE
+	IF NOT(fbGetAllSlaveStates.bBusy OR fbGetAllSlaveStates.bError) THEN
+		nEtherCATDiagState:=nEtherCATDiagState+1;
+		bError:=FALSE;
+	ELSE
+		nEtherCATDiagState:=999;
+	END_IF
+	
+	3: //CHECK ERRORS
+	FOR nForLoopIdx:=0 TO nFoundSlaveCount-1 BY 1 DO
+		IF arrEtherCATSlaves[nForLoopIdx].deviceState <> 8 // Are we in OP
+			AND arrEtherCATSlavesConf[nForLoopIdx].stSlaveIdentity.productCode<>90320  // Ignore MX0001 "EMPTY" modules 
+		THEN
+			arrStack[nStackIDX]:=nForLoopIdx;
+			nStackIDX:=nStackIDX+1;
+		END_IF
+	END_FOR
+	nEtherCATDiagState:=nEtherCATDiagState+1;
+	
+	4: //TRY SET OP
+	IF nStackIDX>0 THEN
+		fbRequestSlaveState.nSlaveAddr:=arrEtherCATSlavesConf[arrStack[0]].nAddr;
+		fbRequestSlaveState.bExecute:=TRUE;
+		nStackIDX:=nStackIDX-1;
+		nEtherCATDiagState:=nEtherCATDiagState+1;
+	ELSE
+		nEtherCATDiagState:=6; // Start Over Actually
+	END_IF
+	
+	5: //CHECK DONE
+	IF NOT(fbRequestSlaveState.bBusy) THEN
+		fbRequestSlaveState.bExecute:=FALSE;
+		nEtherCATDiagState:=nEtherCATDiagState-1;
+	END_IF
+	
+	6: //READ AGAIN
+	fbGetAllSlaveStates.bExecute:=FALSE;
+	nEtherCATDiagState:=1;
+	
+	999: //ERROR
+	;
+	
+END_CASE]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>
