@@ -25,6 +25,7 @@ export * as TcHmiLinearGauge from './dist/TcHmiLinearGauge/TcHmiLinearGauge.esm.
 export * as TcHmiLineChart from './dist/TcHmiLineChart/TcHmiLineChart.esm.js';
 export * as TcHmiLoadingSpinner from './dist/TcHmiLoadingSpinner/TcHmiLoadingSpinner.esm.js';
 export * as TcHmiLocalizationSelect from './dist/TcHmiLocalizationSelect/TcHmiLocalizationSelect.esm.js';
+export * as TcHmiMultiState from './dist/TcHmiMultiState/TcHmiMultiState.esm.js';
 export * as TcHmiNumericInput from './dist/TcHmiNumericInput/TcHmiNumericInput.esm.js';
 export * as TcHmiObjectBrowser from './dist/TcHmiObjectBrowser/TcHmiObjectBrowser.esm.js';
 export * as TcHmiPasswordInput from './dist/TcHmiPasswordInput/TcHmiPasswordInput.esm.js';

@@ -351,6 +351,12 @@
         },
         {
             "type": "Control",
+            "basePath": "TcHmiMultiState",
+            "descriptionFile": "Description.json",
+            "toolboxCategory": "Beckhoff.TwinCAT.HMI.Controls:200"
+        },
+        {
+            "type": "Control",
             "basePath": "TcHmiNumericInput",
             "descriptionFile": "Description.json",
             "toolboxCategory": "Beckhoff.TwinCAT.HMI.Controls:200"

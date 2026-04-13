@@ -5,10 +5,10 @@
     "namespace": "TcHmi.Controls.Beckhoff",
     "displayName": "Progress Bar",
     "version": {
-        "full": "14.3.324.0",
+        "full": "14.4.1.0",
         "major": 14,
-        "minor": 3,
-        "build": 324,
+        "minor": 4,
+        "build": 1,
         "revision": 0
     },
     "visible": true,
@@ -163,7 +163,18 @@
     ],
     "attributeCategories": [],
     "functions": [],
-    "events": [],
+    "events": [
+        {
+            "name": ".onValueChanged",
+            "displayName": ".onValueChanged",
+            "visible": true,
+            "displayPriority": 10,
+            "category": "Control",
+            "description": "The valuechanged event is fired when the result was changed. This event could be fired multiples times during a user interaction.",
+            "heritable": true,
+            "arguments": []
+        }
+    ],
     "dataTypes": [
         {
             "schema": "Schema/Types.Schema.json"

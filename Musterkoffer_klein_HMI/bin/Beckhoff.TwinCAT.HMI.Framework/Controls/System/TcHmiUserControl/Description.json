@@ -5,16 +5,17 @@
     "namespace": "TcHmi.Controls.System",
     "displayName": "User Control",
     "version": {
-        "full": "14.3.332.0",
+        "full": "14.3.360.0",
         "major": 14,
         "minor": 3,
-        "build": 332,
+        "build": 360,
         "revision": 0
     },
     "visible": false,
     "themeable": "Advanced",
     "base": "TcHmi.Controls.System.TcHmiPartial",
     "description": "A reusable collection of Controls.",
+    "defaultDesignerEvent": "",
     "properties": {
         "containerControl": true,
         "geometry": {
@@ -33,7 +34,7 @@
         {
             "name": "../../../dist/Controls/System/TcHmiUserControl/TcHmiUserControl.esm.js",
             "type": "EsModule",
-            "description": ""
+            "description": "Contains all the main logic as ES module."
         }
     ],
     "themes": {},

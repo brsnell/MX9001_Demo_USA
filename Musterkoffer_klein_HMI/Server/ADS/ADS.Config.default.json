@@ -20,7 +20,7 @@
     "RUNTIMES": {
         "NC": {
             "ENABLED": true,
-            "NETID": "127.0.0.1.1.1",
+            "NETID": "172.17.32.12.1.1",
             "PORT": 500,
             "READ_ONLY": false,
             "SYMBOLS": {},
@@ -28,7 +28,7 @@
         },
         "NC-Task1": {
             "ENABLED": true,
-            "NETID": "127.0.0.1.1.1",
+            "NETID": "172.17.32.12.1.1",
             "PORT": 501,
             "READ_ONLY": false,
             "SYMBOLS": {},

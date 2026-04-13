@@ -81,8 +81,7 @@ export declare class ServerSymbols {
      * Is called from onPressed for download the scope record file.
      */
     __downloadScopeRecord(element?: {
-        userName: string;
-        extensionName: string;
+        relativePath: string;
         fileName: string;
         guid: string;
         persist: boolean;
@@ -103,8 +102,7 @@ export declare class ServerSymbols {
      * Called the DeleteScopeRecord method from the scope extension.
      */
     deleteScopeUpload(elements: {
-        userName: string;
-        extensionName: string;
+        relativePath: string;
         fileName: string;
         guid: string;
         persist: boolean;
@@ -113,8 +111,7 @@ export declare class ServerSymbols {
      * Called the DeleteScopeRecord method from the scope extension.
      */
     changePersist(element: {
-        userName: string;
-        extensionName: string;
+        relativePath: string;
         fileName: string;
         guid: string;
         persist: boolean;
@@ -123,8 +120,7 @@ export declare class ServerSymbols {
      * Called the GetChartList method from the scope extension.
      */
     getChartList(element: {
-        userName: string;
-        extensionName: string;
+        relativePath: string;
         fileName: string;
         guid: string;
         persist: boolean;
@@ -133,8 +129,7 @@ export declare class ServerSymbols {
      * Called the download function.
      */
     download(element: {
-        userName: string;
-        extensionName: string;
+        relativePath: string;
         fileName: string;
         guid: string;
         persist: boolean;
@@ -143,8 +138,7 @@ export declare class ServerSymbols {
      * Called the OpenConnectionToFile method from the scope extension.
      */
     openConnectionToFile(element: {
-        userName: string;
-        extensionName: string;
+        relativePath: string;
         fileName: string;
         guid: string;
         persist: boolean;

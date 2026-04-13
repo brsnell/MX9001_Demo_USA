@@ -35,7 +35,7 @@
         },
         "events": {
             "type": "array",
-            "description": "A list of events assoziated to the framework.",
+            "description": "A list of events associated to the framework.",
             "items": {
                 "type": "object",
                 "properties": {
@@ -55,7 +55,7 @@
                     "category": {
                         "type": "string",
                         "enum": ["Framework"],
-                        "description": ""
+                        "description": "Defines this event is associated to the framework"
                     },
                     "allowsPreventDefault": {
                         "type": "boolean",

@@ -1,7 +1,11 @@
 // TwinCAT Hmi Core API as namespace without System Controls
 
 /// <reference path="Lib/jquery.d.ts" />
-/// <reference path="dist/TcHmiCore/index.d.ts" />
+/// <reference path="dist/TcHmiCore/GlobalFunctions.d.ts" />
+/// <reference path="dist/TcHmiCore/StaticDefines.d.ts" />
+/// <reference path="dist/TcHmiCore/_Types.d.ts" />
+/// <reference path="dist/TcHmiCore/Destroyable.d.ts" />
+/// <reference path="dist/TcHmiCore/baseTcHmiControl.d.ts" />
 /// <reference path="dist/API/Access.d.ts" />
 /// <reference path="dist/API/Animation.d.ts" />
 /// <reference path="dist/API/Base64BinaryReader.d.ts" />

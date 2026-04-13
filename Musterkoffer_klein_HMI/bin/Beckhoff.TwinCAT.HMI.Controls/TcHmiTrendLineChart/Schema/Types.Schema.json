@@ -67,6 +67,15 @@
                     "description": "Describes the unit. Is written after the value.",
                     "defaultValue": null,
                     "defaultValueInternal": null
+                },
+                {
+                    "name": "useScaleFactor",
+                    "category": "General",
+                    "displayName": "Use Scale Factor",
+                    "displayPriority": 10,
+                    "description": "Describes whether the scaling factor should be used.",
+                    "defaultValue": false,
+                    "defaultValueInternal": false
                 }
             ],
             "properties": {
@@ -79,6 +88,9 @@
                 },
                 "unit": {
                     "type": "string"
+                },
+                "useScaleFactor": {
+                    "type": "boolean"
                 }
             },
             "required": ["showColumn"],

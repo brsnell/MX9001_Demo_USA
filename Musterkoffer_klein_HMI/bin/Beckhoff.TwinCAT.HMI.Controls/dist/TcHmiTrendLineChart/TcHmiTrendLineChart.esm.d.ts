@@ -1456,6 +1456,7 @@ export interface StatisticalDataField {
     showColumn: boolean;
     decimalPlaces?: number;
     unit?: string;
+    useScaleFactor?: boolean;
 }
 export { TcHmiTrendLineChart as Control };
 declare const _TcHmiTrendLineChart: typeof TcHmiTrendLineChart;

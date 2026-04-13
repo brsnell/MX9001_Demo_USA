@@ -5,10 +5,10 @@
     "namespace": "TcHmi.Controls.Beckhoff.TcHmiScopeControl",
     "displayName": "Scope Control",
     "version": {
-        "full": "14.3.277.0",
+        "full": "14.3.340.0",
         "major": 14,
         "minor": 3,
-        "build": 277,
+        "build": 340,
         "revision": 0
     },
     "visible": true,

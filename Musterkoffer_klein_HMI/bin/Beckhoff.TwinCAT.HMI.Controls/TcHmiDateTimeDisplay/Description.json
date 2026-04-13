@@ -5,16 +5,17 @@
     "namespace": "TcHmi.Controls.Beckhoff",
     "displayName": "Date Time Display",
     "version": {
-        "full": "14.3.324.0",
+        "full": "14.4.1.0",
         "major": 14,
-        "minor": 3,
-        "build": 324,
+        "minor": 4,
+        "build": 1,
         "revision": 0
     },
     "visible": true,
     "themeable": "Standard",
     "base": "TcHmi.Controls.System.TcHmiControl",
     "description": "A simple control for displaying the time by means of the users time zone.",
+    "defaultDesignerEvent": "",
     "properties": {
         "containerControl": false,
         "geometry": {

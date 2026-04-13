@@ -413,6 +413,21 @@
                     }
                 }
             ]
+        },
+        "TcHmi.Controls.ResponsiveNavigation.TcHmiNavigationBar.PageEventObject": {
+            "type": "object",
+            "properties": {
+                "parameter": {
+                    "type": ["string", "null"]
+                },
+                "page": {
+                    "type": ["string", "null"]
+                }
+            },
+            "additionalProperties": false
+        },
+        "TcHmiNavigationBarPageEventObject": {
+            "$ref": "tchmi:framework#/definitions/TcHmi.Controls.ResponsiveNavigation.TcHmiNavigationBar.PageEventObject"
         }
     }
 }

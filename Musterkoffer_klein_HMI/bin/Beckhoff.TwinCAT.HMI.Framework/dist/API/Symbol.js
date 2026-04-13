@@ -32,7 +32,8 @@ read(){if(!this.__symbol)return;let res;return this.__symbol.isProcessedAsync()?
      * Returns a destroy function to terminate writing of asynchronous values.
      * @param value The new value
      * @param callback Callback will be called after success or failure
-     * @template T Type of the write value. Falls back to type of the symbol.
+     * @template W Type of the write value. Falls back to type of the symbol.
+     * @template R Type of the value after write. Falls back to W if not specified.
      * @preserve (Part of the public API)
      */write(value,callback){return this.writeEx(value,null,callback)}
 /**
@@ -41,7 +42,8 @@ read(){if(!this.__symbol)return;let res;return this.__symbol.isProcessedAsync()?
      * @param value Value to write
      * @param options Options for symbol handling
      * @param callback Callback will be called after success or failure
-     * @template T Type of the write value. Falls back to type of the symbol.
+     * @template W Type of the write value. Falls back to type of the symbol.
+     * @template R Type of the value after write. Falls back to W if not specified.
      * @preserve (Part of the public API)
      */writeEx(value,options,callback){const callstackLinker=createTask("Symbol.write>"+this.getExpression());let destroy=this.__symbol.writeEx2(value,options,null,data=>{const result={error:data.error,expression:data.expression,destroy:data.destroy};void 0!==data.expressionResolved&&(result.expressionResolved=data.expressionResolved),void 0!==data.value&&(result.value=data.value),data.details&&(result.details=data.details),Symbol.isIServerReadResultObject(data)&&(result.response=data.response),callstackLinker.run(()=>{TcHmi.Callback.callSafeEx(callback,this,result)})});return()=>{destroy?.(),destroy=null}}
 /**
@@ -184,7 +186,8 @@ read(){if(!this.__symbol)return;let res;return this.__symbol.isProcessedAsync()?
  * @param type Type of the symbol as enum value
  * @param value The new value
  * @param callback Callback will be called after success or failure
- * @template T Type of the write value.
+ * @template W Type of the write value.
+ * @template R Type of the value after write. Falls back to W if not specified.
  * @preserve (Part of the public API)
  */export function write(name,type,value,callback){let typeString;switch(type){case TcHmi.SymbolType.Internal:typeString="i";break;case TcHmi.SymbolType.LocalizedText:typeString="l";break;case TcHmi.SymbolType.PartialParam:typeString="pp";break;case TcHmi.SymbolType.Server:typeString="s";break;case TcHmi.SymbolType.TemplateParam:typeString="tp";break;case TcHmi.SymbolType.Control:typeString="ctrl";break;case TcHmi.SymbolType.Context:typeString="ctx";break;case TcHmi.SymbolType.ThemedResource:typeString="tr";break;default:throw new TypeError("Unsupported SymbolType="+(TcHmi.SymbolType[type]?TcHmi.SymbolType[type]:type)+".")}let s=new Symbol("%"+typeString+"%"+name+"%/"+typeString+"%"),destroy=s.write(value,data=>{const result={error:data.error,value:data.value,expressionResolved:data.expressionResolved,expression:data.expression,destroy:data.destroy};data.details&&(result.details=data.details),isIServerReadResultObject(data)&&(result.response=data.response),TcHmi.Callback.callSafeEx(callback,null,result),s&&s.destroy(),s=null});return()=>{destroy?.(),destroy=null}}
 /**

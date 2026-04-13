@@ -31,6 +31,14 @@ VAR
 	
 	nStackIDX							: UINT := 0;
 	arrStack							: ARRAY [0..EC_MAX_SLAVES] OF UINT;
+	
+	Axis1  								: AXIS_REF;
+	fbEnableAxis						: MC_Power;
+	bEnableAxis							: BOOL;
+	fbJog								: MC_Jog;
+	bForwardJog: BOOL;
+	bBackwardJog: BOOL;
+	fbEnableHardwareButton: R_TRIG;
 END_VAR
 ]]></Declaration>
     <Implementation>
@@ -105,7 +113,35 @@ CASE nEtherCATDiagState OF
 	999: //ERROR
 	;
 	
-END_CASE]]></ST>
+END_CASE
+
+fbEnableHardwareButton(CLK:= stIoModulSlot10.stDISInputs.bInputCh4);
+IF fbEnableHardwareButton.Q THEN
+	IF bEnableAxis THEN
+		bEnableAxis:=FALSE;
+	ELSE
+		bEnableAxis:=TRUE;
+	END_IF
+END_IF
+
+Axis1.ReadStatus();
+fbEnableAxis(
+	Axis:=Axis1 , 
+	Enable:=bEnableAxis , 
+	Enable_Positive:=bEnableAxis , 
+	Enable_Negative:=bEnableAxis , 
+	Override:=100.0);
+	
+fbJog(
+	Axis:=Axis1 , 
+	JogForward:=bForwardJog OR stIoModulSlot10.stDISInputs.bInputCh2 , 
+	JogBackwards:=bBackwardJog OR stIoModulSlot10.stDISInputs.bInputCh6 , 
+	Mode:=MC_Aborting , 
+	Velocity:=100.0 );
+	
+stIoModulSlot10.stDOSOutputs.bOutputCh3:=fbEnableAxis.Status;
+stIoModulSlot10.stDOSOutputs.bOutputCh1:=fbJog.JogForward;
+stIoModulSlot10.stDOSOutputs.bOutputCh5:=fbJog.JogForward;]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>

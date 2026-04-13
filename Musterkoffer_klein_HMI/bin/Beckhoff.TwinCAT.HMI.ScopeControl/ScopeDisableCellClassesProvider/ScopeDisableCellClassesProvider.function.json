@@ -2,16 +2,16 @@
     "$schema": "../../TcHmiFramework/Schema/FunctionDescription.Schema.json",
     "apiVersion": 1,
     "version": {
-        "full": "14.3.277.0",
+        "full": "14.3.340.0",
         "major": 14,
         "minor": 3,
-        "build": 277,
+        "build": 340,
         "revision": 0
     },
     "dependencyFiles": [
         {
-            "name": "ScopeDisableCellClassesProvider.js",
-            "type": "JavaScript",
+            "name": "../dist/ScopeDisableCellClassesProvider/ScopeDisableCellClassesProvider.esm.js",
+            "type": "EsModule",
             "description": ""
         }
     ],

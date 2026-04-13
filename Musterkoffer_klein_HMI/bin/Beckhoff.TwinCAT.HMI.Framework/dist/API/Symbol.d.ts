@@ -52,20 +52,22 @@ export declare class Symbol<ST = any> extends TcHmi.Destroyable {
      * Returns a destroy function to terminate writing of asynchronous values.
      * @param value The new value
      * @param callback Callback will be called after success or failure
-     * @template T Type of the write value. Falls back to type of the symbol.
+     * @template W Type of the write value. Falls back to type of the symbol.
+     * @template R Type of the value after write. Falls back to W if not specified.
      * @preserve (Part of the public API)
      */
-    write<T = ST>(value: T, callback?: (this: this, data: IWriteResultObject<T> | IServerWriteResultObject<T>) => void): TcHmi.DestroyFunction;
+    write<W = ST, R = W>(value: W, callback?: (this: this, data: IWriteResultObject<R> | IServerWriteResultObject<W, R>) => void): TcHmi.DestroyFunction;
     /**
      * Writes the value of the current symbol.
      * Returns a destroy function to terminate writing of asynchronous values.
      * @param value Value to write
      * @param options Options for symbol handling
      * @param callback Callback will be called after success or failure
-     * @template T Type of the write value. Falls back to type of the symbol.
+     * @template W Type of the write value. Falls back to type of the symbol.
+     * @template R Type of the value after write. Falls back to W if not specified.
      * @preserve (Part of the public API)
      */
-    writeEx<T = ST>(value: T, options: IOptions | null, callback?: (this: this, data: IWriteResultObject<T> | IServerWriteResultObject<T>) => void): TcHmi.DestroyFunction;
+    writeEx<W = ST, R = W>(value: W, options: IOptions | null, callback?: (this: this, data: IWriteResultObject<R> | IServerWriteResultObject<W, R>) => void): TcHmi.DestroyFunction;
     /**
      * Watches for changes of the current symbol and raises the callback in case of a change.
      * Returns a destroy function to remove the watch.
@@ -305,10 +307,11 @@ export declare function readEx3<T = any>(expressionOrExpressionObject: string | 
  * @param type Type of the symbol as enum value
  * @param value The new value
  * @param callback Callback will be called after success or failure
- * @template T Type of the write value.
+ * @template W Type of the write value.
+ * @template R Type of the value after write. Falls back to W if not specified.
  * @preserve (Part of the public API)
  */
-export declare function write<T = any>(name: string, type: TcHmi.SymbolType, value: T, callback?: null | ((this: void, data: IWriteResultObject<T> | IServerWriteResultObject<T>) => void)): TcHmi.DestroyFunction;
+export declare function write<W = any, R = W>(name: string, type: TcHmi.SymbolType, value: W, callback?: null | ((this: void, data: IWriteResultObject<R> | IServerWriteResultObject<R>) => void)): TcHmi.DestroyFunction;
 /**
  * Writes the value of a symbol by expression.
  * Returns a destroy function to terminate writing of asynchronous values.
@@ -576,17 +579,19 @@ export interface IServerReadResultObject<T = any, W = T> extends IReadResultObje
     response?: Server.IMessage<W, T>;
 }
 export interface IWriteResultObject<T = any> extends ISymbolResultObject {
+    /** The value after write. */
     value?: T;
     processedStart?: string;
     processedEnd?: string;
     dirtyPaths?: string[];
     destroy?: TcHmi.DestroyFunction;
 }
-export interface IServerWriteResultObject<T = any, W = T> extends IWriteResultObject<T> {
-    response?: Server.IMessage<W, T>;
+export interface IServerWriteResultObject<W = any, R = W> extends IWriteResultObject<R> {
+    response?: Server.IMessage<W, R>;
 }
 export interface ISchemaResultObject extends ISymbolResultObject {
     schema?: TcHmi.JsonSchema;
+    destroy?: TcHmi.DestroyFunction;
 }
 export interface IExistsResultObject extends ISymbolResultObject {
     result?: boolean;
@@ -656,7 +661,7 @@ type tIServerWatchResultObject<T = any> = IServerWatchResultObject<T>;
 type tIReadResultObject<T = any> = IReadResultObject<T>;
 type tIServerReadResultObject<T = any> = IServerReadResultObject<T>;
 type tIWriteResultObject<T = any> = IWriteResultObject<T>;
-type tIServerWriteResultObject<T = any> = IServerWriteResultObject<T>;
+type tIServerWriteResultObject<W = any, R = W> = IServerWriteResultObject<W, R>;
 type tISchemaResultObject = ISchemaResultObject;
 type tIExistsResultObject = IExistsResultObject;
 type tIAttributesResultObject = IAttributesResultObject;
@@ -679,7 +684,7 @@ declare global {
             type IReadResultObject<T = any> = tIReadResultObject<T>;
             type IServerReadResultObject<T = any> = tIServerReadResultObject<T>;
             type IWriteResultObject<T = any> = tIWriteResultObject<T>;
-            type IServerWriteResultObject<T = any> = tIServerWriteResultObject<T>;
+            type IServerWriteResultObject<W = any, R = W> = tIServerWriteResultObject<W, R>;
             type ISchemaResultObject = tISchemaResultObject;
             type IExistsResultObject = tIExistsResultObject;
             type IAttributesResultObject = tIAttributesResultObject;

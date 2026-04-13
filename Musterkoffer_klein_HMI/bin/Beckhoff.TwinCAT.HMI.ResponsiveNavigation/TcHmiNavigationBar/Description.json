@@ -5,16 +5,17 @@
     "namespace": "TcHmi.Controls.ResponsiveNavigation",
     "displayName": "Navigation Bar",
     "version": {
-        "full": "14.3.307.0",
+        "full": "14.3.341.0",
         "major": 14,
         "minor": 3,
-        "build": 307,
+        "build": 341,
         "revision": 0
     },
     "visible": true,
     "themeable": "Standard",
     "base": "TcHmi.Controls.System.TcHmiControl",
     "description": "Responsive navigation bar with desktop and mobile menu.",
+    "defaultDesignerEvent": "",
     "properties": {
         "containerControl": false,
         "geometry": {
@@ -620,7 +621,8 @@
             "displayPriority": 30,
             "category": "Control",
             "description": "The .onViewSwitched event is fired when the view switched between dektop/mobile view.",
-            "heritable": true
+            "heritable": true,
+            "arguments": []
         },
         {
             "name": ".onPageCalled",
@@ -629,7 +631,13 @@
             "displayPriority": 30,
             "category": "Control",
             "description": "The onPageCalled event is fired when a headline with event or a content element is pressed.",
-            "heritable": true
+            "heritable": true,
+            "arguments": [
+                {
+                    "type": "tchmi:framework#/definitions/TcHmiNavigationBarPageEventObject",
+                    "description": "The event object containing information about the page."
+                }
+            ]
         },
         {
             "name": ".onMenuOpened",
@@ -638,7 +646,8 @@
             "displayPriority": 30,
             "category": "Control",
             "description": "The .onMenuOpened event is fired when the content menu will be opened.",
-            "heritable": true
+            "heritable": true,
+            "arguments": []
         },
         {
             "name": ".onMenuClosed",
@@ -647,7 +656,8 @@
             "displayPriority": 30,
             "category": "Control",
             "description": "The .onMenuClosed event is fired when the content will be hidden.",
-            "heritable": true
+            "heritable": true,
+            "arguments": []
         }
     ],
     "dataTypes": [

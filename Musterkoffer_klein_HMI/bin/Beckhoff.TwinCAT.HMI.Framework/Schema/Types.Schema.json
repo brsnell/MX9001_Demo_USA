@@ -2286,7 +2286,7 @@
                                 "waitMode": {
                                     "type": "string",
                                     "enum": ["Synchronous", "Asynchronous"],
-                                    "description": "Synchronous: Next step will called after last JavaScript line. Asynchronous: Next step will called after calling ctx.success() or ctx.error(TcHmi.Errors.ERROR)"
+                                    "description": "Synchronous: Next step will be called after last JavaScript line. Asynchronous: Next step will be called after calling ctx.success() or ctx.error(TcHmi.Errors.ERROR)"
                                 },
                                 "success": {
                                     "type": "array",
@@ -2300,7 +2300,7 @@
                                     "items": {
                                         "$ref": "#/definitions/Trigger/definitions/action"
                                     },
-                                    "description": "Steps which will be called after call of ctx.success() with Asynchronous or an exception with Synchronous."
+                                    "description": "Steps which will be called after the call to ctx.error() with Asynchronous or after an exception with Synchronous."
                                 },
                                 "active": {
                                     "type": "boolean",

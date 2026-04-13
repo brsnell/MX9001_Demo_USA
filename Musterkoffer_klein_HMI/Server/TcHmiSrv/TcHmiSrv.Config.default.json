@@ -1963,6 +1963,56 @@
             },
             "USEMAPPING": true
         },
+        "ADS.NC_Task1.Axes.Axis 1.ActPos": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "NC-Task1::Axes::Axis 1::ActPos",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/LREAL"
+            },
+            "USEMAPPING": true
+        },
+        "ADS.NC_Task1.Axes.Axis 1.ActVelo": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "NC-Task1::Axes::Axis 1::ActVelo",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/LREAL"
+            },
+            "USEMAPPING": true
+        },
+        "ADS.PLC1.MAIN.bBackwardJog": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::MAIN::bBackwardJog",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "ADS.PLC1.MAIN.bEnableAxis": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::MAIN::bEnableAxis",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "ADS.PLC1.MAIN.bForwardJog": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::MAIN::bForwardJog",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
         "ADS.PLC1.MAIN.fTest": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -9868,6 +9918,11 @@
                 "ADS.AdsSyncReadStateReq": 3,
                 "ADS.CheckLicense": 3,
                 "ADS.Diagnostics": 3,
+                "ADS.NC_Task1.Axes.Axis 1.ActPos": 3,
+                "ADS.NC_Task1.Axes.Axis 1.ActVelo": 3,
+                "ADS.PLC1.MAIN.bBackwardJog": 3,
+                "ADS.PLC1.MAIN.bEnableAxis": 3,
+                "ADS.PLC1.MAIN.bForwardJog": 3,
                 "ADS.PLC1.MAIN.fTest": 3,
                 "ADS.PLC1.MAIN.stIoModulSlot10": 3,
                 "ADS.PLC1.MAIN.stIoModulSlot8": 3,

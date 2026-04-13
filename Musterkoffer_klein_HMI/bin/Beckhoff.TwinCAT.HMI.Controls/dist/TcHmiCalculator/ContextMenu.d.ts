@@ -8,6 +8,7 @@ export declare class ContextMenu extends HTMLElement {
     disconnectedCallback(): void;
     toggleMenuOn(): void;
     toggleMenuOff(): void;
+    removeTargetContextMenuEventListener(): void;
     set contextMenuOnCb(cb: () => any | undefined);
     private __addEvents;
     private __removeEvents;

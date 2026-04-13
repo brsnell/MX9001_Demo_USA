@@ -33,7 +33,7 @@ declare class TcHmiCalculator extends TcHmi.Controls.System.TcHmiControl {
     protected __elementKeyboardContainer: HTMLElement;
     /** Reference to the calculator display term container element. */
     protected __elementDisplayTermContainer: HTMLElement;
-    /** Reference to the calculator display term span element. */
+    /** Reference to the calculator display term input element. */
     protected __elementDisplayResultTermInput: HTMLInputElement;
     /** Reference to the calculator display result container element. */
     protected __elementDisplayResultTermContainer: HTMLElement;
@@ -49,6 +49,8 @@ declare class TcHmiCalculator extends TcHmi.Controls.System.TcHmiControl {
     protected __elementDeleteHistoryIcon: HTMLElement;
     /** Reference to the calculator copy icon container element. */
     protected __elementResultCopyIconContainer: HTMLElement;
+    /** Reference to the calculator input context menu element. */
+    protected __elementInputContextMenu: ContextMenu;
     /** The current layout object*/
     protected __layoutObject: Layout | undefined;
     /** Button elements of the current keyboard layout */
@@ -147,6 +149,10 @@ declare class TcHmiCalculator extends TcHmi.Controls.System.TcHmiControl {
      */
     protected __onDisplayTermSpanClick(): void;
     /**
+     * EventHandler for the paste event of the display result term input element.
+     */
+    protected __onInputPaste(event: ClipboardEvent): void;
+    /**
      * EventHandler for the click event of keyboard keys.
      */
     protected __onKeyboardKeyClick(event: MouseEvent): void;
@@ -184,9 +190,14 @@ declare class TcHmiCalculator extends TcHmi.Controls.System.TcHmiControl {
     protected __addToHistory(historyEntry: HistoryEntry, comesFromCache?: boolean): void;
     /**
      * Creates a context menu for the history element.
-     * @param historyElement The history element to create the context menu for.
+     * @param element The history element to create the context menu for.
      */
-    protected __createContextMenu(historyElement: HTMLDivElement): void;
+    protected __createHistoryElementContextMenu(historyElement: HTMLDivElement): void;
+    /**
+     * Creates a context menu for the input element.
+     * @param element The input element to create the context menu for.
+     */
+    protected __createInputElementContextMenu(inputElement: HTMLInputElement): void;
     /**
      * EventHandler for the click event of a history element.
      * @param event The click event
@@ -215,11 +226,24 @@ declare class TcHmiCalculator extends TcHmi.Controls.System.TcHmiControl {
      */
     protected __onHistoryElementCopyClick(historyElement: HTMLElement, contextMenu: ContextMenu): void;
     /**
+     * EventHandler for the click event of the copy icon in the context menu of a input element.
+     * @param inputElement The input element that was clicked.
+     * @param contextMenu The context menu that was opened.
+     * @returns
+     */
+    protected __onInputElementCopyClick(inputElement: HTMLInputElement, contextMenu: ContextMenu): void;
+    /**
      * EventHandler for the click event of the delete icon in the context menu of a history element.
      * @param historyElement The history element that was clicked.
      * @param contextMenu The context menu that was opened.
      */
     protected __onHistoryElementDeleteClick(historyElement: HTMLElement, contextMenu: ContextMenu): void;
+    /**
+     * EventHandler for the click event of the paste icon in the context menu of a input element.
+     * @param inputElement The input element that was clicked.
+     * @param contextMenu The context menu that was opened.
+     */
+    protected __onInputElementPasteClick(inputElement: HTMLInputElement, contextMenu: ContextMenu): void;
     /**
      * Deletes the history elements and their events.
      * @param elements The elements to be deleted. Can be a single HTMLElement or an array of HTMLElements.

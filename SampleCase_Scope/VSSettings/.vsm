@@ -14,6 +14,12 @@
           <FileName></FileName>
           <Children>
             <Node>
+              <Title>ActPos</Title>
+              <Expanded>False</Expanded>
+              <FileName></FileName>
+              <Children />
+            </Node>
+            <Node>
               <Title>bOutputCh1</Title>
               <Expanded>False</Expanded>
               <FileName></FileName>
@@ -122,6 +128,12 @@
                   <Children />
                 </Node>
               </Children>
+            </Node>
+            <Node>
+              <Title>Axis Group (1)</Title>
+              <Expanded>False</Expanded>
+              <FileName></FileName>
+              <Children />
             </Node>
           </Children>
         </Node>

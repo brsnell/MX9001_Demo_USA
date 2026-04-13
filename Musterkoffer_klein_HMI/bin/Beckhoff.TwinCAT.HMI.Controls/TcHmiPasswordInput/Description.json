@@ -5,10 +5,10 @@
     "namespace": "TcHmi.Controls.Beckhoff",
     "displayName": "Password Input",
     "version": {
-        "full": "14.3.324.0",
+        "full": "14.4.1.0",
         "major": 14,
-        "minor": 3,
-        "build": 324,
+        "minor": 4,
+        "build": 1,
         "revision": 0
     },
     "visible": true,

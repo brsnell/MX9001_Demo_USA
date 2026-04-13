@@ -5,10 +5,10 @@
     "namespace": "TcHmi.Controls.Beckhoff",
     "displayName": "EcDiagnostics",
     "version": {
-        "full": "14.3.307.0",
+        "full": "14.3.340.0",
         "major": 14,
         "minor": 3,
-        "build": 307,
+        "build": 340,
         "revision": 0
     },
     "visible": true,
@@ -83,8 +83,8 @@
             "description": ""
         },
         {
-            "name": "TcHmiEcDiagnostics.js",
-            "type": "JavaScript",
+            "name": "../dist/TcHmiEcDiagnostics/TcHmiEcDiagnostics.esm.js",
+            "type": "EsModule",
             "description": ""
         }
     ],

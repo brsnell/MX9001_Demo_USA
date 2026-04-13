@@ -3,6 +3,7 @@
     "locale": "en",
     "localizedText": {
         "CopyResult": "Copy result",
-        "DeleteHistoryElement": "Delete entry"
+        "DeleteHistoryElement": "Delete entry",
+        "PasteClipboard": "Paste clipboard"
     }
 }

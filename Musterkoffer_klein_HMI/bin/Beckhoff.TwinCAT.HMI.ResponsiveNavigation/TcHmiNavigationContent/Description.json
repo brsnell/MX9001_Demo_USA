@@ -5,16 +5,17 @@
     "namespace": "TcHmi.Controls.ResponsiveNavigation",
     "displayName": "Navigation Content",
     "version": {
-        "full": "14.3.307.0",
+        "full": "14.3.341.0",
         "major": 14,
         "minor": 3,
-        "build": 307,
+        "build": 341,
         "revision": 0
     },
     "visible": true,
     "themeable": "Standard",
     "base": "TcHmi.Controls.System.TcHmiControl",
     "description": "This is an optional drop-down menu for the navigation bar.",
+    "defaultDesignerEvent": "",
     "properties": {
         "containerControl": false,
         "geometry": {

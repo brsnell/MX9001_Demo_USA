@@ -1,3 +1,7 @@
+// Compatibility file for non-module typescript compiles without adjustments.
+// Use the following line for modern code (needs adjustments to tsconfig.json#configOptions/paths)
+// import { TcHmiControl } from "Beckhoff.TwinCAT.HMI.Framework/index.esm.js";
+// ***************************************************************************
 
 declare class TcHmiNavigationContent extends TcHmi.Controls.System.TcHmiControl {
     #private;
