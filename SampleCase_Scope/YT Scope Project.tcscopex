@@ -57,9 +57,10 @@
       <SortPriority>0</SortPriority>
       <SubMember>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
-          <AmsNetId>172.17.32.12.1.1</AmsNetId>
+          <AmsNetId>192.168.7.189.1.1</AmsNetId>
           <Area>Local</Area>
           <ArrayLength>0</ArrayLength>
+          <ArrayStartIndex>0</ArrayStartIndex>
           <BaseSampleTime>100000</BaseSampleTime>
           <ChannelStyleInformation />
           <Comment></Comment>
@@ -84,7 +85,7 @@
           <ForceOversampling>false</ForceOversampling>
           <Guid>c05af371-8e92-4975-96cf-4c703994371b</Guid>
           <IndexGroup>61488</IndexGroup>
-          <IndexOffset>387112</IndexOffset>
+          <IndexOffset>390208</IndexOffset>
           <IsEvent>false</IsEvent>
           <IsHistorical>false</IsHistorical>
           <IsTimeline>false</IsTimeline>
@@ -155,9 +156,10 @@
           <VariableSize>1</VariableSize>
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
-          <AmsNetId>172.17.32.12.1.1</AmsNetId>
+          <AmsNetId>192.168.7.189.1.1</AmsNetId>
           <Area>Local</Area>
           <ArrayLength>0</ArrayLength>
+          <ArrayStartIndex>0</ArrayStartIndex>
           <BaseSampleTime>100000</BaseSampleTime>
           <ChannelStyleInformation />
           <Comment></Comment>
@@ -182,7 +184,7 @@
           <ForceOversampling>false</ForceOversampling>
           <Guid>9a668f9a-9c02-4c4e-a424-9353cb2707a9</Guid>
           <IndexGroup>61488</IndexGroup>
-          <IndexOffset>387113</IndexOffset>
+          <IndexOffset>390209</IndexOffset>
           <IsEvent>false</IsEvent>
           <IsHistorical>false</IsHistorical>
           <IsTimeline>false</IsTimeline>
@@ -253,9 +255,10 @@
           <VariableSize>1</VariableSize>
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
-          <AmsNetId>172.17.32.12.1.1</AmsNetId>
+          <AmsNetId>192.168.7.189.1.1</AmsNetId>
           <Area>Local</Area>
           <ArrayLength>0</ArrayLength>
+          <ArrayStartIndex>0</ArrayStartIndex>
           <BaseSampleTime>100000</BaseSampleTime>
           <ChannelStyleInformation />
           <Comment></Comment>
@@ -280,7 +283,7 @@
           <ForceOversampling>false</ForceOversampling>
           <Guid>e0d88bfd-da5b-4c2e-befe-b71b7ab37bc3</Guid>
           <IndexGroup>61488</IndexGroup>
-          <IndexOffset>387114</IndexOffset>
+          <IndexOffset>390210</IndexOffset>
           <IsEvent>false</IsEvent>
           <IsHistorical>false</IsHistorical>
           <IsTimeline>false</IsTimeline>
@@ -351,9 +354,10 @@
           <VariableSize>1</VariableSize>
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
-          <AmsNetId>172.17.32.12.1.1</AmsNetId>
+          <AmsNetId>192.168.7.189.1.1</AmsNetId>
           <Area>Local</Area>
           <ArrayLength>0</ArrayLength>
+          <ArrayStartIndex>0</ArrayStartIndex>
           <BaseSampleTime>100000</BaseSampleTime>
           <ChannelStyleInformation />
           <Comment></Comment>
@@ -378,7 +382,7 @@
           <ForceOversampling>false</ForceOversampling>
           <Guid>d1aebefa-ee34-4979-8102-6930182bd2cd</Guid>
           <IndexGroup>61488</IndexGroup>
-          <IndexOffset>387115</IndexOffset>
+          <IndexOffset>390211</IndexOffset>
           <IsEvent>false</IsEvent>
           <IsHistorical>false</IsHistorical>
           <IsTimeline>false</IsTimeline>
@@ -449,9 +453,10 @@
           <VariableSize>1</VariableSize>
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
-          <AmsNetId>172.17.32.12.1.1</AmsNetId>
+          <AmsNetId>192.168.7.189.1.1</AmsNetId>
           <Area>Local</Area>
           <ArrayLength>0</ArrayLength>
+          <ArrayStartIndex>0</ArrayStartIndex>
           <BaseSampleTime>100000</BaseSampleTime>
           <ChannelStyleInformation />
           <Comment></Comment>
@@ -476,7 +481,7 @@
           <ForceOversampling>false</ForceOversampling>
           <Guid>2895f3ab-9823-451d-ba13-e730feb81c79</Guid>
           <IndexGroup>61488</IndexGroup>
-          <IndexOffset>387116</IndexOffset>
+          <IndexOffset>390212</IndexOffset>
           <IsEvent>false</IsEvent>
           <IsHistorical>false</IsHistorical>
           <IsTimeline>false</IsTimeline>
@@ -547,9 +552,10 @@
           <VariableSize>1</VariableSize>
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
-          <AmsNetId>172.17.32.12.1.1</AmsNetId>
+          <AmsNetId>192.168.7.189.1.1</AmsNetId>
           <Area>Local</Area>
           <ArrayLength>0</ArrayLength>
+          <ArrayStartIndex>0</ArrayStartIndex>
           <BaseSampleTime>100000</BaseSampleTime>
           <ChannelStyleInformation />
           <Comment></Comment>
@@ -574,7 +580,7 @@
           <ForceOversampling>false</ForceOversampling>
           <Guid>0b33d939-6185-41f9-9369-b9a1db11f187</Guid>
           <IndexGroup>61488</IndexGroup>
-          <IndexOffset>387117</IndexOffset>
+          <IndexOffset>390213</IndexOffset>
           <IsEvent>false</IsEvent>
           <IsHistorical>false</IsHistorical>
           <IsTimeline>false</IsTimeline>
@@ -645,9 +651,10 @@
           <VariableSize>1</VariableSize>
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
-          <AmsNetId>172.17.32.12.1.1</AmsNetId>
+          <AmsNetId>192.168.7.189.1.1</AmsNetId>
           <Area>Local</Area>
           <ArrayLength>0</ArrayLength>
+          <ArrayStartIndex>0</ArrayStartIndex>
           <BaseSampleTime>100000</BaseSampleTime>
           <ChannelStyleInformation />
           <Comment></Comment>
@@ -672,7 +679,7 @@
           <ForceOversampling>false</ForceOversampling>
           <Guid>8e0afbb2-e2eb-4ff8-93f0-808ed12edd77</Guid>
           <IndexGroup>61488</IndexGroup>
-          <IndexOffset>387118</IndexOffset>
+          <IndexOffset>390214</IndexOffset>
           <IsEvent>false</IsEvent>
           <IsHistorical>false</IsHistorical>
           <IsTimeline>false</IsTimeline>
@@ -743,9 +750,10 @@
           <VariableSize>1</VariableSize>
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
-          <AmsNetId>172.17.32.12.1.1</AmsNetId>
+          <AmsNetId>192.168.7.189.1.1</AmsNetId>
           <Area>Local</Area>
           <ArrayLength>0</ArrayLength>
+          <ArrayStartIndex>0</ArrayStartIndex>
           <BaseSampleTime>100000</BaseSampleTime>
           <ChannelStyleInformation />
           <Comment></Comment>
@@ -770,7 +778,7 @@
           <ForceOversampling>false</ForceOversampling>
           <Guid>95740f1f-e4ab-4e2b-aa4f-7e1afa9f63e3</Guid>
           <IndexGroup>61488</IndexGroup>
-          <IndexOffset>387119</IndexOffset>
+          <IndexOffset>390215</IndexOffset>
           <IsEvent>false</IsEvent>
           <IsHistorical>false</IsHistorical>
           <IsTimeline>false</IsTimeline>
@@ -841,9 +849,10 @@
           <VariableSize>1</VariableSize>
         </AdsAcquisition>
         <AdsAcquisition AssemblyName="TwinCAT.Measurement.Scope.API.Model">
-          <AmsNetId>172.17.32.12.1.1</AmsNetId>
+          <AmsNetId>192.168.7.189.1.1</AmsNetId>
           <Area>Local</Area>
           <ArrayLength>0</ArrayLength>
+          <ArrayStartIndex>0</ArrayStartIndex>
           <BaseSampleTime>20000</BaseSampleTime>
           <ChannelStyleInformation />
           <Comment></Comment>
@@ -880,15 +889,15 @@
               <Name>None</Name>
               <ScaleFactor>1</ScaleFactor>
               <SourceUnitPrefix>none</SourceUnitPrefix>
-              <SourceUnitString />
+              <SourceUnitString></SourceUnitString>
               <Symbol>1</Symbol>
-              <TargetUnitString />
+              <TargetUnitString></TargetUnitString>
               <TargetUnitValue>0</TargetUnitValue>
             </Transformation>
             <Unit>
-              <BaseUnitString />
+              <BaseUnitString></BaseUnitString>
               <BaseUnitValue>0</BaseUnitValue>
-              <NameExtension />
+              <NameExtension></NameExtension>
               <Offset>0</Offset>
               <Prefix>none</Prefix>
               <ReturnText> (None) </ReturnText>
@@ -899,10 +908,10 @@
             <UnitScaleResult>1</UnitScaleResult>
             <UserUnit>
               <BaseName>UnitOfOne</BaseName>
-              <BaseUnitString />
+              <BaseUnitString></BaseUnitString>
               <BaseUnitValue>0</BaseUnitValue>
               <Name>None</Name>
-              <NameExtension />
+              <NameExtension></NameExtension>
               <Offset>0</Offset>
               <Prefix>none</Prefix>
               <ScaleFactor>1</ScaleFactor>
@@ -948,10 +957,10 @@
       <Comment />
       <ConnectedTimeMemberGuid>00000000-0000-0000-0000-000000000000</ConnectedTimeMemberGuid>
       <DefaultDisplayWidth>100000000</DefaultDisplayWidth>
-      <DisplayColor>-986896</DisplayColor>
+      <DisplayColor>-1118478</DisplayColor>
       <DisplayOverwriteMode>false</DisplayOverwriteMode>
       <DurationLength>0</DurationLength>
-      <ForeColor>-16777216</ForeColor>
+      <ForeColor>-14803426</ForeColor>
       <Guid>0895e799-8451-4bba-9b44-f045151f8cf8</Guid>
       <LayerEndConnectedTimeMemberGuid>00000000-0000-0000-0000-000000000000</LayerEndConnectedTimeMemberGuid>
       <LayerEndTimeRefreshMode>NoTime</LayerEndTimeRefreshMode>
@@ -966,7 +975,7 @@
         <AxisGroup AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <ChannelRelatedGuid>00000000-0000-0000-0000-000000000000</ChannelRelatedGuid>
           <Comment />
-          <DisplayColor>-1</DisplayColor>
+          <DisplayColor>-657931</DisplayColor>
           <Enabled>true</Enabled>
           <Guid>b50afc72-f55b-4838-8e21-fa09330a601f</Guid>
           <Name>Axis Group</Name>
@@ -992,18 +1001,20 @@
                   <ChannelRelatedGuid>00000000-0000-0000-0000-000000000000</ChannelRelatedGuid>
                   <ColorMode>CustomColor</ColorMode>
                   <Comment />
-                  <DisplayColor>-16777216</DisplayColor>
+                  <DisplayColor>-14803426</DisplayColor>
                   <Grid>true</Grid>
-                  <GridColor>-16777216</GridColor>
+                  <GridColor>-14803426</GridColor>
                   <GridDivisions>10</GridDivisions>
                   <GridLineWidth>1</GridLineWidth>
                   <Guid>68a91922-254a-4003-b4b0-a89c5193402a</Guid>
                   <LineWidth>1</LineWidth>
                   <Name>Axis Style (1)</Name>
                   <Precision>6</Precision>
+                  <ShowEnum>AllChannels</ShowEnum>
                   <ShowName>False</ShowName>
                   <ShowUnit>None</ShowUnit>
                   <SortPriority>100</SortPriority>
+                  <StretchFactor>1</StretchFactor>
                   <SubGrid>false</SubGrid>
                   <SubGridDivisions>5</SubGridDivisions>
                   <Title>MeasurementMemberBase</Title>
@@ -1030,18 +1041,20 @@
                   <ChannelRelatedGuid>00000000-0000-0000-0000-000000000000</ChannelRelatedGuid>
                   <ColorMode>CustomColor</ColorMode>
                   <Comment />
-                  <DisplayColor>-16777216</DisplayColor>
+                  <DisplayColor>-14803426</DisplayColor>
                   <Grid>true</Grid>
-                  <GridColor>-16777216</GridColor>
+                  <GridColor>-14803426</GridColor>
                   <GridDivisions>10</GridDivisions>
                   <GridLineWidth>1</GridLineWidth>
                   <Guid>40e996fa-27f3-47c2-bf21-a202000468c0</Guid>
                   <LineWidth>1</LineWidth>
                   <Name>Axis Style</Name>
                   <Precision>6</Precision>
+                  <ShowEnum>AllChannels</ShowEnum>
                   <ShowName>False</ShowName>
                   <ShowUnit>AllChannels</ShowUnit>
                   <SortPriority>100</SortPriority>
+                  <StretchFactor>1</StretchFactor>
                   <SubGrid>false</SubGrid>
                   <SubGridDivisions>5</SubGridDivisions>
                   <Title>MeasurementMemberBase</Title>
@@ -1146,6 +1159,7 @@
                       <DisplayColor>-16744448</DisplayColor>
                       <FillColor>838893568</FillColor>
                       <FillMode>FromHorizontalZero</FillMode>
+                      <GradientConfig>Colors:-7077677,-16776961,-16711681,-16711936,-65536;Thresholds:0.25,0.5,0.75,1</GradientConfig>
                       <Guid>29869fb9-8759-4beb-86ac-04eedd6b6fce</Guid>
                       <LineWidth>2</LineWidth>
                       <MarkColor>-16744448</MarkColor>
@@ -1153,6 +1167,9 @@
                       <MarkState>Auto</MarkState>
                       <Name>Series Style</Name>
                       <SeriesType>Line</SeriesType>
+                      <ShowBars>false</ShowBars>
+                      <ShowMesh>true</ShowMesh>
+                      <ShowMeshGrid>false</ShowMeshGrid>
                       <SortPriority>100</SortPriority>
                       <Title>MeasurementMemberBase</Title>
                     </SeriesStyle>
@@ -1280,6 +1297,7 @@
                       <DisplayColor>-16776961</DisplayColor>
                       <FillColor>838861055</FillColor>
                       <FillMode>FromHorizontalZero</FillMode>
+                      <GradientConfig>Colors:-7077677,-16776961,-16711681,-16711936,-65536;Thresholds:0.25,0.5,0.75,1</GradientConfig>
                       <Guid>f4a92928-3c2e-4821-8ba2-143905c4fdcb</Guid>
                       <LineWidth>2</LineWidth>
                       <MarkColor>-16776961</MarkColor>
@@ -1287,6 +1305,9 @@
                       <MarkState>Auto</MarkState>
                       <Name>Series Style (1)</Name>
                       <SeriesType>Line</SeriesType>
+                      <ShowBars>false</ShowBars>
+                      <ShowMesh>true</ShowMesh>
+                      <ShowMeshGrid>false</ShowMeshGrid>
                       <SortPriority>100</SortPriority>
                       <Title>MeasurementMemberBase</Title>
                     </SeriesStyle>
@@ -1414,6 +1435,7 @@
                       <DisplayColor>-23296</DisplayColor>
                       <FillColor>855614720</FillColor>
                       <FillMode>FromHorizontalZero</FillMode>
+                      <GradientConfig>Colors:-7077677,-16776961,-16711681,-16711936,-65536;Thresholds:0.25,0.5,0.75,1</GradientConfig>
                       <Guid>95fda4b7-341e-4322-8cd6-819d0882f131</Guid>
                       <LineWidth>2</LineWidth>
                       <MarkColor>-23296</MarkColor>
@@ -1421,6 +1443,9 @@
                       <MarkState>Auto</MarkState>
                       <Name>Series Style (2)</Name>
                       <SeriesType>Line</SeriesType>
+                      <ShowBars>false</ShowBars>
+                      <ShowMesh>true</ShowMesh>
+                      <ShowMeshGrid>false</ShowMeshGrid>
                       <SortPriority>100</SortPriority>
                       <Title>MeasurementMemberBase</Title>
                     </SeriesStyle>
@@ -1548,6 +1573,7 @@
                       <DisplayColor>-16711936</DisplayColor>
                       <FillColor>838926080</FillColor>
                       <FillMode>FromHorizontalZero</FillMode>
+                      <GradientConfig>Colors:-7077677,-16776961,-16711681,-16711936,-65536;Thresholds:0.25,0.5,0.75,1</GradientConfig>
                       <Guid>4c60a49c-f976-4151-bb74-82be9c4ced65</Guid>
                       <LineWidth>2</LineWidth>
                       <MarkColor>-16711936</MarkColor>
@@ -1555,6 +1581,9 @@
                       <MarkState>Auto</MarkState>
                       <Name>Series Style (3)</Name>
                       <SeriesType>Line</SeriesType>
+                      <ShowBars>false</ShowBars>
+                      <ShowMesh>true</ShowMesh>
+                      <ShowMeshGrid>false</ShowMeshGrid>
                       <SortPriority>100</SortPriority>
                       <Title>MeasurementMemberBase</Title>
                     </SeriesStyle>
@@ -1682,6 +1711,7 @@
                       <DisplayColor>-14774017</DisplayColor>
                       <FillColor>840863999</FillColor>
                       <FillMode>FromHorizontalZero</FillMode>
+                      <GradientConfig>Colors:-7077677,-16776961,-16711681,-16711936,-65536;Thresholds:0.25,0.5,0.75,1</GradientConfig>
                       <Guid>7291d367-894c-4149-92c8-591292458d80</Guid>
                       <LineWidth>2</LineWidth>
                       <MarkColor>-14774017</MarkColor>
@@ -1689,6 +1719,9 @@
                       <MarkState>Auto</MarkState>
                       <Name>Series Style (4)</Name>
                       <SeriesType>Line</SeriesType>
+                      <ShowBars>false</ShowBars>
+                      <ShowMesh>true</ShowMesh>
+                      <ShowMeshGrid>false</ShowMeshGrid>
                       <SortPriority>100</SortPriority>
                       <Title>MeasurementMemberBase</Title>
                     </SeriesStyle>
@@ -1816,6 +1849,7 @@
                       <DisplayColor>-65281</DisplayColor>
                       <FillColor>855572735</FillColor>
                       <FillMode>FromHorizontalZero</FillMode>
+                      <GradientConfig>Colors:-7077677,-16776961,-16711681,-16711936,-65536;Thresholds:0.25,0.5,0.75,1</GradientConfig>
                       <Guid>305ea306-ca39-4ba4-9d05-cc6bd368485c</Guid>
                       <LineWidth>2</LineWidth>
                       <MarkColor>-65281</MarkColor>
@@ -1823,6 +1857,9 @@
                       <MarkState>Auto</MarkState>
                       <Name>Series Style (5)</Name>
                       <SeriesType>Line</SeriesType>
+                      <ShowBars>false</ShowBars>
+                      <ShowMesh>true</ShowMesh>
+                      <ShowMeshGrid>false</ShowMeshGrid>
                       <SortPriority>100</SortPriority>
                       <Title>MeasurementMemberBase</Title>
                     </SeriesStyle>
@@ -1950,6 +1987,7 @@
                       <DisplayColor>-8355840</DisplayColor>
                       <FillColor>847282176</FillColor>
                       <FillMode>FromHorizontalZero</FillMode>
+                      <GradientConfig>Colors:-7077677,-16776961,-16711681,-16711936,-65536;Thresholds:0.25,0.5,0.75,1</GradientConfig>
                       <Guid>faa15184-7ba2-4c76-ad90-3d5b529a49be</Guid>
                       <LineWidth>2</LineWidth>
                       <MarkColor>-8355840</MarkColor>
@@ -1957,6 +1995,9 @@
                       <MarkState>Auto</MarkState>
                       <Name>Series Style (6)</Name>
                       <SeriesType>Line</SeriesType>
+                      <ShowBars>false</ShowBars>
+                      <ShowMesh>true</ShowMesh>
+                      <ShowMeshGrid>false</ShowMeshGrid>
                       <SortPriority>100</SortPriority>
                       <Title>MeasurementMemberBase</Title>
                     </SeriesStyle>
@@ -2084,6 +2125,7 @@
                       <DisplayColor>-16711681</DisplayColor>
                       <FillColor>838926335</FillColor>
                       <FillMode>FromHorizontalZero</FillMode>
+                      <GradientConfig>Colors:-7077677,-16776961,-16711681,-16711936,-65536;Thresholds:0.25,0.5,0.75,1</GradientConfig>
                       <Guid>88f03140-cc3a-45eb-a01f-d4847d0ffefc</Guid>
                       <LineWidth>2</LineWidth>
                       <MarkColor>-16711681</MarkColor>
@@ -2091,6 +2133,9 @@
                       <MarkState>Auto</MarkState>
                       <Name>Series Style (7)</Name>
                       <SeriesType>Line</SeriesType>
+                      <ShowBars>false</ShowBars>
+                      <ShowMesh>true</ShowMesh>
+                      <ShowMeshGrid>false</ShowMeshGrid>
                       <SortPriority>100</SortPriority>
                       <Title>MeasurementMemberBase</Title>
                     </SeriesStyle>
@@ -2137,12 +2182,13 @@
         </AxisGroup>
         <OverviewChart AssemblyName="TwinCAT.Measurement.Scope.API.Model">
           <Comment />
-          <DisplayColor>-1</DisplayColor>
-          <ForeColor>-16777216</ForeColor>
+          <DisplayColor>-657931</DisplayColor>
+          <ForeColor>-14803426</ForeColor>
           <Guid>b3c2d169-8677-450b-ad80-7a7c50bf6ae6</Guid>
           <Name>Overview Chart</Name>
           <OverviewVisible>false</OverviewVisible>
           <SortPriority>100</SortPriority>
+          <TimeColor>-12681525</TimeColor>
           <Title>MeasurementMemberBase</Title>
         </OverviewChart>
         <ChartStyle AssemblyName="TwinCAT.Measurement.Scope.API.Model">
@@ -2198,67 +2244,6 @@
           <SubMember />
           <Title>MeasurementMemberBase</Title>
         </MarkerContainer>
-        <AxisGroup AssemblyName="TwinCAT.Measurement.Scope.API.Model">
-          <ChannelRelatedGuid>00000000-0000-0000-0000-000000000000</ChannelRelatedGuid>
-          <Comment />
-          <DisplayColor>-657931</DisplayColor>
-          <Enabled>true</Enabled>
-          <Guid>6a50e350-6565-45e6-8e00-c9a4f500eb3a</Guid>
-          <Name>Axis Group (1)</Name>
-          <ShowTitle>False</ShowTitle>
-          <SortPriority>11</SortPriority>
-          <SubMember>
-            <RefGuid-TimeAxis>f0f4b371-7175-4acc-8ddc-e2019966321b</RefGuid-TimeAxis>
-            <ValueAxis AssemblyName="TwinCAT.Measurement.Scope.API.Model">
-              <Comment />
-              <DisplayColor>Black</DisplayColor>
-              <Guid>64ca4011-99ff-4f81-bd75-fe12403713f4</Guid>
-              <Inverted>false</Inverted>
-              <Logarithmic>false</Logarithmic>
-              <ManualMax>0.5</ManualMax>
-              <ManualMin>-0.5</ManualMin>
-              <Name>Value Axis (1)</Name>
-              <Orientation>Y</Orientation>
-              <ScalingMode>AutoGrowOnly</ScalingMode>
-              <SortPriority>100</SortPriority>
-              <SubMember>
-                <AxisStyle AssemblyName="TwinCAT.Measurement.Scope.API.Model">
-                  <ChannelRelatedGuid>00000000-0000-0000-0000-000000000000</ChannelRelatedGuid>
-                  <ColorMode>CustomColor</ColorMode>
-                  <Comment />
-                  <DisplayColor>-14803426</DisplayColor>
-                  <Grid>true</Grid>
-                  <GridColor>-14803426</GridColor>
-                  <GridDivisions>10</GridDivisions>
-                  <GridLineWidth>1</GridLineWidth>
-                  <Guid>c69d6579-eb19-4872-9270-bd23aab4b116</Guid>
-                  <LineWidth>1</LineWidth>
-                  <Name>Axis Style (2)</Name>
-                  <Precision>6</Precision>
-                  <ShowName>False</ShowName>
-                  <ShowUnit>AllChannels</ShowUnit>
-                  <SortPriority>100</SortPriority>
-                  <SubGrid>false</SubGrid>
-                  <SubGridDivisions>5</SubGridDivisions>
-                  <Title>MeasurementMemberBase</Title>
-                  <UseScientificNotation>true</UseScientificNotation>
-                  <Visible>true</Visible>
-                </AxisStyle>
-              </SubMember>
-              <Title>Value Axis</Title>
-            </ValueAxis>
-            <MarkerContainer AssemblyName="TwinCAT.Measurement.Scope.API.Model">
-              <Comment />
-              <DisplayColor>Black</DisplayColor>
-              <Guid>b4dc3136-bf94-4034-ba10-4c2e901ad79d</Guid>
-              <Name>Marker Container (2)</Name>
-              <SortPriority>100</SortPriority>
-              <SubMember />
-              <Title>MeasurementMemberBase</Title>
-            </MarkerContainer>
-          </SubMember>
-          <Title>Axis Group</Title>
-        </AxisGroup>
       </SubMember>
       <TimeOffset>0</TimeOffset>
       <TimeRefreshMode>Explicit</TimeRefreshMode>

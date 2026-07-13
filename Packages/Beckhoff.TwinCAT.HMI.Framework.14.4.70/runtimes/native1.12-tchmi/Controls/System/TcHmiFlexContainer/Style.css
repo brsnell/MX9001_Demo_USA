@@ -1,0 +1,11 @@
+/** Styles for all themes */
+
+/* Style for the main element */
+.TcHmi_Controls_System_TcHmiFlexContainer {
+    overflow: hidden;
+    display: flex;
+}
+
+.TcHmi_Controls_System_TcHmiFlexContainer > [data-tchmi-type] {
+    position: relative;
+}

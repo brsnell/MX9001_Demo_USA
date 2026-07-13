@@ -1,0 +1,13 @@
+/** Styles for all themes */
+
+/* Style for the main element */
+.TcHmi_Controls_System_TcHmiGridContainer {
+    overflow: hidden;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+}
+
+.TcHmi_Controls_System_TcHmiGridContainer > [data-tchmi-type] {
+    position: relative;
+}

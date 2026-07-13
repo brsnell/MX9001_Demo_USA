@@ -1,0 +1,176 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "definitions": {
+        "TcHmi.Controls.System.TcHmiGridContainer": {
+            "$schema": "http://json-schema.org/draft-04/schema",
+            "type": "object",
+            "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+            "frameworkControlType": "TcHmiGridContainer",
+            "frameworkControlNamespace": "TcHmi.Controls.System"
+        },
+        "TcHmiGridContainer": {
+            "$ref": "tchmi:framework#/definitions/TcHmi.Controls.System.TcHmiGridContainer"
+        },
+        "GridLayout": {
+            "$ref": "tchmi:framework#/definitions/TcHmi.Controls.System.TcHmiGridContainer.GridLayout"
+        },
+        "AutoFlow": {
+            "$ref": "tchmi:framework#/definitions/TcHmi.Controls.System.TcHmiGridContainer.AutoFlow"
+        },
+        "TcHmi.Controls.System.TcHmiGridContainer.GridLayout": {
+            "title": "GridLayout",
+            "type": "object",
+            "description": "Defines the layout of the grid.",
+            "engineeringColumns": [],
+            "propertiesMeta": [
+                {
+                    "name": "gridTemplateColumns",
+                    "category": "Layout",
+                    "displayName": "Grid Template Columns",
+                    "displayPriority": 10,
+                    "description": "Defines the column structure of the grid. The value is a space separated list of column definitions. \nA column definition can be a pixel value (42px), percent value (42%), 'max-value' or 'min-value' for automatic sizing based on the widest or narrowest content in the column or '1fr' for deviding the remaining free space in the grid into fractions. '1fr' means that all free space is given to this column. \nExample: '50px max-content 1fr'",
+                    "defaultValue": null,
+                    "defaultValueInternal": null
+                },
+                {
+                    "name": "gridTemplateRows",
+                    "category": "Layout",
+                    "displayName": "Grid Template Rows",
+                    "displayPriority": 10,
+                    "description": "Defines the row structure of the grid. The value is a space separated list of row definitions. \nA row definition can be a pixel value (42px), percent value (42%), 'max-value' or 'min-value' for automatic sizing based on the tallest or shortest content in the row or '1fr' for deviding the remaining free space in the grid into fractions. '1fr' means that all free space is given to this row. \nExample: '50px max-content 1fr'",
+                    "defaultValue": null,
+                    "defaultValueInternal": null
+                },
+                {
+                    "name": "gridAutoFlow",
+                    "category": "Layout",
+                    "displayName": "Grid Auto Flow",
+                    "displayPriority": 20,
+                    "description": "Defines the direction the grid’s auto-placement algorithm uses when placing items that don’t have an explicit position. \nWith row, items are filled left-to-right across each row before continuing on the next row; \nwith column, items are filled top-to-bottom down each column before continuing in the next column.",
+                    "defaultValue": "Row",
+                    "defaultValueInternal": "Row"
+                },
+                {
+                    "name": "columnGap",
+                    "category": "Layout",
+                    "displayName": "Column Gap",
+                    "displayPriority": 30,
+                    "description": "Defines the gap between columns in the grid. Can be a pixel value (42px), percent value (42%).",
+                    "defaultValueInternal": 0
+                },
+                {
+                    "name": "columnGapUnit",
+                    "refTo": "columnGap",
+                    "category": "Layout",
+                    "displayName": "Column Gap Unit",
+                    "displayPriority": 30,
+                    "description": "Unit of the column gap.",
+                    "defaultValueInternal": "px"
+                },
+                {
+                    "name": "rowGap",
+                    "category": "Layout",
+                    "displayName": "Row Gap",
+                    "displayPriority": 30,
+                    "description": "Defines the gap between rows in the grid. Can be a pixel value (42px), percent value (42%).",
+                    "defaultValueInternal": 0
+                },
+                {
+                    "name": "rowGapUnit",
+                    "refTo": "rowGap",
+                    "category": "Layout",
+                    "displayName": "Row Gap Unit",
+                    "displayPriority": 30,
+                    "description": "Unit of the row gap.",
+                    "defaultValueInternal": "px"
+                },
+                {
+                    "name": "justifyItems",
+                    "category": "Layout",
+                    "displayName": "Justify Items",
+                    "displayPriority": 40,
+                    "description": "Horizontal alignment of the items within the grid.",
+                    "defaultValueInternal": "Left"
+                },
+                {
+                    "name": "alignItems",
+                    "category": "Layout",
+                    "displayName": "Align Items",
+                    "displayPriority": 40,
+                    "description": "Vertical alignment of the items within the grid.",
+                    "defaultValueInternal": "Top"
+                },
+                {
+                    "name": "overflowX",
+                    "category": "Layout",
+                    "displayName": "Overflow X",
+                    "displayPriority": 50,
+                    "description": "Horizontal overflow of the items within the grid.",
+                    "defaultValueInternal": "Hidden"
+                },
+                {
+                    "name": "overflowY",
+                    "category": "Layout",
+                    "displayName": "Overflow Y",
+                    "displayPriority": 50,
+                    "description": "Vertical overflow of the items within the grid.",
+                    "defaultValueInternal": "Hidden"
+                }
+            ],
+            "properties": {
+                "gridTemplateColumns": {
+                    "$ref": "tchmi:general#/definitions/String"
+                },
+                "gridTemplateRows": {
+                    "$ref": "tchmi:general#/definitions/String"
+                },
+                "gridAutoFlow": {
+                    "$ref": "tchmi:framework#/definitions/TcHmi.Controls.System.TcHmiGridContainer.AutoFlow"
+                },
+                "columnGap": {
+                    "$ref": "tchmi:framework#/definitions/MeasurementValue"
+                },
+                "columnGapUnit": {
+                    "$ref": "tchmi:framework#/definitions/MeasurementUnit"
+                },
+                "rowGap": {
+                    "$ref": "tchmi:framework#/definitions/MeasurementValue"
+                },
+                "rowGapUnit": {
+                    "$ref": "tchmi:framework#/definitions/MeasurementUnit"
+                },
+                "justifyItems": {
+                    "$ref": "tchmi:framework#/definitions/TcHmi.Controls.System.TcHmiGridContainer.JustifyItems"
+                },
+                "alignItems": {
+                    "$ref": "tchmi:framework#/definitions/TcHmi.Controls.System.TcHmiGridContainer.AlignItems"
+                },
+                "overflowX": {
+                    "$ref": "tchmi:framework#/definitions/Overflow"
+                },
+                "overflowY": {
+                    "$ref": "tchmi:framework#/definitions/Overflow"
+                }
+            },
+            "additionalProperties": false
+        },
+        "TcHmi.Controls.System.TcHmiGridContainer.AutoFlow": {
+            "description": "Defines the direction of the grid's auto-placement algorithm.",
+            "type": "string",
+            "enum": ["Row", "Column"],
+            "default": "Row"
+        },
+        "TcHmi.Controls.System.TcHmiGridContainer.JustifyItems": {
+            "description": "Defines the horizontal alignment of the items within the grid.",
+            "type": "string",
+            "enum": ["Left", "Center", "Right"],
+            "default": "Left"
+        },
+        "TcHmi.Controls.System.TcHmiGridContainer.AlignItems": {
+            "description": "Defines the vertical alignment of the items within the grid.",
+            "type": "string",
+            "enum": ["Start", "Center", "End"],
+            "default": "Start"
+        }
+    }
+}

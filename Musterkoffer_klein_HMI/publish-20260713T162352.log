@@ -1,0 +1,192 @@
+13.07.2026 04:23:51.872: (START:    00000000) Constructor:          Not connected.
+
+13.07.2026 04:23:51.872: (START:    00000001) Connect:              ws://127.0.0.1:3000/
+
+13.07.2026 04:23:51.880: (COMPLETE: 00000001) Connect
+
+13.07.2026 04:23:51.880: (START:    00000002) ReceiveData:          Receive buffer size is 16384 bytes.
+
+13.07.2026 04:23:51.888: (COMPLETE: 00000002) ReceiveData
+
+13.07.2026 04:23:51.892: ServerConnection instantiation: ws://192.168.7.189:2010/
+
+13.07.2026 04:23:51.892: (START:    00000000) Constructor:          Not connected.
+
+13.07.2026 04:23:51.892: (START:    00000001) Connect:              ws://192.168.7.189:2010/
+
+13.07.2026 04:23:51.907: (COMPLETE: 00000001) Connect
+
+13.07.2026 04:23:51.907: (START:    00000002) ReceiveData:          Receive buffer size is 16384 bytes.
+
+13.07.2026 04:23:51.907: (COMPLETE: 00000002) ReceiveData
+
+13.07.2026 04:23:51.907: (START:    00000003) SendMessage:          {"id":1.0,"requestType":"ReadWrite","commands":[{"symbol":"Login","writeValue":{"userName":"__SystemAdministrator","password":"1"},"commandOptions":["SendErrorMessage"]}]}
+
+13.07.2026 04:23:51.907: (COMPLETE: 00000003) SendMessage
+
+13.07.2026 04:23:52.492: (START:    00000004) MessageReceived:      {"id":1.0,"commands":[{"symbol":"Login","readValue":"903599ebad1f0a9b769e2e3e185e60053422faa7f2d5b4088f5c5615b3ad81df0ea9179dd8812c058bfccf6af999953dd7a32f1611eb03ba173c7f5204944dee","processedStart":"1970-01-01T01:18:49.4776581Z","processedEnd":"1970-01-01T01:18:49.4838619Z","commandOptions":["SendErrorMessage"],"version":1.0}],"apiVersion":23.0,"requestType":"ReadWrite","sessionId":"903599ebad1f0a9b769e2e3e185e60053422faa7f2d5b4088f5c5615b3ad81df0ea9179dd8812c058bfccf6af999953dd7a32f1611eb03ba173c7f5204944dee","serverId":"c2e3247d2e37d88d2f5824dec02231cc113d50765a4b3fc412c73e37cebfb4d2"}
+
+13.07.2026 04:23:52.493: (COMPLETE: 00000004) MessageReceived
+
+13.07.2026 04:23:52.493: TcHmiWebSocket connected
+
+13.07.2026 04:23:52.494: Send __License
+
+13.07.2026 04:23:52.494: (START:    00000005) SendMessage:          {"id":2.0,"requestType":"ReadWrite","commands":[{"symbol":"__License","writeValue":"","commandOptions":["SendErrorMessage"]}]}
+
+13.07.2026 04:23:52.494: (COMPLETE: 00000005) SendMessage
+
+13.07.2026 04:23:52.496: (START:    00000006) MessageReceived:      {"id":2.0,"error":{"code":779,"message":"LICENSE_EXPIRED","reason":"The license has expired"},"commands":[{"symbol":"__License","readValue":"be3ae02bf17714627106eb3c65f57b2411e309130b4ca67dfd67857bee6e52f5e7079465b5a9d912cebdc534a927c57a9daa69d5a54ffc8df54364513260afb3","commandOptions":["SendErrorMessage"],"version":1.0}],"apiVersion":23.0,"requestType":"ReadWrite","sessionId":"903599ebad1f0a9b769e2e3e185e60053422faa7f2d5b4088f5c5615b3ad81df0ea9179dd8812c058bfccf6af999953dd7a32f1611eb03ba173c7f5204944dee","serverId":"c2e3247d2e37d88d2f5824dec02231cc113d50765a4b3fc412c73e37cebfb4d2"}
+
+13.07.2026 04:23:52.497: (COMPLETE: 00000006) MessageReceived
+
+13.07.2026 04:23:52.498: Received __License
+
+13.07.2026 04:23:52.498: (START:    00000007) SendMessage:          {"id":3.0,"requestType":"ReadWrite","commands":[{"symbol":"ADS.Diagnostics","commandOptions":["SendErrorMessage"]}]}
+
+13.07.2026 04:23:52.498: (COMPLETE: 00000007) SendMessage
+
+13.07.2026 04:23:52.500: (START:    00000008) MessageReceived:      {"id":3.0,"commands":[{"symbol":"ADS.Diagnostics","error":{"domain":"TcHmiSrv","code":778,"message":"LICENSE_TARGET","reason":"The target license is missing"},"readValue":null,"processedStart":"1970-01-01T01:18:49.4923848Z","processedEnd":"1970-01-01T01:18:49.4925342Z","commandOptions":["SendErrorMessage"],"version":1.0}],"apiVersion":23.0,"requestType":"ReadWrite","sessionId":"903599ebad1f0a9b769e2e3e185e60053422faa7f2d5b4088f5c5615b3ad81df0ea9179dd8812c058bfccf6af999953dd7a32f1611eb03ba173c7f5204944dee","serverId":"c2e3247d2e37d88d2f5824dec02231cc113d50765a4b3fc412c73e37cebfb4d2"}
+
+13.07.2026 04:23:52.501: (COMPLETE: 00000008) MessageReceived
+
+13.07.2026 04:23:52.501: Send __License
+
+13.07.2026 04:23:52.501: (START:    00000009) SendMessage:          {"id":4.0,"requestType":"ReadWrite","commands":[{"symbol":"__License","writeValue":"","commandOptions":["SendErrorMessage"]}]}
+
+13.07.2026 04:23:52.503: (COMPLETE: 00000009) SendMessage
+
+13.07.2026 04:23:52.503: (START:    0000000A) MessageReceived:      {"id":4.0,"error":{"code":779,"message":"LICENSE_EXPIRED","reason":"The license has expired"},"commands":[{"symbol":"__License","readValue":"3360a9dfa14b2edb4316d52bcfb83282a30867b00c2df0c4e90dd7ba548d98243cdaa1a7f99e1ca6d919c3f58356bdc72ea06c37410f0e8daf47db805cc2f3ba","commandOptions":["SendErrorMessage"],"version":1.0}],"apiVersion":23.0,"requestType":"ReadWrite","sessionId":"903599ebad1f0a9b769e2e3e185e60053422faa7f2d5b4088f5c5615b3ad81df0ea9179dd8812c058bfccf6af999953dd7a32f1611eb03ba173c7f5204944dee","serverId":"c2e3247d2e37d88d2f5824dec02231cc113d50765a4b3fc412c73e37cebfb4d2"}
+
+13.07.2026 04:23:52.504: (COMPLETE: 0000000A) MessageReceived
+
+13.07.2026 04:23:52.504: Received __License
+
+13.07.2026 04:23:52.504: (START:    0000000B) SendMessage:          {"id":5.0,"requestType":"ReadWrite","commands":[{"symbol":"IsAuthRequired","commandOptions":["SendErrorMessage"]}]}
+
+13.07.2026 04:23:52.506: (COMPLETE: 0000000B) SendMessage
+
+13.07.2026 04:23:52.507: (START:    0000000C) MessageReceived:      {"id":5.0,"commands":[{"symbol":"IsAuthRequired","readValue":true,"processedStart":"1970-01-01T01:18:49.4991855Z","processedEnd":"1970-01-01T01:18:49.4991975Z","commandOptions":["SendErrorMessage","UniqueHash"],"version":1.0}],"apiVersion":23.0,"requestType":"ReadWrite","sessionId":"903599ebad1f0a9b769e2e3e185e60053422faa7f2d5b4088f5c5615b3ad81df0ea9179dd8812c058bfccf6af999953dd7a32f1611eb03ba173c7f5204944dee","serverId":"c2e3247d2e37d88d2f5824dec02231cc113d50765a4b3fc412c73e37cebfb4d2"}
+
+13.07.2026 04:23:52.508: (COMPLETE: 0000000C) MessageReceived
+
+13.07.2026 04:23:52.508: (START:    0000000D) SendMessage:          {"id":6.0,"requestType":"ReadWrite","commands":[{"symbol":"Login","writeValue":{"userName":"__SystemAdministrator","password":"1"},"commandOptions":["SendErrorMessage"]}]}
+
+13.07.2026 04:23:52.508: (COMPLETE: 0000000D) SendMessage
+
+13.07.2026 04:23:52.510: (START:    0000000E) MessageReceived:      {"id":6.0,"commands":[{"symbol":"Login","error":{"code":4106,"message":"ALREADY_LOGGED_IN","reason":"The user is already logged in with this session"},"readValue":null,"processedStart":"1970-01-01T01:18:49.5024216Z","processedEnd":"1970-01-01T01:18:49.5026331Z","commandOptions":["SendErrorMessage"],"version":1.0}],"apiVersion":23.0,"requestType":"ReadWrite","sessionId":"903599ebad1f0a9b769e2e3e185e60053422faa7f2d5b4088f5c5615b3ad81df0ea9179dd8812c058bfccf6af999953dd7a32f1611eb03ba173c7f5204944dee","serverId":"c2e3247d2e37d88d2f5824dec02231cc113d50765a4b3fc412c73e37cebfb4d2"}
+
+13.07.2026 04:23:52.511: (COMPLETE: 0000000E) MessageReceived
+
+13.07.2026 04:23:52.512: (START:    0000000F) SendMessage:          {"id":7.0,"requestType":"ReadWrite","commands":[{"symbol":"GetServerInformation","commandOptions":["SendErrorMessage"]}]}
+
+13.07.2026 04:23:52.512: (COMPLETE: 0000000F) SendMessage
+
+13.07.2026 04:23:52.514: (START:    00000010) MessageReceived:      {"id":7.0,"commands":[{"symbol":"GetServerInformation","readValue":{"architecture":"win-x64","creatorMode":false,"endpoints":["https://0.0.0.0:2020","http://0.0.0.0:2010","http://127.0.0.1:2010"],"forceAuthEndpoints":[],"frameworkApiVersion":"1.0.0.1","maintenanceMode":{"isAllowed":false},"pid":6616,"productVersion":"23.0.279","projectName":"SampleCase_small_HMI","projectVersion":"1.0.0.0","publishInProgress":false,"serverTime":"2026-07-13T21:30:43.7224194Z","serviceMode":true,"serviceName":"HMI_Musterkoffer","state":1,"timedClient":{"isTimed":false},"version":"23.0.279.0"},"processedStart":"1970-01-01T01:18:49.5061696Z","processedEnd":"1970-01-01T01:18:49.5062342Z","commandOptions":["SendErrorMessage"],"version":1.0}],"apiVersion":23.0,"requestType":"ReadWrite","sessionId":"903599ebad1f0a9b769e2e3e185e60053422faa7f2d5b4088f5c5615b3ad81df0ea9179dd8812c058bfccf6af999953dd7a32f1611eb03ba173c7f5204944dee","serverId":"c2e3247d2e37d88d2f5824dec02231cc113d50765a4b3fc412c73e37cebfb4d2"}
+
+13.07.2026 04:23:52.515: (COMPLETE: 00000010) MessageReceived
+
+13.07.2026 04:23:52.515: (START:    00000011) SendMessage:          {"id":8.0,"requestType":"ReadWrite","commands":[{"symbol":"ListDomains","commandOptions":["SendErrorMessage"]}]}
+
+13.07.2026 04:23:52.516: (COMPLETE: 00000011) SendMessage
+
+13.07.2026 04:23:52.518: (START:    00000012) MessageReceived:      {"id":8.0,"commands":[{"symbol":"ListDomains","readValue":{"ADS":{"authExtension":false,"configVersion":"1.0.1.6","extension":"TcHmiAds","friendlyName":"ADS","guid":"5AE90DB9-B895-45AD-9B79-27A19FADCD86","licensed":true,"packageVersion":"23.0.279.0","productVersion":"23.0.279","remote":false,"required":true,"state":"Initialized","thirdParty":false,"updated":"2026-07-13T21:13:41.7489158Z","version":"23.0.279.0","visibility":"AlwaysShow"},"TcHmiEcDiagnostics":{"authExtension":false,"configVersion":"1.0.1.3","extension":"TcHmiEcDiagnostics","friendlyName":"EtherCAT Diagnostics","guid":"5DC96C56-5913-4dbb-92A5-8557E1B87658","licensed":true,"packageVersion":"23.0.275","productVersion":"23.0.275","remote":false,"required":false,"state":"Initialized","thirdParty":false,"updated":"2026-07-13T21:13:52.084917Z","version":"23.0.275.0","visibility":"AlwaysShow"},"TcHmiLua":{"authExtension":false,"configVersion":"1.0.1.1","extension":"TcHmiLua","friendlyName":"Lua","guid":"EBCC019A-41B4-4ADA-9163-F9F34357B0B6","licensed":true,"packageVersion":"23.0.279.0","productVersion":"23.0.279","remote":false,"required":true,"state":"Initialized","thirdParty":false,"updated":"2026-07-13T21:13:41.5789192Z","version":"23.0.279.0","visibility":"HideInEngineering"},"TcHmiSqliteLogger":{"authExtension":false,"configVersion":"1.0.1.2","extension":"TcHmiSqliteLogger","friendlyName":"SQLite Logger","guid":"CD0B1D03-27D7-4904-BEFF-3882D751757A","licensed":true,"packageVersion":"23.0.279.0","productVersion":"23.0.279","remote":false,"required":true,"state":"Initialized","thirdParty":false,"updated":"2026-07-13T21:13:41.4859158Z","version":"23.0.279.0","visibility":"HideInEngineering"},"TcHmiSrv":{"authExtension":false,"configVersion":"1.0.1.19","extension":"TcHmiSrv","guid":"1EE8B733-8328-488E-A4BA-C287BF8302E7","licensed":true,"loaded":true,"packageVersion":"23.0.279","productVersion":"23.0.279","required":true,"state":"Initialized","thirdParty":false,"updated":"2026-07-13T21:21:08.1789992Z","version":"23.0.279.0","visibility":"AlwaysShow"},"TcHmiUserManagement":{"authExtension":true,"configVersion":"1.0.1.6","extension":"TcHmiUserManagement","friendlyName":"TcHmiUserManagement","guid":"2E0817F0-DE05-42ED-BAFA-552D96B07127","licensed":true,"packageVersion":"23.0.279.0","productVersion":"23.0.279","remote":false,"required":true,"state":"Initialized","thirdParty":false,"updated":"2026-07-13T21:21:08.1359963Z","version":"23.0.279.0","visibility":"HideInEngineering"}},"processedStart":"1970-01-01T01:18:49.5099309Z","processedEnd":"1970-01-01T01:18:49.5101314Z","commandOptions":["SendErrorMessage"],"version":1.0}],"apiVersion":23.0,"requestType":"ReadWrite","sessionId":"903599ebad1f0a9b769e2e3e185e60053422faa7f2d5b4088f5c5615b3ad81df0ea9179dd8812c058bfccf6af999953dd7a32f1611eb03ba173c7f5204944dee","serverId":"c2e3247d2e37d88d2f5824dec02231cc113d50765a4b3fc412c73e37cebfb4d2"}
+
+13.07.2026 04:23:52.519: (COMPLETE: 00000012) MessageReceived
+
+13.07.2026 04:23:52.519: (START:    00000003) SendMessage:          {"id":1.0,"requestType":"ReadWrite","commands":[{"symbol":"ListDomains","commandOptions":["SendErrorMessage"]}]}
+
+13.07.2026 04:23:52.519: (COMPLETE: 00000003) SendMessage
+
+13.07.2026 04:23:52.521: (START:    00000004) MessageReceived:      {"id":1.0,"commands":[{"symbol":"ListDomains","readValue":{"ADS":{"authExtension":false,"configVersion":"1.0.1.6","extension":"TcHmiAds","friendlyName":"ADS","guid":"5AE90DB9-B895-45AD-9B79-27A19FADCD86","licensed":true,"packageVersion":"23.0.279.0","productVersion":"23.0.279","remote":false,"required":true,"state":"Initialized","thirdParty":false,"updated":"2026-07-13T20:56:59.1132606Z","version":"23.0.279.0","visibility":"AlwaysShow"},"TcHmiEcDiagnostics":{"authExtension":false,"configVersion":"1.0.1.3","extension":"TcHmiEcDiagnostics","friendlyName":"EtherCAT Diagnostics","guid":"5DC96C56-5913-4dbb-92A5-8557E1B87658","licensed":true,"packageVersion":"23.0.275","productVersion":"23.0.275","remote":false,"required":false,"state":"Initialized","thirdParty":false,"updated":"2026-07-13T20:56:58.9926314Z","version":"23.0.275.0","visibility":"AlwaysShow"},"TcHmiLua":{"authExtension":false,"configVersion":"1.0.1.1","extension":"TcHmiLua","friendlyName":"Lua","guid":"EBCC019A-41B4-4ADA-9163-F9F34357B0B6","licensed":true,"packageVersion":"23.0.279.0","productVersion":"23.0.279","remote":false,"required":true,"state":"Initialized","thirdParty":false,"updated":"2026-07-13T20:56:58.9454883Z","version":"23.0.279.0","visibility":"HideInEngineering"},"TcHmiScope":{"authExtension":false,"configVersion":"1.0.2.0","debuggerAttached":false,"extension":"TcHmiScope","friendlyName":"TwinCAT Scope","guid":"2997437c-6969-4fe0-8bc2-3275125f6ebd","licensed":true,"packageVersion":"14.2.7758","productVersion":"14.5.14.0","remote":false,"required":false,"state":"Initialized","thirdParty":false,"updated":"2026-07-13T21:23:06.6631545Z","version":"14.5.14.0","visibility":"AlwaysShow"},"TcHmiSqliteLogger":{"authExtension":false,"configVersion":"1.0.1.2","extension":"TcHmiSqliteLogger","friendlyName":"SQLite Logger","guid":"CD0B1D03-27D7-4904-BEFF-3882D751757A","licensed":true,"packageVersion":"23.0.279.0","productVersion":"23.0.279","remote":false,"required":true,"state":"Initialized","thirdParty":false,"updated":"2026-07-13T20:56:58.8473566Z","version":"23.0.279.0","visibility":"HideInEngineering"},"TcHmiSrv":{"authExtension":false,"configVersion":"1.0.1.19","extension":"TcHmiSrv","guid":"1EE8B733-8328-488E-A4BA-C287BF8302E7","licensed":true,"loaded":true,"packageVersion":"23.0.279","productVersion":"23.0.279","required":true,"state":"Initialized","thirdParty":false,"updated":"2026-07-13T21:20:16.4109691Z","version":"23.0.279.0","visibility":"AlwaysShow"},"TcHmiUserManagement":{"authExtension":true,"configVersion":"1.0.1.6","extension":"TcHmiUserManagement","friendlyName":"TcHmiUserManagement","guid":"2E0817F0-DE05-42ED-BAFA-552D96B07127","licensed":true,"packageVersion":"23.0.279.0","productVersion":"23.0.279","remote":false,"required":true,"state":"Initialized","thirdParty":false,"updated":"2026-07-13T20:56:59.0677228Z","version":"23.0.279.0","visibility":"HideInEngineering"}},"processedStart":"1970-01-08T04:54:07.1762476Z","processedEnd":"1970-01-08T04:54:07.1765741Z","commandOptions":["SendErrorMessage"],"version":1.0}],"apiVersion":23.0,"requestType":"ReadWrite","sessionId":"7dd113c898167e60af3fb181bce4d9e4ad7d02a3604933071b34e3df8a95afcbf3a95cee5702a2d716110d34e47ed542e005d5f21845d34006cbe382a5b840aa","serverId":"d9eaaf417c0b443beb64d9cbaf4c9837dd181a515d289e582d864df448e661e5"}
+
+13.07.2026 04:23:52.522: (COMPLETE: 00000004) MessageReceived
+
+13.07.2026 04:23:52.523: (START:    00000005) SendMessage:          {"id":2.0,"requestType":"ReadWrite","commands":[{"symbol":"ListDomains","commandOptions":["SendErrorMessage"]}]}
+
+13.07.2026 04:23:52.523: (COMPLETE: 00000005) SendMessage
+
+13.07.2026 04:23:52.524: (START:    00000006) MessageReceived:      {"id":2.0,"commands":[{"symbol":"ListDomains","readValue":{"ADS":{"authExtension":false,"configVersion":"1.0.1.6","extension":"TcHmiAds","friendlyName":"ADS","guid":"5AE90DB9-B895-45AD-9B79-27A19FADCD86","licensed":true,"packageVersion":"23.0.279.0","productVersion":"23.0.279","remote":false,"required":true,"state":"Initialized","thirdParty":false,"updated":"2026-07-13T20:56:59.1132606Z","version":"23.0.279.0","visibility":"AlwaysShow"},"TcHmiEcDiagnostics":{"authExtension":false,"configVersion":"1.0.1.3","extension":"TcHmiEcDiagnostics","friendlyName":"EtherCAT Diagnostics","guid":"5DC96C56-5913-4dbb-92A5-8557E1B87658","licensed":true,"packageVersion":"23.0.275","productVersion":"23.0.275","remote":false,"required":false,"state":"Initialized","thirdParty":false,"updated":"2026-07-13T20:56:58.9926314Z","version":"23.0.275.0","visibility":"AlwaysShow"},"TcHmiLua":{"authExtension":false,"configVersion":"1.0.1.1","extension":"TcHmiLua","friendlyName":"Lua","guid":"EBCC019A-41B4-4ADA-9163-F9F34357B0B6","licensed":true,"packageVersion":"23.0.279.0","productVersion":"23.0.279","remote":false,"required":true,"state":"Initialized","thirdParty":false,"updated":"2026-07-13T20:56:58.9454883Z","version":"23.0.279.0","visibility":"HideInEngineering"},"TcHmiScope":{"authExtension":false,"configVersion":"1.0.2.0","debuggerAttached":false,"extension":"TcHmiScope","friendlyName":"TwinCAT Scope","guid":"2997437c-6969-4fe0-8bc2-3275125f6ebd","licensed":true,"packageVersion":"14.2.7758","productVersion":"14.5.14.0","remote":false,"required":false,"state":"Initialized","thirdParty":false,"updated":"2026-07-13T21:23:06.6631545Z","version":"14.5.14.0","visibility":"AlwaysShow"},"TcHmiSqliteLogger":{"authExtension":false,"configVersion":"1.0.1.2","extension":"TcHmiSqliteLogger","friendlyName":"SQLite Logger","guid":"CD0B1D03-27D7-4904-BEFF-3882D751757A","licensed":true,"packageVersion":"23.0.279.0","productVersion":"23.0.279","remote":false,"required":true,"state":"Initialized","thirdParty":false,"updated":"2026-07-13T20:56:58.8473566Z","version":"23.0.279.0","visibility":"HideInEngineering"},"TcHmiSrv":{"authExtension":false,"configVersion":"1.0.1.19","extension":"TcHmiSrv","guid":"1EE8B733-8328-488E-A4BA-C287BF8302E7","licensed":true,"loaded":true,"packageVersion":"23.0.279","productVersion":"23.0.279","required":true,"state":"Initialized","thirdParty":false,"updated":"2026-07-13T21:20:16.4109691Z","version":"23.0.279.0","visibility":"AlwaysShow"},"TcHmiUserManagement":{"authExtension":true,"configVersion":"1.0.1.6","extension":"TcHmiUserManagement","friendlyName":"TcHmiUserManagement","guid":"2E0817F0-DE05-42ED-BAFA-552D96B07127","licensed":true,"packageVersion":"23.0.279.0","productVersion":"23.0.279","remote":false,"required":true,"state":"Initialized","thirdParty":false,"updated":"2026-07-13T20:56:59.0677228Z","version":"23.0.279.0","visibility":"HideInEngineering"}},"processedStart":"1970-01-08T04:54:07.1793765Z","processedEnd":"1970-01-08T04:54:07.1796081Z","commandOptions":["SendErrorMessage"],"version":1.0}],"apiVersion":23.0,"requestType":"ReadWrite","sessionId":"7dd113c898167e60af3fb181bce4d9e4ad7d02a3604933071b34e3df8a95afcbf3a95cee5702a2d716110d34e47ed542e005d5f21845d34006cbe382a5b840aa","serverId":"d9eaaf417c0b443beb64d9cbaf4c9837dd181a515d289e582d864df448e661e5"}
+
+13.07.2026 04:23:52.525: (COMPLETE: 00000006) MessageReceived
+
+13.07.2026 04:23:52.525: (START:    00000013) SendMessage:          {"id":9.0,"requestType":"ReadWrite","commands":[{"symbol":"ListDomains","commandOptions":["SendErrorMessage"]}]}
+
+13.07.2026 04:23:52.526: (COMPLETE: 00000013) SendMessage
+
+13.07.2026 04:23:52.528: (START:    00000014) MessageReceived:      {"id":9.0,"commands":[{"symbol":"ListDomains","readValue":{"ADS":{"authExtension":false,"configVersion":"1.0.1.6","extension":"TcHmiAds","friendlyName":"ADS","guid":"5AE90DB9-B895-45AD-9B79-27A19FADCD86","licensed":true,"packageVersion":"23.0.279.0","productVersion":"23.0.279","remote":false,"required":true,"state":"Initialized","thirdParty":false,"updated":"2026-07-13T21:13:41.7489158Z","version":"23.0.279.0","visibility":"AlwaysShow"},"TcHmiEcDiagnostics":{"authExtension":false,"configVersion":"1.0.1.3","extension":"TcHmiEcDiagnostics","friendlyName":"EtherCAT Diagnostics","guid":"5DC96C56-5913-4dbb-92A5-8557E1B87658","licensed":true,"packageVersion":"23.0.275","productVersion":"23.0.275","remote":false,"required":false,"state":"Initialized","thirdParty":false,"updated":"2026-07-13T21:13:52.084917Z","version":"23.0.275.0","visibility":"AlwaysShow"},"TcHmiLua":{"authExtension":false,"configVersion":"1.0.1.1","extension":"TcHmiLua","friendlyName":"Lua","guid":"EBCC019A-41B4-4ADA-9163-F9F34357B0B6","licensed":true,"packageVersion":"23.0.279.0","productVersion":"23.0.279","remote":false,"required":true,"state":"Initialized","thirdParty":false,"updated":"2026-07-13T21:13:41.5789192Z","version":"23.0.279.0","visibility":"HideInEngineering"},"TcHmiSqliteLogger":{"authExtension":false,"configVersion":"1.0.1.2","extension":"TcHmiSqliteLogger","friendlyName":"SQLite Logger","guid":"CD0B1D03-27D7-4904-BEFF-3882D751757A","licensed":true,"packageVersion":"23.0.279.0","productVersion":"23.0.279","remote":false,"required":true,"state":"Initialized","thirdParty":false,"updated":"2026-07-13T21:13:41.4859158Z","version":"23.0.279.0","visibility":"HideInEngineering"},"TcHmiSrv":{"authExtension":false,"configVersion":"1.0.1.19","extension":"TcHmiSrv","guid":"1EE8B733-8328-488E-A4BA-C287BF8302E7","licensed":true,"loaded":true,"packageVersion":"23.0.279","productVersion":"23.0.279","required":true,"state":"Initialized","thirdParty":false,"updated":"2026-07-13T21:21:08.1789992Z","version":"23.0.279.0","visibility":"AlwaysShow"},"TcHmiUserManagement":{"authExtension":true,"configVersion":"1.0.1.6","extension":"TcHmiUserManagement","friendlyName":"TcHmiUserManagement","guid":"2E0817F0-DE05-42ED-BAFA-552D96B07127","licensed":true,"packageVersion":"23.0.279.0","productVersion":"23.0.279","remote":false,"required":true,"state":"Initialized","thirdParty":false,"updated":"2026-07-13T21:21:08.1359963Z","version":"23.0.279.0","visibility":"HideInEngineering"}},"processedStart":"1970-01-01T01:18:49.5199284Z","processedEnd":"1970-01-01T01:18:49.520232Z","commandOptions":["SendErrorMessage"],"version":1.0}],"apiVersion":23.0,"requestType":"ReadWrite","sessionId":"903599ebad1f0a9b769e2e3e185e60053422faa7f2d5b4088f5c5615b3ad81df0ea9179dd8812c058bfccf6af999953dd7a32f1611eb03ba173c7f5204944dee","serverId":"c2e3247d2e37d88d2f5824dec02231cc113d50765a4b3fc412c73e37cebfb4d2"}
+
+13.07.2026 04:23:52.529: (COMPLETE: 00000014) MessageReceived
+
+13.07.2026 04:23:52.529: (START:    00000007) SendMessage:          {"id":3.0,"requestType":"ReadWrite","commands":[{"symbol":"Diagnostics::ARCHITECTURE","commandOptions":["SendErrorMessage"]}]}
+
+13.07.2026 04:23:52.529: (COMPLETE: 00000007) SendMessage
+
+13.07.2026 04:23:52.530: (START:    00000008) MessageReceived:      {"id":3.0,"commands":[{"symbol":"Diagnostics::ARCHITECTURE","readValue":"win-x64","processedStart":"1970-01-08T04:54:07.1858382Z","processedEnd":"1970-01-08T04:54:07.1859335Z","commandOptions":["SendErrorMessage"],"version":1.0}],"apiVersion":23.0,"requestType":"ReadWrite","sessionId":"7dd113c898167e60af3fb181bce4d9e4ad7d02a3604933071b34e3df8a95afcbf3a95cee5702a2d716110d34e47ed542e005d5f21845d34006cbe382a5b840aa","serverId":"d9eaaf417c0b443beb64d9cbaf4c9837dd181a515d289e582d864df448e661e5"}
+
+13.07.2026 04:23:52.531: (COMPLETE: 00000008) MessageReceived
+
+13.07.2026 04:23:52.532: (START:    00000015) SendMessage:          {"id":10.0,"requestType":"ReadWrite","commands":[{"symbol":"GetServerInformation","commandOptions":["SendErrorMessage"]}]}
+
+13.07.2026 04:23:52.532: (COMPLETE: 00000015) SendMessage
+
+13.07.2026 04:23:52.533: (START:    00000016) MessageReceived:      {"id":10.0,"commands":[{"symbol":"GetServerInformation","readValue":{"architecture":"win-x64","creatorMode":false,"endpoints":["https://0.0.0.0:2020","http://0.0.0.0:2010","http://127.0.0.1:2010"],"forceAuthEndpoints":[],"frameworkApiVersion":"1.0.0.1","maintenanceMode":{"isAllowed":false},"pid":6616,"productVersion":"23.0.279","projectName":"SampleCase_small_HMI","projectVersion":"1.0.0.0","publishInProgress":false,"serverTime":"2026-07-13T21:30:43.7424191Z","serviceMode":true,"serviceName":"HMI_Musterkoffer","state":1,"timedClient":{"isTimed":false},"version":"23.0.279.0"},"processedStart":"1970-01-01T01:18:49.5266199Z","processedEnd":"1970-01-01T01:18:49.5266799Z","commandOptions":["SendErrorMessage"],"version":1.0}],"apiVersion":23.0,"requestType":"ReadWrite","sessionId":"903599ebad1f0a9b769e2e3e185e60053422faa7f2d5b4088f5c5615b3ad81df0ea9179dd8812c058bfccf6af999953dd7a32f1611eb03ba173c7f5204944dee","serverId":"c2e3247d2e37d88d2f5824dec02231cc113d50765a4b3fc412c73e37cebfb4d2"}
+
+13.07.2026 04:23:52.535: (COMPLETE: 00000016) MessageReceived
+
+13.07.2026 04:23:52.536: (START:    00000009) SendMessage:          {"id":4.0,"requestType":"ReadWrite","commands":[{"symbol":"ListDomains","commandOptions":["SendErrorMessage"]}]}
+
+13.07.2026 04:23:52.536: (COMPLETE: 00000009) SendMessage
+
+13.07.2026 04:23:52.537: (START:    0000000A) MessageReceived:      {"id":4.0,"commands":[{"symbol":"ListDomains","readValue":{"ADS":{"authExtension":false,"configVersion":"1.0.1.6","extension":"TcHmiAds","friendlyName":"ADS","guid":"5AE90DB9-B895-45AD-9B79-27A19FADCD86","licensed":true,"packageVersion":"23.0.279.0","productVersion":"23.0.279","remote":false,"required":true,"state":"Initialized","thirdParty":false,"updated":"2026-07-13T20:56:59.1132606Z","version":"23.0.279.0","visibility":"AlwaysShow"},"TcHmiEcDiagnostics":{"authExtension":false,"configVersion":"1.0.1.3","extension":"TcHmiEcDiagnostics","friendlyName":"EtherCAT Diagnostics","guid":"5DC96C56-5913-4dbb-92A5-8557E1B87658","licensed":true,"packageVersion":"23.0.275","productVersion":"23.0.275","remote":false,"required":false,"state":"Initialized","thirdParty":false,"updated":"2026-07-13T20:56:58.9926314Z","version":"23.0.275.0","visibility":"AlwaysShow"},"TcHmiLua":{"authExtension":false,"configVersion":"1.0.1.1","extension":"TcHmiLua","friendlyName":"Lua","guid":"EBCC019A-41B4-4ADA-9163-F9F34357B0B6","licensed":true,"packageVersion":"23.0.279.0","productVersion":"23.0.279","remote":false,"required":true,"state":"Initialized","thirdParty":false,"updated":"2026-07-13T20:56:58.9454883Z","version":"23.0.279.0","visibility":"HideInEngineering"},"TcHmiScope":{"authExtension":false,"configVersion":"1.0.2.0","debuggerAttached":false,"extension":"TcHmiScope","friendlyName":"TwinCAT Scope","guid":"2997437c-6969-4fe0-8bc2-3275125f6ebd","licensed":true,"packageVersion":"14.2.7758","productVersion":"14.5.14.0","remote":false,"required":false,"state":"Initialized","thirdParty":false,"updated":"2026-07-13T21:23:06.6631545Z","version":"14.5.14.0","visibility":"AlwaysShow"},"TcHmiSqliteLogger":{"authExtension":false,"configVersion":"1.0.1.2","extension":"TcHmiSqliteLogger","friendlyName":"SQLite Logger","guid":"CD0B1D03-27D7-4904-BEFF-3882D751757A","licensed":true,"packageVersion":"23.0.279.0","productVersion":"23.0.279","remote":false,"required":true,"state":"Initialized","thirdParty":false,"updated":"2026-07-13T20:56:58.8473566Z","version":"23.0.279.0","visibility":"HideInEngineering"},"TcHmiSrv":{"authExtension":false,"configVersion":"1.0.1.19","extension":"TcHmiSrv","guid":"1EE8B733-8328-488E-A4BA-C287BF8302E7","licensed":true,"loaded":true,"packageVersion":"23.0.279","productVersion":"23.0.279","required":true,"state":"Initialized","thirdParty":false,"updated":"2026-07-13T21:20:16.4109691Z","version":"23.0.279.0","visibility":"AlwaysShow"},"TcHmiUserManagement":{"authExtension":true,"configVersion":"1.0.1.6","extension":"TcHmiUserManagement","friendlyName":"TcHmiUserManagement","guid":"2E0817F0-DE05-42ED-BAFA-552D96B07127","licensed":true,"packageVersion":"23.0.279.0","productVersion":"23.0.279","remote":false,"required":true,"state":"Initialized","thirdParty":false,"updated":"2026-07-13T20:56:59.0677228Z","version":"23.0.279.0","visibility":"HideInEngineering"}},"processedStart":"1970-01-08T04:54:07.1921532Z","processedEnd":"1970-01-08T04:54:07.1923756Z","commandOptions":["SendErrorMessage"],"version":1.0}],"apiVersion":23.0,"requestType":"ReadWrite","sessionId":"7dd113c898167e60af3fb181bce4d9e4ad7d02a3604933071b34e3df8a95afcbf3a95cee5702a2d716110d34e47ed542e005d5f21845d34006cbe382a5b840aa","serverId":"d9eaaf417c0b443beb64d9cbaf4c9837dd181a515d289e582d864df448e661e5"}
+
+13.07.2026 04:23:52.538: (COMPLETE: 0000000A) MessageReceived
+
+13.07.2026 04:23:52.539: (START:    00000017) SendMessage:          {"id":11.0,"requestType":"ReadWrite","commands":[{"symbol":"ADS.CheckLicense","customerData":"TF2300 | TC3 HMI Scope","writeValue":"27326EE5-AB30-4084-B15B-8CCA96CCBF0B","commandOptions":["SendErrorMessage"]},{"symbol":"ADS.CheckLicense","customerData":"TF2300 | TC3 HMI Scope","writeValue":"4989A799-AEEA-4FEE-88EF-666B99EEFB45","commandOptions":["SendErrorMessage"]}]}
+
+13.07.2026 04:23:52.539: (COMPLETE: 00000017) SendMessage
+
+13.07.2026 04:23:52.540: (START:    00000018) MessageReceived:      {"id":11.0,"commands":[{"symbol":"ADS.CheckLicense","error":{"domain":"TcHmiSrv","code":778,"message":"LICENSE_TARGET","reason":"The target license is missing"},"customerData":"TF2300 | TC3 HMI Scope","readValue":null,"processedStart":"1970-01-01T01:18:49.5326143Z","processedEnd":"1970-01-01T01:18:49.532803Z","commandOptions":["SendErrorMessage"],"version":1.0},{"symbol":"ADS.CheckLicense","error":{"domain":"TcHmiSrv","code":778,"message":"LICENSE_TARGET","reason":"The target license is missing"},"customerData":"TF2300 | TC3 HMI Scope","readValue":null,"processedStart":"1970-01-01T01:18:49.5326143Z","processedEnd":"1970-01-01T01:18:49.5328044Z","commandOptions":["SendErrorMessage"],"version":1.0}],"apiVersion":23.0,"requestType":"ReadWrite","sessionId":"903599ebad1f0a9b769e2e3e185e60053422faa7f2d5b4088f5c5615b3ad81df0ea9179dd8812c058bfccf6af999953dd7a32f1611eb03ba173c7f5204944dee","serverId":"c2e3247d2e37d88d2f5824dec02231cc113d50765a4b3fc412c73e37cebfb4d2"}
+
+13.07.2026 04:23:52.541: (COMPLETE: 00000018) MessageReceived
+
+13.07.2026 04:23:52.542: (START:    00000019) Destructor
+
+13.07.2026 04:23:52.542: (START:    0000001A) CancelReceiveData
+
+13.07.2026 04:23:52.542: (COMPLETE: 0000001A) CancelReceiveData
+
+13.07.2026 04:23:52.544: (START:    0000001B) ReceiveDataCompleted
+
+13.07.2026 04:23:52.544: (COMPLETE: 0000001B) ReceiveDataCompleted
+
+13.07.2026 04:23:52.544: (START:    0000001C) ConnectionClosed:     Aborted
+
+13.07.2026 04:23:52.544: (COMPLETE: 0000001C) ConnectionClosed
+
+13.07.2026 04:23:52.544: (START:    0000001D) Disposed
+
+13.07.2026 04:23:52.544: (COMPLETE: 0000001D) Disposed
+
+13.07.2026 04:23:52.544: (COMPLETE: 00000019) Destructor
+
+13.07.2026 04:23:52.544: (START:    0000000B) Destructor
+
+13.07.2026 04:23:52.544: (START:    0000000C) CancelReceiveData
+
+13.07.2026 04:23:52.544: (COMPLETE: 0000000C) CancelReceiveData
+
+13.07.2026 04:23:52.544: (START:    0000000D) ReceiveDataCompleted
+
+13.07.2026 04:23:52.544: (COMPLETE: 0000000D) ReceiveDataCompleted
+
+13.07.2026 04:23:52.544: (START:    0000000E) ConnectionClosed:     Aborted
+
+13.07.2026 04:23:52.544: (COMPLETE: 0000000E) ConnectionClosed
+
+13.07.2026 04:23:52.544: (START:    0000000F) Disposed
+
+13.07.2026 04:23:52.544: (COMPLETE: 0000000F) Disposed
+
+13.07.2026 04:23:52.544: (COMPLETE: 0000000B) Destructor
+

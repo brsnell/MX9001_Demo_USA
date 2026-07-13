@@ -1,1 +1,0 @@
-import{intervalManager}from"../System/IntervalManager.js";export function start(name){intervalManager.start(name)}export function stop(name){intervalManager.stop(name)}TcHmi.Interval={start,stop};

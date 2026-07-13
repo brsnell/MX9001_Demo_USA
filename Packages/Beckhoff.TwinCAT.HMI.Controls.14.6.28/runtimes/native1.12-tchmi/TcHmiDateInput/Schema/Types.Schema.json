@@ -1,0 +1,20 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "definitions": {
+        "TcHmi.Controls.Beckhoff.TcHmiDateInput": {
+            "type": "object",
+            "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+            "frameworkControlType": "TcHmiDateInput",
+            "frameworkControlNamespace": "TcHmi.Controls.Beckhoff"
+        },
+        "TcHmiDateInput": {
+            "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiDateInput"
+        },
+        "TcHmi.Controls.Beckhoff.TcHmiDateInput.ButtonPosition": {
+            "title": "DateInputButtonPosition",
+            "type": "string",
+            "enum": ["Left", "Right"],
+            "default": "Right"
+        }
+    }
+}

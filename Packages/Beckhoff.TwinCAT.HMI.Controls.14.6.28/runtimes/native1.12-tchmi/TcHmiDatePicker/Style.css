@@ -1,0 +1,160 @@
+.TcHmi_Controls_Beckhoff_TcHmiDatePicker-template {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiDatePicker-template-overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex: 1;
+    overflow: hidden;
+}
+
+/* Popup mode: overlay is in TopMostLayer, not in the template flex flow */
+.TcHmi_Controls_Beckhoff_TcHmiDatePicker-template-overlay.tchmi-in-topmostlayer {
+    flex: none;
+    position: absolute;
+    padding: 10px;
+    width: 370px;
+    height: 425px;
+    max-width: 95%;
+    max-height: 95%;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiDatePicker-selected-area-template {
+    position: relative;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiDatePicker-calendar-template {
+    position: relative;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    flex: 1;
+    overflow: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiDatePicker-calendar-template-calendar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiDatePicker-button-area-template {
+    position: relative;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiDatePicker-template-action-button {
+    position: relative;
+    width: 100px;
+    height: 35px;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiDatePicker-template-value {
+    position: relative;
+    height: 30px;
+    width: 100%;
+}
+
+/* calendar style */
+.TcHmi_Controls_Beckhoff_TcHmiDatePicker-calendar-template-header {
+    width: 100%;
+    text-align: center;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiDatePicker-calendar-template-header ul {
+    margin: 0;
+    padding: 5px;
+    list-style-type: none;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiDatePicker-calendar-template-header-year {
+    padding-top: 0px;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiDatePicker-calendar-template-header ul li {
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    list-style-type: none;
+    display: inline-block;
+    height: 100%;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiDatePicker-calendar-template-prev {
+    float: left;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiDatePicker-calendar-template-next {
+    float: right;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiDatePicker.read-only .TcHmi_Controls_Beckhoff_TcHmiDatePicker-calendar-template-prev,
+.TcHmi_Controls_Beckhoff_TcHmiDatePicker.read-only .TcHmi_Controls_Beckhoff_TcHmiDatePicker-calendar-template-next {
+    display: none;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiDatePicker-calendar-template-weekdays {
+    margin: 0;
+    padding: 10px 0;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiDatePicker-calendar-template-weekdays li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiDatePicker-calendar-template-days {
+    flex: 1;
+    padding: 10px 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-auto-rows: 1fr;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiDatePicker-calendar-template-days li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 22px;
+    font-size: 12px;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiDatePicker-invalid-notification {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    z-index: 9999;
+}

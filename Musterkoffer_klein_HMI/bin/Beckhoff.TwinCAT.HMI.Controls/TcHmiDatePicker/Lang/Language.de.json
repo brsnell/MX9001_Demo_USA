@@ -1,0 +1,10 @@
+{
+    "$schema": "../../../TwinCAT-HMI-Common/JsonSchemas/Language.Schema.json",
+    "locale": "de",
+    "localizedText": {
+        "Button_Text_Ok": "OK",
+        "Button_Text_Cancel": "Abbrechen",
+        "Tooltip_LessThanMin_Text": "Das aktuell gewählte Datum liegt vor dem Mindestdatum: {0}",
+        "Tooltip_GreaterThanMax_Text": "Das aktuell gewählte Datum liegt nach dem Höchstdatum: {0}"
+    }
+}

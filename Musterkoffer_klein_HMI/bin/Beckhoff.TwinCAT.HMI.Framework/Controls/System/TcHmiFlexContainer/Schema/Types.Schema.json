@@ -1,0 +1,187 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "definitions": {
+        "TcHmi.Controls.System.TcHmiFlexContainer": {
+            "$schema": "http://json-schema.org/draft-04/schema",
+            "type": "object",
+            "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+            "frameworkControlType": "TcHmiFlexContainer",
+            "frameworkControlNamespace": "TcHmi.Controls.System"
+        },
+        "TcHmiFlexContainer": {
+            "$ref": "tchmi:framework#/definitions/TcHmi.Controls.System.TcHmiFlexContainer"
+        },
+        "FlexLayout": {
+            "$ref": "tchmi:framework#/definitions/TcHmi.Controls.System.TcHmiFlexContainer.FlexLayout"
+        },
+        "TcHmi.Controls.System.TcHmiFlexContainer.FlexLayout": {
+            "title": "FlexLayout",
+            "type": "object",
+            "description": "Defines the layout of the flex container.",
+            "engineeringColumns": [],
+            "propertiesMeta": [
+                {
+                    "name": "flexDirection",
+                    "category": "Layout",
+                    "displayName": "Flex Direction",
+                    "displayPriority": 10,
+                    "description": "Defines the direction the flex container uses when placing items. \nWith Row, items are placed left-to-right; \nwith Column, items are placed top-to-bottom down.",
+                    "defaultValue": "Row",
+                    "defaultValueInternal": "Row"
+                },
+                {
+                    "name": "flexWrap",
+                    "category": "Layout",
+                    "displayName": "Flex Wrap",
+                    "displayPriority": 15,
+                    "description": "Defines the wrapping behavior of the flex container. \nWith NoWrap, items are laid out in a single line which may cause overflow. \nWith Wrap, items will wrap onto multiple lines, from top to bottom.",
+                    "defaultValue": "NoWrap",
+                    "defaultValueInternal": "NoWrap"
+                },
+                {
+                    "name": "justifyContent",
+                    "category": "Layout",
+                    "displayName": "Justify Content",
+                    "displayPriority": 20,
+                    "description": "Defines the alignment along the main axis. \nWith Flex-Start, items are packed toward the start of the flex-direction. \nWith Flex-End, items are packed toward the end of the flex-direction. \nWith Center, items are centered along the line. \nWith Space-Between, items are evenly distributed in the line; first item is on the start line, last item on the end line. \nWith Space-Around, items are evenly distributed in the line with equal space around them. \nWith Space-Evenly, items are distributed so that the spacing between any two items (and the space to the edges) is equal.",
+                    "defaultValue": "Flex-Start",
+                    "defaultValueInternal": "Flex-Start"
+                },
+                {
+                    "name": "alignItems",
+                    "category": "Layout",
+                    "displayName": "Align Items",
+                    "displayPriority": 25,
+                    "description": "Defines the alignment of items along the cross axis. \nWith Flex-Start, items are aligned toward the start of the cross-axis. \nWith Flex-End, items are aligned toward the end of the cross-axis. \nWith Center, items are centered along the cross-axis. \nWith Baseline, items are aligned such as their baselines align.",
+                    "defaultValue": "Flex-Start",
+                    "defaultValueInternal": "Flex-Start"
+                },
+                {
+                    "name": "alignContent",
+                    "category": "Layout",
+                    "displayName": "Align Content",
+                    "displayPriority": 30,
+                    "description": "Defines the alignment of items along the cross axis when wrapping is active. \nWith Flex-Start, lines are packed toward the start of the cross-axis. \nWith Flex-End, lines are packed toward the end of the cross-axis. \nWith Center, lines are centered along the cross-axis. \nWith Space-Between, lines are evenly distributed in the cross-axis; first line is on the start line, last line on the end line. \nWith Space-Around, lines are evenly distributed in the cross-axis with equal space around them.",
+                    "defaultValue": "Flex-Start",
+                    "defaultValueInternal": "Flex-Start"
+                },
+                {
+                    "name": "columnGap",
+                    "category": "Layout",
+                    "displayName": "Column Gap",
+                    "displayPriority": 35,
+                    "description": "Defines the gap between columns in the flex container. Can be a pixel value (42px), percent value (42%).",
+                    "defaultValueInternal": 0
+                },
+                {
+                    "name": "columnGapUnit",
+                    "refTo": "columnGap",
+                    "category": "Layout",
+                    "displayName": "Column Gap Unit",
+                    "displayPriority": 35,
+                    "description": "Unit of the column gap.",
+                    "defaultValueInternal": "px"
+                },
+                {
+                    "name": "rowGap",
+                    "category": "Layout",
+                    "displayName": "Row Gap",
+                    "displayPriority": 35,
+                    "description": "Defines the gap between rows in the flex container. Can be a pixel value (42px), percent value (42%).",
+                    "defaultValueInternal": 0
+                },
+                {
+                    "name": "rowGapUnit",
+                    "refTo": "rowGap",
+                    "category": "Layout",
+                    "displayName": "Row Gap Unit",
+                    "displayPriority": 35,
+                    "description": "Unit of the row gap.",
+                    "defaultValueInternal": "px"
+                },
+                {
+                    "name": "overflowX",
+                    "category": "Layout",
+                    "displayName": "Overflow X",
+                    "displayPriority": 40,
+                    "description": "Defines the overflow behavior of the flex container along the horizontal axis.",
+                    "defaultValueInternal": "Hidden"
+                },
+                {
+                    "name": "overflowY",
+                    "category": "Layout",
+                    "displayName": "Overflow Y",
+                    "displayPriority": 40,
+                    "description": "Defines the overflow behavior of the flex container along the vertical axis.",
+                    "defaultValueInternal": "Hidden"
+                }
+            ],
+            "properties": {
+                "flexDirection": {
+                    "$ref": "tchmi:framework#/definitions/TcHmi.Controls.System.TcHmiFlexContainer.FlexDirection"
+                },
+                "flexWrap": {
+                    "$ref": "tchmi:framework#/definitions/TcHmi.Controls.System.TcHmiFlexContainer.FlexWrap"
+                },
+                "justifyContent": {
+                    "$ref": "tchmi:framework#/definitions/TcHmi.Controls.System.TcHmiFlexContainer.JustifyContent"
+                },
+                "alignItems": {
+                    "$ref": "tchmi:framework#/definitions/TcHmi.Controls.System.TcHmiFlexContainer.AlignItems"
+                },
+                "alignContent": {
+                    "$ref": "tchmi:framework#/definitions/TcHmi.Controls.System.TcHmiFlexContainer.AlignContent"
+                },
+                "columnGap": {
+                    "$ref": "tchmi:framework#/definitions/MeasurementValue"
+                },
+                "columnGapUnit": {
+                    "$ref": "tchmi:framework#/definitions/MeasurementUnit"
+                },
+                "rowGap": {
+                    "$ref": "tchmi:framework#/definitions/MeasurementValue"
+                },
+                "rowGapUnit": {
+                    "$ref": "tchmi:framework#/definitions/MeasurementUnit"
+                },
+                "overflowX": {
+                    "$ref": "tchmi:framework#/definitions/Overflow"
+                },
+                "overflowY": {
+                    "$ref": "tchmi:framework#/definitions/Overflow"
+                }
+            },
+            "additionalProperties": false
+        },
+        "TcHmi.Controls.System.TcHmiFlexContainer.FlexDirection": {
+            "description": "Defines the direction of the items in the flex container.",
+            "type": "string",
+            "enum": ["Row", "Column", "Row-Reverse", "Column-Reverse"],
+            "default": "Row"
+        },
+        "TcHmi.Controls.System.TcHmiFlexContainer.FlexWrap": {
+            "description": "Defines the wrapping behavior of the flex container.",
+            "type": "string",
+            "enum": ["NoWrap", "Wrap", "Wrap-Reverse"],
+            "default": "NoWrap"
+        },
+        "TcHmi.Controls.System.TcHmiFlexContainer.JustifyContent": {
+            "description": "Defines how items are aligned along the main axis of the flex container.",
+            "type": "string",
+            "enum": ["Flex-Start", "Center", "Flex-End", "Space-Between", "Space-Around", "Space-Evenly"],
+            "default": "Flex-Start"
+        },
+        "TcHmi.Controls.System.TcHmiFlexContainer.AlignItems": {
+            "description": "Defines the alignment of items along the cross axis.",
+            "type": "string",
+            "enum": ["Flex-Start", "Center", "Flex-End", "Baseline", "Stretch"],
+            "default": "Flex-Start"
+        },
+        "TcHmi.Controls.System.TcHmiFlexContainer.AlignContent": {
+            "description": "Defines the alignment of items along the cross axis when wrapping is active.",
+            "type": "string",
+            "enum": ["Flex-Start", "Center", "Flex-End", "Space-Between", "Space-Around", "Stretch"],
+            "default": "Flex-Start"
+        }
+    }
+}

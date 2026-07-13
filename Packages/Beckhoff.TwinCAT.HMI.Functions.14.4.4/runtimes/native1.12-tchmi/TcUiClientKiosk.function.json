@@ -1,0 +1,47 @@
+{
+    "$schema": "../TcHmiFramework/Schema/FunctionDescription.Schema.json",
+    "apiVersion": 1,
+    "version": {
+        "full": "14.4.4.0",
+        "fullSemVer": "14.4.4",
+        "major": 14,
+        "minor": 4,
+        "build": 4,
+        "revision": 0
+    },
+    "dependencyFiles": [
+        {
+            "name": "TcUiClientKiosk.js",
+            "type": "EsModule"
+        }
+    ],
+    "function": {
+        "name": "TcUiClientKiosk",
+        "namespace": "TcHmi.Functions.Beckhoff",
+        "displayName": "TcUiClientKiosk",
+        "visible": true,
+        "category": "TcUiClient",
+        "waitMode": "Asynchronous",
+        "injectContextObject": true,
+        "description": "Enables or disables kiosk mode via the TcUiClient API. This feature requires the TcUiClient.",
+        "returnValue": null,
+        "arguments": [
+            {
+                "name": "ctx",
+                "displayName": "ctx",
+                "type": "tchmi:framework#/definitions/ContextReference",
+                "description": "Context Reference",
+                "required": true,
+                "bindable": false
+            },
+            {
+                "name": "enable",
+                "displayName": "Enable",
+                "type": "tchmi:general#/definitions/Boolean",
+                "description": "Whether to enable or disable kiosk mode.",
+                "required": true,
+                "bindable": true
+            }
+        ]
+    }
+}

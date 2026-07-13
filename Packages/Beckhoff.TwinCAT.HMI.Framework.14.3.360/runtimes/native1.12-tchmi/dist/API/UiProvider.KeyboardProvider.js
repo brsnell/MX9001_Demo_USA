@@ -1,1 +1,0 @@
-import{BaseProvider}from"./UiProvider.js";export class KeyboardProvider extends BaseProvider{type="keyboard";constructor(providerName){super(providerName,"keyboard")}}TcHmi.UiProvider??={},TcHmi.UiProvider.KeyboardProvider=KeyboardProvider;

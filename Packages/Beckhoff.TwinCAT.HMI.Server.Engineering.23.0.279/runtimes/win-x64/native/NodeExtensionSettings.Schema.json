@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "properties": {
+      "type": "object",
+      "properties": {
+        "extensionHostReloadAutomatically": {
+          "type": "boolean",
+          "default": false
+        },
+        "extensionHostDebugPort": {
+          "type": "number",
+          "default": 0
+        },
+        "extensionHostFileSystemWatcherInterval": {
+          "type": "string",
+          "format": "timespan",
+          "default": "PT10S"
+        },
+        "extensionHostStartupArguments": {
+          "type": "string",
+          "default": ""
+        },
+        "extensionHostLogLevel": {
+          "type": "string",
+          "enum": [
+            "error",
+            "warning",
+            "info",
+            "debug"
+          ],
+          "default": "warning"
+        },
+        "extensionHostInitTimeout": {
+          "type": "string",
+          "format": "timespan",
+          "default": "PT30S"
+        },
+        "extensionHostNpmAudit": {
+          "type": "boolean",
+          "default": true
+        }
+      },
+      "additionalProperties": false
+    },
+    "additionalProperties": true
+  },
+  "additionalProperties": false
+}

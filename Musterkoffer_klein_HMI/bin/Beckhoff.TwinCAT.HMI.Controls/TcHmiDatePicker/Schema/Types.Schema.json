@@ -1,0 +1,19 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "definitions": {
+        "TcHmi.Controls.Beckhoff.TcHmiDatePicker": {
+            "type": "object",
+            "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+            "frameworkControlType": "TcHmiDatePicker",
+            "frameworkControlNamespace": "TcHmi.Controls.Beckhoff"
+        },
+        "TcHmiDatePicker": {
+            "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiDatePicker"
+        },
+        "TcHmi.Controls.Beckhoff.TcHmiDatePicker.DateValue": {
+            "title": "Date",
+            "type": "string",
+            "pattern": "^\\d{4}-(?:0\\d|1[0-2])-(?:[0-2]\\d|3[01])$"
+        }
+    }
+}
