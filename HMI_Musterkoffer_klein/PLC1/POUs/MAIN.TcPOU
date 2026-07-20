@@ -143,9 +143,14 @@ stIoModulSlot10.stDOSOutputs.bOutputCh3:=fbEnableAxis.Status;
 stIoModulSlot10.stDOSOutputs.bOutputCh1:=fbJog.JogForward;
 stIoModulSlot10.stDOSOutputs.bOutputCh5:=fbJog.JogForward;
 
-stMS4208Slot7.stEFUOutputsUp1.ControlViaProcessData:=TRUE;
-stMS4208Slot7.stEFUOutputsUp2.ControlViaProcessData:=TRUE;
-stMS4208Slot7.stEFUOutputsUs.ControlViaProcessData:=TRUE;]]></ST>
+IF _TaskInfo[0].FirstCycle THEN
+	stMS4208Slot7.stEFUOutputsUp1.ControlViaProcessData:=TRUE;
+	stMS4208Slot7.stEFUInputsUp1.bEnabled:=TRUE;
+	stMS4208Slot7.stEFUOutputsUp2.ControlViaProcessData:=TRUE;
+	stMS4208Slot7.stEFUInputsUp2.bEnabled:=TRUE;
+	stMS4208Slot7.stEFUOutputsUs.ControlViaProcessData:=TRUE;
+	stMS4208Slot7.stEFUInputsUs.bEnabled:=TRUE;
+END_IF]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>
