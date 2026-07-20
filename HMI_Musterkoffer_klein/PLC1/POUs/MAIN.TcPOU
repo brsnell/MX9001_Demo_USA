@@ -141,7 +141,11 @@ fbJog(
 	
 stIoModulSlot10.stDOSOutputs.bOutputCh3:=fbEnableAxis.Status;
 stIoModulSlot10.stDOSOutputs.bOutputCh1:=fbJog.JogForward;
-stIoModulSlot10.stDOSOutputs.bOutputCh5:=fbJog.JogForward;]]></ST>
+stIoModulSlot10.stDOSOutputs.bOutputCh5:=fbJog.JogForward;
+
+stMS4208Slot7.stEFUOutputsUp1.ControlViaProcessData:=TRUE;
+stMS4208Slot7.stEFUOutputsUp2.ControlViaProcessData:=TRUE;
+stMS4208Slot7.stEFUOutputsUs.ControlViaProcessData:=TRUE;]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>
