@@ -143,7 +143,7 @@ stIoModulSlot10.stDOSOutputs.bOutputCh3:=fbEnableAxis.Status;
 stIoModulSlot10.stDOSOutputs.bOutputCh1:=fbJog.JogForward;
 stIoModulSlot10.stDOSOutputs.bOutputCh5:=fbJog.JogForward;
 
-IF _TaskInfo[0].FirstCycle THEN
+IF _TaskInfo[1].FirstCycle THEN
 	stMS4208Slot7.stEFUOutputsUp1.ControlViaProcessData:=TRUE;
 	stMS4208Slot7.stEFUInputsUp1.bEnabled:=TRUE;
 	stMS4208Slot7.stEFUOutputsUp2.ControlViaProcessData:=TRUE;

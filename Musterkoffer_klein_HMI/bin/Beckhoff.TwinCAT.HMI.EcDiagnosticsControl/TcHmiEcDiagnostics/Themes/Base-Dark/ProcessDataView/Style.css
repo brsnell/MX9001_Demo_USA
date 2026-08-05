@@ -1,11 +1,15 @@
-.beckhoff-ec-diagnostics .process-data-chart-wrapper .current-value {
-    background: rgba(100, 100, 100, 0.9);
-}
+.beckhoff-ec-diagnostics {
+    & .process-data-chart-wrapper {
+        & .current-value {
+            background: rgba(100, 100, 100, 0.9);
+        }
 
-.beckhoff-ec-diagnostics .process-data-chart-wrapper .min-value {
-    background: rgba(100, 100, 100, 0.9);
-}
+        & .min-value {
+            background: rgba(100, 100, 100, 0.9);
+        }
 
-.beckhoff-ec-diagnostics .process-data-chart-wrapper .max-value {
-    background: rgba(100, 100, 100, 0.9);
+        & .max-value {
+            background: rgba(100, 100, 100, 0.9);
+        }
+    }
 }

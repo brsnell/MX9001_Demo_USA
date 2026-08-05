@@ -1,0 +1,14 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "definitions": {
+        "TcHmi.Controls.Beckhoff.TcHmiMotion.TcHmiAxesList": {
+            "type": "object",
+            "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+            "frameworkControlType": "TcHmiAxesList",
+            "frameworkControlNamespace": "TcHmi.Controls.Beckhoff.TcHmiMotion"
+        },
+        "TcHmiAxesList": {
+            "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiMotion.TcHmiAxesList"
+        }
+    }
+}

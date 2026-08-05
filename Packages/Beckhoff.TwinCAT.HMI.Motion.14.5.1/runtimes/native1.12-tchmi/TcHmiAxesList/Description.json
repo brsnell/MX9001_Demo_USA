@@ -1,0 +1,132 @@
+{
+    "$schema": "../../TcHmiFramework/Schema/ControlDescription.Schema.json",
+    "apiVersion": 1,
+    "name": "TcHmiAxesList",
+    "namespace": "TcHmi.Controls.Beckhoff.TcHmiMotion",
+    "displayName": "Axes List",
+    "version": {
+        "full": "14.5.1.0",
+        "fullSemVer": "14.5.1",
+        "major": 14,
+        "minor": 5,
+        "build": 1,
+        "revision": 0
+    },
+    "visible": true,
+    "themeable": "Standard",
+    "base": "TcHmi.Controls.System.TcHmiControl",
+    "description": "A control to display a list of TcMotion axes.",
+    "defaultDesignerEvent": "",
+    "properties": {
+        "containerControl": false,
+        "geometry": {
+            "width": 820,
+            "height": 560
+        }
+    },
+    "template": "Template.html",
+    "icons": [
+        {
+            "name": "Icons/16x16.png",
+            "width": 16,
+            "height": 16
+        }
+    ],
+    "dependencyFiles": [
+        {
+            "name": "../dist/TcHmiAxesList/TcHmiAxesList.esm.js",
+            "type": "EsModule",
+            "description": "Contains all the main logic as ES module."
+        },
+        {
+            "name": "Style.css",
+            "type": "Stylesheet",
+            "description": "Theme independent style"
+        }
+    ],
+    "themes": {
+        "Base": {
+            "resources": [
+                {
+                    "name": "Themes/Base/Style.css",
+                    "type": "Stylesheet",
+                    "description": "Theme dependent style"
+                }
+            ]
+        },
+        "Base-Dark": {
+            "resources": [
+                {
+                    "name": "Themes/Base-Dark/Style.css",
+                    "type": "Stylesheet",
+                    "description": "Theme dependent style"
+                }
+            ]
+        }
+    },
+    "attributes": [
+        {
+            "name": "data-tchmi-main-nc",
+            "propertyName": "MainNc",
+            "propertySetterName": "setMainNc",
+            "propertyGetterName": "getMainNc",
+            "displayName": "Main NC",
+            "visible": true,
+            "type": "tchmi:general#/definitions/String",
+            "themeable": "Standard",
+            "category": "Common",
+            "description": "String with the exact name of the NC Runtime on port 500. You can configure the runtime in Server > ADS > Runtimes. \nThe NC Runtime is not optional.",
+            "readOnly": false,
+            "bindable": true,
+            "heritable": true,
+            "defaultValue": "NC",
+            "defaultValueInternal": ""
+        },
+        {
+            "name": "data-tchmi-nc-task",
+            "propertyName": "NcTask",
+            "propertySetterName": "setNcTask",
+            "propertyGetterName": "getNcTask",
+            "displayName": "NC Task",
+            "visible": true,
+            "type": "tchmi:general#/definitions/String",
+            "themeable": "Standard",
+            "category": "Common",
+            "description": "String with the exact name of the NC-Task Runtime on Port 501. You can configure the runtime in Server > ADS > Runtimes. \nThe NC-Task Runtime is not optional.",
+            "readOnly": false,
+            "bindable": true,
+            "heritable": true,
+            "defaultValue": "NC-Task1",
+            "defaultValueInternal": ""
+        },
+        {
+            "name": "data-tchmi-target-motion-control",
+            "propertyName": "TargetMotionControl",
+            "propertySetterName": "setTargetMotionControl",
+            "propertyGetterName": "getTargetMotionControl",
+            "displayName": "Target Motion Control",
+            "visible": true,
+            "type": "tchmi:framework#/definitions/TcHmi.Controls.System.TcHmiControl",
+            "themeable": "Standard",
+            "category": "Common",
+            "description": "Reference to a TcHmiMotionControl. When an axis is selected in the list and the referenced control uses the data source mode 'NC' and the axis is part of its allowed axes, that axis is selected in the referenced control automatically.",
+            "readOnly": false,
+            "bindable": true,
+            "heritable": true,
+            "defaultValue": null,
+            "defaultValueInternal": null
+        }
+    ],
+    "attributeCategories": [],
+    "functions": [],
+    "events": [],
+    "dataTypes": [
+        {
+            "schema": "Schema/Types.Schema.json"
+        }
+    ],
+    "languages": {
+        "en": "Lang/Language.en.json",
+        "de": "Lang/Language.de.json"
+    }
+}

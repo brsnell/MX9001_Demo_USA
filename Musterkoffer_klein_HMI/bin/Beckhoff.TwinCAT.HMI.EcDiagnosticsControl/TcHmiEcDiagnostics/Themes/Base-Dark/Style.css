@@ -1,5 +1,5 @@
-/* Styles for theme: Base-Dark */
 .beckhoff-ec-diagnostics {
+    /* Styles for theme: Base-Dark */
     --main-background-color: var(--tchmi-background-color-1);
     --main-text-color: var(--tchmi-foreground-color-1);
     --main-tooltip-bg-color: rgba(0, 0, 0, 0.7);
@@ -34,234 +34,242 @@
     --main-regular-button-active-text-color: var(--tchmi-foreground-color-4);
     --main-input-bg: var(--tchmi-background-color-4);
     color: var(--main-text-color);
-}
-.beckhoff-ec-diagnostics hr {
-    border-top: 1px solid var(--main-border-color);
-}
-.beckhoff-ec-diagnostics .master-info,
-.beckhoff-ec-diagnostics .trace-view,
-.beckhoff-ec-diagnostics .slave-view {
-    color: var(--main-text-color);
-}
-.beckhoff-ec-diagnostics .arrow {
-    border-right: 2px solid white;
-    border-bottom: 2px solid white;
-}
+    & hr {
+        border-top: 1px solid var(--main-border-color);
+    }
+    & .master-info,
+    & .trace-view,
+    & .slave-view {
+        color: var(--main-text-color);
+    }
+    & .arrow {
+        border-right: 2px solid white;
+        border-bottom: 2px solid white;
+        &:before {
+            border-color: transparent transparent #007bff transparent;
+        }
+    }
 
-.beckhoff-ec-diagnostics .crossed-out {
-    color: var(--main-error-color);
-}
+    & .crossed-out {
+        color: var(--main-error-color);
+    }
 
-.beckhoff-ec-diagnostics .text-error {
-    color: var(--main-error-color);
-}
+    & .text-error {
+        color: var(--main-error-color);
+    }
 
-.beckhoff-ec-diagnostics .text-warning {
-    color: var(--main-warning-color);
-}
+    & .text-warning {
+        color: var(--main-warning-color);
+    }
 
-.beckhoff-ec-diagnostics .text-success {
-    color: var(--main-success-color);
-}
+    & .text-success {
+        color: var(--main-success-color);
+    }
 
-.beckhoff-ec-diagnostics .no-value {
-    color: var(--main-grayed-out);
-}
+    & .no-value {
+        color: var(--main-grayed-out);
+    }
 
-.beckhoff-ec-diagnostics .arrow:before {
-    border-color: transparent transparent #007bff transparent;
-}
+    & .toolbox {
+        background: var(--main-toolbox-bg-color);
+    }
 
-.beckhoff-ec-diagnostics .toolbox {
-    background: var(--main-toolbox-bg-color);
-}
+    & .toolbox-reset-view {
+        background-color: var(--main-background-color);
+        background-image: url('center.png');
+    }
 
-.beckhoff-ec-diagnostics .toolbox-reset-view {
-    background-color: var(--main-background-color);
-    background-image: url('center.png');
-}
+    & .change-highlight {
+        background: var(--main-change-highlight) !important;
+        &.error-value {
+            background: var(--main-change-error-highlight) !important;
+        }
+    }
 
-.beckhoff-ec-diagnostics .change-highlight {
-    background: var(--main-change-highlight) !important;
-}
+    & .regular-button {
+        transition: none;
+        font-size: var(--tchmi-button-font-size);
+        background: var(--tchmi-button-background);
+        color: var(--tchmi-button-text-color);
+        border: var(--tchmi-button-border);
+        box-shadow: var(--tchmi-button-shadow);
+        &:hover {
+            font-size: var(--tchmi-button-font-size);
+            background: var(--tchmi-button-background);
+            color: var(--tchmi-button-text-color);
+            border: var(--tchmi-button-border);
+            box-shadow: var(--tchmi-button-shadow);
+        }
+        &:active:not(:disabled, [disabled]) {
+            background: var(--tchmi-button-background-pressed);
+            color: var(--tchmi-button-text-color-pressed);
+            border: var(--tchmi-button-border-pressed);
+            box-shadow: var(--tchmi-button-shadow-pressed);
+        }
+        &:disabled::after,
+        &[disabled]::after {
+            background: var(--tchmi-disabled-color);
+            content: '';
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 100;
+        }
+    }
+    & input.regular-text-input {
+        background: var(--main-input-bg);
+        border: 1px solid var(--main-border-color);
+        color: var(--main-text-color);
+    }
+    /** trace view*/
+    & .trace-view {
+        & .table-vertical {
+            & .head {
+                border-right: 1px solid var(--main-border-color);
+            }
 
-.beckhoff-ec-diagnostics .change-highlight.error-value {
-    background: var(--main-change-error-highlight) !important;
-}
+            & .content {
+                & .col:hover {
+                    box-shadow: 0px 0px 10px 1px var(--main-border-color);
+                }
+            }
 
-.beckhoff-ec-diagnostics .regular-button {
-    transition: none;
-    font-size: var(--tchmi-button-font-size);
-    background: var(--tchmi-button-background);
-    color: var(--tchmi-button-text-color);
-    border: var(--tchmi-button-border);
-    box-shadow: var(--tchmi-button-shadow);
-}
-.beckhoff-ec-diagnostics .regular-button:hover {
-    font-size: var(--tchmi-button-font-size);
-    background: var(--tchmi-button-background);
-    color: var(--tchmi-button-text-color);
-    border: var(--tchmi-button-border);
-    box-shadow: var(--tchmi-button-shadow);
-}
-.beckhoff-ec-diagnostics .regular-button:active:not(:disabled, [disabled]) {
-    background: var(--tchmi-button-background-pressed);
-    color: var(--tchmi-button-text-color-pressed);
-    border: var(--tchmi-button-border-pressed);
-    box-shadow: var(--tchmi-button-shadow-pressed);
-}
-.beckhoff-ec-diagnostics .regular-button:disabled::after,
-.beckhoff-ec-diagnostics .regular-button[disabled]::after {
-    background: var(--tchmi-disabled-color);
-    content: '';
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    z-index: 100;
-}
-.beckhoff-ec-diagnostics input.regular-text-input {
-    background: var(--main-input-bg);
-    border: 1px solid var(--main-border-color);
-    color: var(--main-text-color);
-}
-/** trace view*/
-.beckhoff-ec-diagnostics .trace-view .table-vertical .head {
-    border-right: 1px solid var(--main-border-color);
-}
+            & .trace-slave-highlight,
+            & .col.trace-slave-highlight > div:nth-child(2n + 1) {
+                background: var(--main-trace-slave-highlight) !important;
+            }
 
-.beckhoff-ec-diagnostics .trace-view .table-vertical .content .col:hover {
-    box-shadow: 0px 0px 10px 1px var(--main-border-color);
-}
+            & .col > div:nth-child(2n + 1) {
+                background: var(--main-trace-odd-row);
+            }
+        }
+    }
+    /** slave view */
+    & .slave-view {
+        background: var(--main-background-color);
+        & .tab-content[tab='online'] .port {
+            border-top: 1px solid var(--main-border-color);
+        }
 
-.beckhoff-ec-diagnostics .trace-view .table-vertical .trace-slave-highlight,
-.table-vertical .col.trace-slave-highlight > div:nth-child(2n + 1) {
-    background: var(--main-trace-slave-highlight) !important;
-}
+        & .tab-content[tab='online'] .port.not-connected {
+            color: var(--main-grayed-out);
+        }
+    }
+    & .slave-message {
+        /** error */
+        &.slave-message-error {
+            border-left-color: var(--tchmi-error-color);
+            border-bottom-color: var(--tchmi-error-color);
+        }
 
-.beckhoff-ec-diagnostics .trace-view .table-vertical .col > div:nth-child(2n + 1) {
-    background: var(--main-trace-odd-row);
-}
-/** slave view */
-.beckhoff-ec-diagnostics .slave-view {
-    background: var(--main-background-color);
-}
+        /** warning */
+        &.slave-message-warning {
+            border-left-color: var(--tchmi-warning-color);
+            border-bottom-color: var(--tchmi-warning-color);
+        }
+    }
 
-.beckhoff-ec-diagnostics .slave-view .tab-content[tab='online'] .port {
-    border-top: 1px solid var(--main-border-color);
-}
+    /** process data */
+    & .slave-view table.process-data tr.entry:nth-child(4n + 2) td:not(:first-child) {
+        background: var(--main-background-color);
+    }
 
-.beckhoff-ec-diagnostics .slave-view .tab-content[tab='online'] .port.not-connected {
-    color: var(--main-grayed-out);
-}
-/** error */
-.beckhoff-ec-diagnostics .slave-message.slave-message-error {
-    border-left-color: var(--tchmi-error-color);
-    border-bottom-color: var(--tchmi-error-color);
-}
+    & .slave-view table.process-data tr.entry-chart:nth-child(4n + 3) td:not(:first-child) {
+        background: var(--main-background-color);
+    }
+    /* input pdos */
+    & .slave-view table.process-data-input tbody:nth-child(even) {
+        background: var(--main-process-data-input);
+    }
 
-/** warning */
-.beckhoff-ec-diagnostics .slave-message.slave-message-warning {
-    border-left-color: var(--tchmi-warning-color);
-    border-bottom-color: var(--tchmi-warning-color);
-}
+    & .slave-view table.process-data-input tbody:nth-child(odd) {
+        background: var(--main-process-data-input-light);
+    }
+    /* output pdos */
+    & .slave-view table.process-data-output tbody:nth-child(even) {
+        background: var(--main-process-data-output);
+    }
 
-/** process data */
-.beckhoff-ec-diagnostics .slave-view table.process-data tr.entry:nth-child(4n + 2) td:not(:first-child) {
-    background: var(--main-background-color);
-}
+    & .slave-view table.process-data-output tbody:nth-child(odd) {
+        background: var(--main-process-data-output-light);
+    }
 
-.beckhoff-ec-diagnostics .slave-view table.process-data tr.entry-chart:nth-child(4n + 3) td:not(:first-child) {
-    background: var(--main-background-color);
-}
-/* input pdos */
-.beckhoff-ec-diagnostics .slave-view table.process-data-input tbody:nth-child(even) {
-    background: var(--main-process-data-input);
-}
+    & .slave-view table.process-data tr.entry:nth-child(4n + 0) td:not(:first-child) {
+        background: var(--main-process-data-entry-even);
+    }
 
-.beckhoff-ec-diagnostics .slave-view table.process-data-input tbody:nth-child(odd) {
-    background: var(--main-process-data-input-light);
-}
-/* output pdos */
-.beckhoff-ec-diagnostics .slave-view table.process-data-output tbody:nth-child(even) {
-    background: var(--main-process-data-output);
-}
+    & .slave-view table.process-data tr.entry-chart:nth-child(4n + 1) td:not(:first-child) {
+        background: var(--main-process-data-entry-even);
+    }
 
-.beckhoff-ec-diagnostics .slave-view table.process-data-output tbody:nth-child(odd) {
-    background: var(--main-process-data-output-light);
-}
+    & beckhoff-ec-diagnostics-pop-up .inner-frame > .header {
+        border-bottom: 1px solid var(--main-border-color);
+    }
 
-.beckhoff-ec-diagnostics .slave-view table.process-data tr.entry:nth-child(4n + 0) td:not(:first-child) {
-    background: var(--main-process-data-entry-even);
-}
+    /** process data */
+    & .forced-process-data-value-flag {
+        background: rgb(230, 115, 0);
+        color: white;
+    }
 
-.beckhoff-ec-diagnostics .slave-view table.process-data tr.entry-chart:nth-child(4n + 1) td:not(:first-child) {
-    background: var(--main-process-data-entry-even);
-}
+    & .boolean-representation {
+        &.false {
+            background: black;
+            color: white;
+        }
+        &.true {
+            background: blue;
+            color: white;
+        }
+    }
+    & .icon-input-channel {
+        background: url('TcBase/input_channel.png');
+    }
 
-.beckhoff-ec-diagnostics beckhoff-ec-diagnostics-pop-up .inner-frame > .header {
-    border-bottom: 1px solid var(--main-border-color);
-}
+    & .icon-input-struct-entry {
+        background: url('TcBase/input_struct_entry.png');
+    }
 
-/** process data */
-.beckhoff-ec-diagnostics .forced-process-data-value-flag {
-    background: rgb(230, 115, 0);
-    color: white;
-}
+    & .icon-input-array-entry {
+        background: url('TcBase/input_array_entry.png');
+    }
 
-.beckhoff-ec-diagnostics .boolean-representation.false {
-    background: black;
-    color: white;
-}
+    & .icon-input-entry {
+        background: url('TcBase/input_entry.png');
+    }
 
-.beckhoff-ec-diagnostics .boolean-representation.true {
-    background: blue;
-    color: white;
-}
-.beckhoff-ec-diagnostics .icon-input-channel {
-    background: url('TcBase/input_channel.png');
-}
+    & .icon-input-entry-linked {
+        background: url('TcBase/input_entry_linked.png');
+    }
 
-.beckhoff-ec-diagnostics .icon-input-struct-entry {
-    background: url('TcBase/input_struct_entry.png');
-}
+    & .icon-output-channel {
+        background: url('TcBase/output_channel.png');
+    }
 
-.beckhoff-ec-diagnostics .icon-input-array-entry {
-    background: url('TcBase/input_array_entry.png');
-}
+    & .icon-output-struct-entry {
+        background: url('TcBase/output_struct_entry.png');
+    }
 
-.beckhoff-ec-diagnostics .icon-input-entry {
-    background: url('TcBase/input_entry.png');
-}
+    & .icon-output-array-entry {
+        background: url('TcBase/output_array_entry.png');
+    }
 
-.beckhoff-ec-diagnostics .icon-input-entry-linked {
-    background: url('TcBase/input_entry_linked.png');
-}
+    & .icon-output-entry {
+        background: url('TcBase/output_entry.png');
+    }
 
-.beckhoff-ec-diagnostics .icon-output-channel {
-    background: url('TcBase/output_channel.png');
-}
+    & .icon-output-entry-linked {
+        background: url('TcBase/output_entry_linked.png');
+    }
 
-.beckhoff-ec-diagnostics .icon-output-struct-entry {
-    background: url('TcBase/output_struct_entry.png');
-}
-
-.beckhoff-ec-diagnostics .icon-output-array-entry {
-    background: url('TcBase/output_array_entry.png');
-}
-
-.beckhoff-ec-diagnostics .icon-output-entry {
-    background: url('TcBase/output_entry.png');
-}
-
-.beckhoff-ec-diagnostics .icon-output-entry-linked {
-    background: url('TcBase/output_entry_linked.png');
-}
-
-.beckhoff-ec-diagnostics .drawing-wrapper .drawing-info {
-    background: var(--main-dark-color);
-}
-.beckhoff-ec-diagnostics .navigation-link {
-    color: white;
+    & .drawing-wrapper {
+        & .drawing-info {
+            background: var(--main-dark-color);
+        }
+    }
+    & .navigation-link {
+        color: white;
+    }
 }

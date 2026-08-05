@@ -1,0 +1,1 @@
+export{Log,TopMostLayer,setFrameworkCore,getFrameworkCore}from"../../../Common/FrameworkCore.js";

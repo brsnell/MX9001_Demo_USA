@@ -192,6 +192,9 @@
     "TcHmi.Controls.System.TcHmiPopup.TargetFile": {
       "title": "TargetFile",
       "type": "object",
+      "engineeringColumns": [
+        "path"
+      ],
       "properties": {
         "path": {
           "anyOf": [
@@ -229,6 +232,9 @@
       "items": {
         "title": "Button",
         "type": "object",
+        "engineeringColumns": [
+          "name"
+        ],
         "propertiesMeta": [
           {
             "name": "name",
@@ -4857,6 +4863,9 @@
           {
             "title": "Event Property",
             "type": "object",
+            "engineeringColumns": [
+              "name"
+            ],
             "propertiesMeta": [
               {
                 "name": "name",
@@ -9610,6 +9619,10 @@
         "type": "object",
         "title": "Line graph description",
         "description": "Defines one line graph descriptions.",
+        "engineeringColumns": [
+          "symbol",
+          "yAxisId"
+        ],
         "propertiesMeta": [
           {
             "name": "lineColor",
@@ -10795,6 +10808,9 @@
         "type": "object",
         "title": "Historized symbol description",
         "description": "Defines a historized symbol.",
+        "engineeringColumns": [
+          "symbol"
+        ],
         "propertiesMeta": [
           {
             "name": "symbol",
@@ -11335,6 +11351,15 @@
         "NC",
         "NC & PLC"
       ]
+    },
+    "TcHmi.Controls.Beckhoff.TcHmiMotion.TcHmiAxesList": {
+      "type": "object",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkControlType": "TcHmiAxesList",
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff.TcHmiMotion"
+    },
+    "TcHmiAxesList": {
+      "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiMotion.TcHmiAxesList"
     },
     "TcHmi.Controls.ResponsiveNavigation.TcHmiNavigationBar": {
       "type": "object",

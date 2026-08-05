@@ -1,0 +1,188 @@
+/*
+ * Styles for the reusable ColumnSettingsPopup helper.
+ *
+ * The popup wrapper (background, header, footer layout) is provided by the shared TcHmiPopups popup helper
+ * (class prefix 'TcHmi_Controls_Helpers_Popup'). These rules only style the popup content, which uses the css
+ * prefix 'tchmi-column-settings-popup' (configurable via the cssPrefix option). Colors reuse the global TcHmi theme
+ * variables. The icons for the select / deselect toggles and the move up / down buttons are configurable via the
+ * css variables defined below, so this helper does not ship its own images.
+ */
+
+.tchmi-column-settings-popup-columns-popup-content {
+    --tchmi-popup-color: var(--tchmi-foreground-color-1);
+    --tchmi-popup-background: var(--tchmi-background-color-1);
+    --tchmi-popup-config-background: var(--tchmi-background-color-3);
+    --tchmi-popup-config-background-hover: var(--tchmi-background-color-4);
+    --tchmi-popup-config-background-active: var(--tchmi-highlight-color-1);
+    --tchmi-popup-config-color: var(--tchmi-foreground-color-1);
+    --tchmi-popup-config-color-hover: var(--tchmi-foreground-color-1);
+    --tchmi-popup-config-color-active: var(--tchmi-foreground-color-1);
+
+    display: flex;
+    flex-direction: row;
+}
+
+/* Push the reset button to the left of the shared popup footer. */
+.TcHmi_Controls_Helpers_Popup-ColumnSettingsPopup .TcHmi_Controls_Helpers_Popup-footer .align-left {
+    margin-right: auto;
+}
+
+.tchmi-column-settings-popup-columns-selector {
+    display: flex;
+    margin: 0 -3px 5px -3px;
+}
+
+.tchmi-column-settings-popup-columns-selector > div {
+    margin: 0 3px;
+}
+
+.tchmi-column-settings-popup-columns-selector .tchmi-control {
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.tchmi-column-settings-popup-columns-config-available-columns,
+.tchmi-column-settings-popup-columns-config-selected-columns {
+    width: 170px;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.tchmi-column-settings-popup-columns-config-column {
+    padding: 5px;
+    position: relative;
+    background: var(--tchmi-popup-config-background);
+    color: var(--tchmi-popup-config-color);
+    border-bottom: 1px solid var(--tchmi-popup-background);
+}
+
+.tchmi-column-settings-popup-columns-config-column span {
+    pointer-events: none;
+}
+
+.tchmi-column-settings-popup-columns-config-selected-columns
+    .tchmi-column-settings-popup-columns-config-column:not(.active):hover {
+    background: var(--tchmi-popup-config-background-hover);
+    color: var(--tchmi-popup-config-color-hover);
+}
+
+.tchmi-column-settings-popup-columns-config-column.active {
+    background: var(--tchmi-popup-config-background-active);
+    color: var(--tchmi-popup-config-color-active);
+}
+
+.tchmi-column-settings-popup-columns-config-column-selection-toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 26px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.tchmi-column-settings-popup-columns-config-available-columns
+    .tchmi-column-settings-popup-columns-config-column-selection-toggle {
+    background-image: var(
+        --tchmi-column-settings-popup-icon-select,
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M8 3v10M3 8h10" stroke="%23888" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg>')
+    );
+}
+
+.tchmi-column-settings-popup-columns-config-available-columns
+    .tchmi-column-settings-popup-columns-config-column-selection-toggle:active {
+    background-image: var(
+        --tchmi-column-settings-popup-icon-select-active,
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M8 3v10M3 8h10" stroke="%234c9aff" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg>')
+    );
+}
+
+.tchmi-column-settings-popup-columns-config-selected-columns
+    .tchmi-column-settings-popup-columns-config-column-selection-toggle {
+    background-image: var(
+        --tchmi-column-settings-popup-icon-deselect,
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M4 4l8 8M12 4l-8 8" stroke="%23888" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg>')
+    );
+}
+
+.tchmi-column-settings-popup-columns-config-selected-columns
+    .tchmi-column-settings-popup-columns-config-column-selection-toggle:active {
+    background-image: var(
+        --tchmi-column-settings-popup-icon-deselect-active,
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M4 4l8 8M12 4l-8 8" stroke="%234c9aff" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg>')
+    );
+}
+
+.tchmi-column-settings-popup-column-properties {
+    display: flex;
+    flex-direction: column;
+}
+
+.tchmi-column-settings-popup-column-properties > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 10px;
+    margin-bottom: 2px;
+    position: relative;
+}
+
+.tchmi-column-settings-popup-column-properties > div.hidden {
+    display: none;
+}
+
+.tchmi-column-settings-popup-column-property-label {
+    margin-right: 3px;
+    color: var(--tchmi-popup-color);
+}
+
+.tchmi-column-settings-popup-column-properties div[data-tchmi-type] {
+    position: relative;
+}
+
+.tchmi-column-settings-popup-column-properties div[data-tchmi-type] + div[data-tchmi-type] {
+    margin-left: 2px;
+}
+
+.tchmi-column-settings-popup-in-textbox {
+    position: absolute;
+    z-index: 1;
+    width: 0;
+    right: 117px;
+    line-height: 26px;
+    color: #4c6374;
+    pointer-events: none;
+}
+
+.tchmi-column-settings-popup-move-up-button .tchmi-button-template {
+    background-image: var(
+        --tchmi-column-settings-popup-icon-move-up,
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M4 10l4-4 4 4" stroke="%23888" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>')
+    );
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.tchmi-column-settings-popup-move-up-button.down .tchmi-button-template {
+    background-image: var(
+        --tchmi-column-settings-popup-icon-move-up-active,
+        var(--tchmi-column-settings-popup-icon-move-up, none)
+    );
+}
+
+.tchmi-column-settings-popup-move-down-button .tchmi-button-template {
+    background-image: var(
+        --tchmi-column-settings-popup-icon-move-down,
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M4 6l4 4 4-4" stroke="%23888" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>')
+    );
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.tchmi-column-settings-popup-move-down-button.down .tchmi-button-template {
+    background-image: var(
+        --tchmi-column-settings-popup-icon-move-down-active,
+        var(--tchmi-column-settings-popup-icon-move-down, none)
+    );
+}

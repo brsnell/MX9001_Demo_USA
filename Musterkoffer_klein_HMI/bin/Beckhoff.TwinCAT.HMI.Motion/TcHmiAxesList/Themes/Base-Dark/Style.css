@@ -1,0 +1,11 @@
+/* TcHmiMotion styles for theme Base-Dark */
+.TcHmi_Controls_Beckhoff_TcHmiMotion_TcHmiAxesList {
+    background: var(--tchmi-motion-header-background);
+    /* color: var(--tchmi-background-color-1); */
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiMotion_TcHmiAxesList-column-chooser-button .TcHmi_Controls_Beckhoff_TcHmiButton-template {
+    background-image: url('Images/columns.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
